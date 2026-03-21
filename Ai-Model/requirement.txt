@@ -1,0 +1,10 @@
+torch
+torchvision
+torchaudio
+datasets
+huggingface_hub
+pillow
+tqdm
+numpy
+matplotlib
+scikit-learn
