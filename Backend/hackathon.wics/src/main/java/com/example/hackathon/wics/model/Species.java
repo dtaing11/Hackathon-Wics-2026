@@ -23,7 +23,7 @@ public class Species {
     private UUID id;
     @Column(name="species", nullable = false)
     private String species;
-    @Column(name="post_id",nullable = false)
+    @Column(name = "post_id")
     private UUID postId;
 
     public Species(String species, UUID post_id) {
