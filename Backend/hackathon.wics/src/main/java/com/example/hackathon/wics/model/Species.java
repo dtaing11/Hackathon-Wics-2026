@@ -24,10 +24,11 @@ public class Species {
     @Column(name="species", nullable = false)
     private String species;
     @Column(name="post_id",nullable = false)
-    private String postId;
+    private UUID postId;
 
-    public Species(String species, String post_id) {
+    public Species(String species, UUID post_id) {
         this.species = species;
+        this.postId = post_id;
         this.postId = post_id;
     }
 }
