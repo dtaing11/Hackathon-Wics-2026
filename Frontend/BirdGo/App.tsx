@@ -253,6 +253,8 @@ const App = () => {
     <SafeAreaView style={styles.screen}>
       <StatusBar barStyle="light-content" />
       <View style={styles.screen}>
+
+        {/*Base Map View*/}
         <MapView
           style={styles.map}
           styleURL={
@@ -274,7 +276,6 @@ const App = () => {
             followHeading={playerLocation?.coords.heading ?? 0}
           />
 
-          //player location
           {hasLocationPermission ? (
             <UserLocation
               visible
@@ -287,7 +288,7 @@ const App = () => {
             />
           ) : null}
 
-          //mapbox buildings
+          {/*Map Box Building Modelss*/}
           <VectorSource
             id="composite-buildings"
             url="mapbox://mapbox.mapbox-streets-v8">
@@ -301,14 +302,14 @@ const App = () => {
             />
           </VectorSource>
           
-          //Bird Models
+          {/*Bird Card Models*/}
           <Models
             models={{
               [INSPECTION_CARD_MODEL_ID]: inspectionCardModel,
             }}
           />
 
-          //Bird Click Handling
+          {/*Bird Click Handling*/}
           <ShapeSource id="pole-source" shape={poleFeatures} onPress={handlePolePress}>
             <CircleLayer id="pole-hit-area" style={poleHitAreaStyle} />
             <ModelLayer id="pole-cards-base" style={baseModelStyle} />
@@ -319,8 +320,9 @@ const App = () => {
             />
           </ShapeSource>
         </MapView>
+        
 
-        //UI Region
+        {/*UI Navigatin*/}
         <View style={styles.topBar}>
           <View style={styles.badge}>
             <Text style={styles.badgeTitle}>3D Card Demo</Text>

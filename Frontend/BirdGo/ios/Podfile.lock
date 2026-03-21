@@ -2132,7 +2132,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   FBLazyVector: e97c19a5a442429d1988f182a1940fb08df514da
-  hermes-engine: ba23a98b9037923b619309138b1e2dfe4790cbdd
+  hermes-engine: 42880558d080d303de347355cddd3b558d587468
   MapboxCommon: 10cbf74edb23c9abcfe2424899d804f288a47334
   MapboxCoreMaps: f19680d20681797067268284b2292349de861730
   MapboxMaps: 04c7bf46d66265ad0f4b98484a251777a926c423
@@ -2144,7 +2144,7 @@ SPEC CHECKSUMS:
   React: 1ba7d364ade7d883a1ec055bfc3606f35fdee17b
   React-callinvoker: bc2a26f8d84fb01f003fc6de6c9337b64715f95b
   React-Core: bdaa87b276ca31877632a982ecf7c36f8c826414
-  React-Core-prebuilt: c76b50fe9a909e5a4faa042e2a7b5416a2d1d59e
+  React-Core-prebuilt: a2f6f0d8e82df1c835ca3ad262906cd07db0cc1b
   React-CoreModules: b24989f62d56390ae08ca4f65e6f38fe6802de42
   React-cxxreact: 1a2dfcbc18a6b610664dba152adf327f063a0d12
   React-debug: 755200a6e7f5e6e0a40ff8d215493d43cce285fc
@@ -2206,7 +2206,7 @@ SPEC CHECKSUMS:
   ReactAppDependencyProvider: 26bbf1e26768d08dd965a2b5e372e53f67b21fee
   ReactCodegen: 4fa1b291ad275013e39212f2463c46480fb53afe
   ReactCommon: 309419492d417c4cbb87af06f67735afa40ecb9d
-  ReactNativeDependencies: d49eba2ad0afa1952e854d71d6b1a454688aa4a6
+  ReactNativeDependencies: 110e8ac09b4475b06fe96a669594c6c370b2d77b
   rnmapbox-maps: f7d1d72396ba9ec76ee80b33c5b84b65e52ae621
   Turf: c9eb11a65d96af58cac523460fd40fec5061b081
   Yoga: c0b3f2c7e8d3e327e450223a2414ca3fa296b9a2
