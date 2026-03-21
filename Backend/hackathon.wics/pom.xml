@@ -65,6 +65,15 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
+		<groupId>com.google.cloud.sql</groupId>
+		<artifactId>postgres-socket-factory</artifactId>
+		<version>1.20.0</version>
+		</dependency>
+		<dependency>
+		<groupId>com.google.cloud</groupId>
+		<artifactId>spring-cloud-gcp-starter-sql-postgresql</artifactId>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security-test</artifactId>
 			<scope>test</scope>
