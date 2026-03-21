@@ -15,8 +15,8 @@ def train():
     model = BirdCNN(num_classes=num_classes).to(device)
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = torch.optim.Adam(model.parameters(), lr=1e-3)
-
+    optimizer = torch.optim.SGD(model.parameters(), lr=1e-2, momentum=0.9)
+    scheduler = torch.optim.lr_scheduler.StepLR(optimizer, step_size=1, gamma=0.5)
     for epoch in range(5):
         model.train()
         total_loss = 0
@@ -41,7 +41,7 @@ def train():
 
         print(f"Epoch {epoch} Loss: {total_loss:.4f}")
 
-    torch.save(model.state_dict(), "bird_cnn.pth")
+    torch.save(model.state_dict(), "bird_cnn_1.pth")
 
 
 if __name__ == "__main__":
