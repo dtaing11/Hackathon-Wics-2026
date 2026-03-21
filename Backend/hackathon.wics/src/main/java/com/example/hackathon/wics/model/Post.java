@@ -30,7 +30,7 @@ public class Post {
     @Column(name = "longitude", nullable = false)
     private Double longitude;
     @Column(name= "created_at", nullable = false)
-    private LocalDateTime created_at = LocalDateTime.now();
+    private LocalDateTime createdAt = LocalDateTime.now();
 
 
     public Post(UUID user_id, String image_url, String contentType,Double latitude, Double longitude) {

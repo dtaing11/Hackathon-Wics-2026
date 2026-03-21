@@ -29,5 +29,6 @@ public class Species {
     public Species(String species, UUID post_id) {
         this.species = species;
         this.postId = post_id;
+        this.postId = post_id;
     }
 }
