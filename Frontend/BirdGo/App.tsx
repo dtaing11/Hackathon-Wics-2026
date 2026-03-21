@@ -24,9 +24,9 @@ import Mapbox, {
   VectorSource,
 } from '@rnmapbox/maps';
 
-import {MAPBOX_PUBLIC_API_KEY, MAPBOX_LOCAL_API_KEY} from '@env';
+import {MAPBOX_PUBLIC_API_KEY} from '@env';
 
-const inspectionCardModel = require('./BoxTextured.glb');
+import inspectionCardModel from './BoxTextured.glb';
 
 Mapbox.setAccessToken(
   MAPBOX_PUBLIC_API_KEY,
@@ -76,6 +76,7 @@ const POLES: Pole[] = [
       'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80',
   },
 ];
+
 
 //haversine finds distance btween two lat values
 function distanceBetweenInMeters(
@@ -149,6 +150,7 @@ function getPoleById(poleId: number | null) {
 
 const App = () => {
   const cameraRef = useRef<Camera>(null);
+  const [cameraHeading, setCameraHeading] = useState(25);
   const [selectedPoleId, setSelectedPoleId] = useState<number | null>(POLES[0].id);
   const [mapStyle, setMapStyle] = useState<'street' | 'satellite'>('satellite');
   const [hasLocationPermission, setHasLocationPermission] = useState(
@@ -161,6 +163,14 @@ const App = () => {
   const poleFeatures = useMemo(
     () => buildPoleFeatureCollection(POLES, selectedPoleId),
     [selectedPoleId],
+  );
+  const baseModelStyle = useMemo(
+    () => buildBaseModelStyle(cameraHeading),
+    [cameraHeading],
+  );
+  const selectedModelStyle = useMemo(
+    () => buildSelectedModelStyle(cameraHeading),
+    [cameraHeading],
   );
 
   useEffect(() => {
@@ -263,7 +273,10 @@ const App = () => {
               : Mapbox.StyleURL.Street
           }
           onPress={handleMapPress}
-          scaleBarEnabled={false}>
+          scaleBarEnabled={false}
+          onCameraChanged={event => {
+          setCameraHeading(event.properties.heading ?? 0);
+  }}>
           <Camera
             ref={cameraRef}
             centerCoordinate={[-90.09497, 29.98119]}
@@ -387,35 +400,38 @@ export default App;
 
 //MapBox styling
 
+function buildBaseModelStyle(cameraHeading: number): any {
+  return {
+    modelId: ['get', 'modelId'],
+    modelType: 'common-3d',
+    modelScale: [10, 10, 0.6],
+    modelRotation: [90, 0, cameraHeading],
+    modelTranslation: [0, 0, 0],
+    modelOpacity: 0.95,
+    modelCastShadows: true,
+    modelReceiveShadows: true,
+    modelColorMixIntensity: 0.7,
+    modelColor: [
+      'case',
+      ['boolean', ['get', 'isBad'], false],
+      '#ef4444',
+      '#22c55e',
+    ],
+  };
+}
 
-const baseModelStyle: any = {
-  modelId: ['get', 'modelId'],
-  modelType: 'common-3d',
-  modelScale: [10, 10, 0.6],
-  modelRotation: [90, 0, ['get', 'heading']],
-  modelTranslation: [0, 0, 0],
-  modelOpacity: 0.95,
-  modelCastShadows: true,
-  modelReceiveShadows: true,
-  modelColorMixIntensity: 0.7,
-  modelColor: [
-    'case',
-    ['boolean', ['get', 'isBad'], false],
-    '#ef4444',
-    '#22c55e',
-  ],
-};
-
-const selectedModelStyle: any = {
-  modelId: ['get', 'modelId'],
-  modelType: 'common-3d',
-  modelScale: [12, 12, 0.8],
-  modelRotation: [90, 0, ['get', 'heading']],
-  modelTranslation: [0, 0, 1.5],
-  modelOpacity: 1,
-  modelColorMixIntensity: 1,
-  modelColor: '#f59e0b',
-};
+function buildSelectedModelStyle(cameraHeading: number): any {
+  return {
+    modelId: ['get', 'modelId'],
+    modelType: 'common-3d',
+    modelScale: [12, 12, 0.8],
+    modelRotation: [90, 0, cameraHeading],
+    modelTranslation: [0, 0, 1.5],
+    modelOpacity: 1,
+    modelColorMixIntensity: 1,
+    modelColor: '#f59e0b',
+  };
+}
 
 const poleHitAreaStyle = {
   circleRadius: 18,
