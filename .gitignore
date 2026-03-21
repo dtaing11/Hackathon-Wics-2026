@@ -1,4 +1,15 @@
-*.log
+# Node
+node_modules/
+
+# Environment variables
 .env
+
+# Log files
+*.log
+
+# IDE garbage
 .DS_Store
+.vscode/
+
+# ML
 bird_resnet18.pth
