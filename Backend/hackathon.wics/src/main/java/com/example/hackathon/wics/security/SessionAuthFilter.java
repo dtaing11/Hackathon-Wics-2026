@@ -37,7 +37,7 @@ public class SessionAuthFilter extends OncePerRequestFilter {
 
     if (authCookie != null){
         try{
-            var user = userSessionService.findBySession(authCookie);
+            var user = userSessionService.getSessionBySessionId(authCookie);
             var auth = new UsernamePasswordAuthenticationToken(
                 user, null, List.of()
             );
