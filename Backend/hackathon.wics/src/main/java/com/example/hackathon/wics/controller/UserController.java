@@ -7,6 +7,7 @@ import com.example.hackathon.wics.model.Users;
 import com.example.hackathon.wics.service.UserService;
 import com.example.hackathon.wics.service.UserSessionService;
 import org.springframework.http.*;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 
@@ -38,6 +39,11 @@ public class UserController {
       return new ResponseEntity<>(HttpStatus.OK);
     }
 
+    @GetMapping("/point")
+    public ResponseEntity<?> getUserPoints(@AuthenticationPrincipal Users user) {
+        return new ResponseEntity<>(user.getPoints(), HttpStatus.OK);
+    }
+
 
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginUserReq loginUserReq) {
@@ -55,6 +61,8 @@ public class UserController {
                 .header(HttpHeaders.SET_COOKIE, partitionedCookie)
                 .body("login successful");
     }
+
+
 
     @GetMapping("/{id}")
     public ResponseEntity<Users> getUserById(@PathVariable UUID id) {

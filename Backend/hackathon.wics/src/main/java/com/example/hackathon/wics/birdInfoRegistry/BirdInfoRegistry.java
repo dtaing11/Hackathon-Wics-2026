@@ -29,10 +29,11 @@ public class BirdInfoRegistry {
             BirdInfoDefinition[] birdInfos = mapper.readValue(is, BirdInfoDefinition[].class);
 
             for (BirdInfoDefinition def : birdInfos) {
-                birdInfo.put(def.getBirdName(), def);
+                birdInfo.put(def.getBirdName().toUpperCase(), def);
             }
 
             loaded.set(true);
+            System.out.println("Value " + birdInfo.get("ABBOTTS BABBLER").getBirdName() + " birds");
             System.out.println("Loaded " + birdInfo.size() + " birds");
         } catch (Exception e) {
             throw new RuntimeException("Failed to load bird info", e);

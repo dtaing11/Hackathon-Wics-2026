@@ -1,5 +1,8 @@
 package com.example.hackathon.wics.service;
 
+import com.example.hackathon.wics.birdPointRegistry.BirdPointDefinition;
+import com.example.hackathon.wics.birdPointRegistry.BirdPointInitService;
+import com.example.hackathon.wics.exeception.ResourceNotFoundException;
 import com.example.hackathon.wics.model.Species;
 import com.example.hackathon.wics.repository.SpeciesRepository;
 import jakarta.transaction.Transactional;
@@ -22,18 +25,22 @@ public class SpeciesService {
 
     private final String url = "https://bird-classifier-api-871757115753.us-central1.run.app/predict";
     private final SpeciesRepository speciesRepository;
+    private final UserService userService;
+    private final BirdPointInitService birdPointInitService;
     private final RestTemplate restTemplate;
 
-    public SpeciesService(SpeciesRepository speciesRepository,  RestTemplate restTemplate) {
+    public SpeciesService(SpeciesRepository speciesRepository,  RestTemplate restTemplate , UserService userService,  BirdPointInitService birdPointInitService) {
         this.speciesRepository = speciesRepository;
         this.restTemplate = restTemplate;
+        this.birdPointInitService = birdPointInitService;
+        this.userService = userService;
     }
 
 
 
     @Async
     @Transactional
-    public void createSpeciesAsync( MultipartFile file, UUID postID) {
+    public void createSpeciesAsync( MultipartFile file, UUID postID, UUID userID) {
         try {
             Map<String, Double> prediction = predictBird(file);
             Map.Entry<String, Double> entry = prediction.entrySet().iterator().next();
@@ -42,6 +49,11 @@ public class SpeciesService {
             Double confidence = entry.getValue();
 
             Species species = new Species( speciesName, confidence, postID);
+            BirdPointDefinition birdPointDefinition = birdPointInitService.getName(speciesName);
+            if(birdPointDefinition == null) {
+                throw new ResourceNotFoundException("Bird point not found");
+            }
+            userService.updatePointsAsync(userID, birdPointDefinition.getRarityRank());
             speciesRepository.save(species);
         } catch (Exception e) {
             e.printStackTrace();
@@ -52,14 +64,18 @@ public class SpeciesService {
         return speciesRepository.findAll();
     }
 
+    public Species getSpeciesByPostId (UUID postID) {
+        return speciesRepository.getSpeciesByPostId(postID).orElseThrow(()-> new ResourceNotFoundException("Species not found with postId: " + postID));
+    }
+
     public Species getSpeciesById(UUID id) {
         return speciesRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Species not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Species not found with id: " + id));
     }
 
     public Species updateSpecies(UUID id, Species updatedSpecies) {
         Species existingSpecies = speciesRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Species not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Species not found with id: " + id));
 
         existingSpecies.setSpecies(updatedSpecies.getSpecies());
         existingSpecies.setPostId(updatedSpecies.getPostId());
@@ -69,7 +85,7 @@ public class SpeciesService {
 
     public void deleteSpecies(UUID id) {
         Species existingSpecies = speciesRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("Species not found with id: " + id));
+                .orElseThrow(() -> new ResourceNotFoundException("Species not found with id: " + id));
 
         speciesRepository.delete(existingSpecies);
     }

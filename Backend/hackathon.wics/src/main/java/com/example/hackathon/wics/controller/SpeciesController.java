@@ -26,40 +26,18 @@ public class SpeciesController {
         this.birdInfoInitService = birdInfoInitService;
     }
 
-    @GetMapping
-    public ResponseEntity<List<Species>> getAllSpecies() {
-        List<Species> species = speciesService.getAllSpecies();
-        return ResponseEntity.ok(species);
-    }
-
-    @GetMapping("/{id}")
-    public ResponseEntity<Species> getSpeciesById(@PathVariable UUID id) {
-        Species species = speciesService.getSpeciesById(id);
-        return ResponseEntity.ok(species);
-    }
-    @GetMapping("/{id}/more")
-    public ResponseEntity<GetSpeciesRes> getMoreInfo (@PathVariable UUID id) {
-        Species species = speciesService.getSpeciesById(id);
-        BirdInfoDefinition birdInfoDefinition = birdInfoInitService.getName(species.getSpecies());
-
-        GetSpeciesRes getSpeciesRes = new GetSpeciesRes(
-                birdInfoDefinition.getBirdName(),
-                birdInfoDefinition.getSpeciesName(),
-                birdInfoDefinition.getAverageWeightSpecies(),
-                birdInfoDefinition.getDescription(),
-                birdInfoDefinition.getGeography(),
-                birdInfoDefinition.getRarity()
-        );
-
-        return ResponseEntity.ok().body(getSpeciesRes);
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<Species> updateSpecies(
-            @PathVariable UUID id,
-            @RequestBody Species updatedSpecies) {
-        Species updated = speciesService.updateSpecies(id, updatedSpecies);
-        return ResponseEntity.ok(updated);
+    @GetMapping("/post/{id}")
+    public ResponseEntity<GetSpeciesRes> getPostById(@PathVariable UUID id) {
+       Species species =  speciesService.getSpeciesByPostId(id);
+       BirdInfoDefinition birdInfoDefinition = birdInfoInitService.getName(species.getSpecies());
+       GetSpeciesRes getSpeciesRes = new GetSpeciesRes(
+               birdInfoDefinition.getBirdName(),
+               birdInfoDefinition.getAverageWeightSpecies(),
+               birdInfoDefinition.getDescription(),
+               birdInfoDefinition.getGeography(),
+               birdInfoDefinition.getRarity()
+       );
+       return ResponseEntity.ok().body(getSpeciesRes);
     }
 
     @DeleteMapping("/{id}")
