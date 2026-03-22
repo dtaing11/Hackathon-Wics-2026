@@ -24,7 +24,6 @@ This creates a game-like collection experience where users are encouraged to dis
 # How to Run Dev and Test Environment
 
 ### Downloading Dependencies
-Describe where to download the dependencies here. Some will likely require a web download. Provide links here. For IDE extensions, make sure your project works with the free version of them, and detail which IDE(s) these are available in. 
 Run Docker build
 
 ## Commands
