@@ -16,6 +16,7 @@ end
 
 target 'BirdGo' do
   config = use_native_modules!
+  app_root = File.expand_path('..', __dir__)
 
   use_react_native!(
     :path => config[:reactNativePath],
@@ -35,6 +36,27 @@ target 'BirdGo' do
       :mac_catalyst_enabled => false,
       # :ccache_enabled => true
     )
+
+    hermes_cli_path = File.join(
+      app_root,
+      'node_modules',
+      'hermes-compiler',
+      'hermesc',
+      'osx-bin',
+      'hermesc'
+    )
+
+    Dir.glob(File.join(__dir__, 'Pods/Target Support Files/**/*.xcconfig')).each do |path|
+      next unless File.file?(path)
+
+      contents = File.read(path)
+      next unless contents.include?('HERMES_CLI_PATH = ')
+
+      updated_contents = contents.gsub(
+        /^HERMES_CLI_PATH = .*$\n?/,
+        "HERMES_CLI_PATH = #{hermes_cli_path}\n"
+      )
+      File.write(path, updated_contents) if updated_contents != contents
+    end
   end
 end
-

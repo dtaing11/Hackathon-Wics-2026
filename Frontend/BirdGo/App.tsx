@@ -1,24 +1,26 @@
 import React, {useEffect, useMemo, useRef, useState} from 'react';
 import {
+  Animated,
   Image,
   PermissionsAndroid,
   Platform,
   Pressable,
-  SafeAreaView,
   StatusBar,
-  StyleSheet,
   Text,
   View,
 } from 'react-native';
+import {SafeAreaView} from 'react-native-safe-area-context';
 import Mapbox, {
+  Atmosphere,
   Camera,
-  CircleLayer,
   FillExtrusionLayer,
   type Location,
   MapView,
+  MarkerView,
   ModelLayer,
   Models,
   ShapeSource,
+  SkyLayer,
   UserLocation,
   UserLocationRenderMode,
   VectorSource,
@@ -26,152 +28,82 @@ import Mapbox, {
 
 import {MAPBOX_PUBLIC_API_KEY} from '@env';
 
-import inspectionCardModel from './BoxTextured.glb';
+import playerModel from './player.glb';
+import {styles} from './src/appStyles';
+import {BottomActionBar} from './src/components/BottomActionBar';
+import {
+  buildPlayerModelStyle,
+  daytimeFogStyle,
+  gamifiedBuildingExtrusion,
+  gamifiedMapStyleLight,
+  prettySkyStyle,
+} from './src/mapStyles';
+import {
+  captureAndUploadPhoto,
+  showCameraNotReadyAlert,
+} from './src/services/cameraUpload';
+import {
+  buildPlayerFeatureCollection,
+  findClosestPole,
+  getPoleById,
+  PLAYER_MODEL_ID,
+  POLES,
+  type Pole,
+} from './src/poles';
 
 Mapbox.setAccessToken(
   MAPBOX_PUBLIC_API_KEY,
 );
 
-type Pole = {
-  id: number;
-  title: string;
-  status: 'ok' | 'bad';
-  latitude: number;
-  longitude: number;
-  heading: number;
-  imageUri: string;
-};
+type CameraMode =
+  | {type: 'player'}
+  | {type: 'bird'; birdId: number}
+  | {type: 'free'};
 
-const INSPECTION_CARD_MODEL_ID = 'inspectionCard';
+const FALLBACK_CENTER: [number, number] = [POLES[0].longitude, POLES[0].latitude];
 
-const POLES: Pole[] = [
-  {
-    id: 101,
-    title: 'Pole 101',
-    status: 'ok',
-    longitude: -90.09497,
-    latitude: 29.98119,
-    heading: 25,
-    imageUri:
-      'https://images.unsplash.com/photo-1511300636408-a63a89df3482?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    id: 102,
-    title: 'Pole 102',
-    status: 'bad',
-    longitude: -90.09542,
-    latitude: 29.98182,
-    heading: 130,
-    imageUri:
-      'https://images.unsplash.com/photo-1524230572899-a752b3835840?auto=format&fit=crop&w=900&q=80',
-  },
-  {
-    id: 103,
-    title: 'Pole 103',
-    status: 'ok',
-    longitude: -90.09586,
-    latitude: 29.98096,
-    heading: 215,
-    imageUri:
-      'https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80',
-  },
-];
+function getPlayerCoordinate(location: Location | null): [number, number] | null {
+  const longitude = location?.coords.longitude;
+  const latitude = location?.coords.latitude;
 
+  if (!Number.isFinite(longitude) || !Number.isFinite(latitude)) {
+    return null;
+  }
 
-//haversine finds distance btween two lat values
-function distanceBetweenInMeters(
-  lat1: number,
-  lon1: number,
-  lat2: number,
-  lon2: number,
-) {
-  const toRadians = (degrees: number) => degrees * (Math.PI / 180);
-  const earthRadius = 6371000;
-
-  const psi1 = toRadians(lat1);
-  const psi2 = toRadians(lat2);
-  const deltaPsi = toRadians(lat2 - lat1);
-  const deltaLambda = toRadians(lon2 - lon1);
-
-  const a =
-    Math.sin(deltaPsi / 2) ** 2 +
-    Math.cos(psi1) * Math.cos(psi2) * Math.sin(deltaLambda / 2) ** 2;
-
-  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-  return earthRadius * c;
+  return [longitude, latitude];
 }
-
-function findClosestPole(latitude: number, longitude: number, poles: Pole[]) {
-  return poles.reduce((closestPole, currentPole) => {
-    const currentDistance = distanceBetweenInMeters(
-      currentPole.latitude,
-      currentPole.longitude,
-      latitude,
-      longitude,
-    );
-    const closestDistance = distanceBetweenInMeters(
-      closestPole.latitude,
-      closestPole.longitude,
-      latitude,
-      longitude,
-    );
-
-    return currentDistance < closestDistance ? currentPole : closestPole;
-  });
-}
-
-function buildPoleFeatureCollection(poles: Pole[], selectedPoleId: number | null): any {
-  return {
-    type: 'FeatureCollection',
-    features: poles.map(pole => ({
-      type: 'Feature' as const,
-      id: pole.id,
-      properties: {
-        poleId: pole.id,
-        title: pole.title,
-        heading: pole.heading,
-        isBad: pole.status === 'bad',
-        selected: pole.id === selectedPoleId,
-        imageUri: pole.imageUri,
-        modelId: INSPECTION_CARD_MODEL_ID,
-      },
-      geometry: {
-        type: 'Point' as const,
-        coordinates: [pole.longitude, pole.latitude],
-      },
-    })),
-  };
-}
-
-function getPoleById(poleId: number | null) {
-  return POLES.find(pole => pole.id === poleId) ?? null;
-}
-
 
 const App = () => {
   const cameraRef = useRef<Camera>(null);
-  const [cameraHeading, setCameraHeading] = useState(25);
-  const [selectedPoleId, setSelectedPoleId] = useState<number | null>(POLES[0].id);
-  const [mapStyle, setMapStyle] = useState<'street' | 'satellite'>('satellite');
+  const [selectedBirdId, setSelectedBirdId] = useState<number | null>(null);
   const [hasLocationPermission, setHasLocationPermission] = useState(
     Platform.OS === 'ios',
   );
-  const [followPlayer, setFollowPlayer] = useState(false);
+  const [cameraMode, setCameraMode] = useState<CameraMode>({type: 'player'});
   const [playerLocation, setPlayerLocation] = useState<Location | null>(null);
+  const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
+  const [isMapReady, setIsMapReady] = useState(false);
+  const detailsDrawerY = useRef(new Animated.Value(220)).current;
 
-  const selectedPole = getPoleById(selectedPoleId);
-  const poleFeatures = useMemo(
-    () => buildPoleFeatureCollection(POLES, selectedPoleId),
-    [selectedPoleId],
+  const selectedBird = getPoleById(selectedBirdId);
+  const playerCoordinate = useMemo(
+    () => getPlayerCoordinate(playerLocation),
+    [playerLocation],
   );
-  const baseModelStyle = useMemo(
-    () => buildBaseModelStyle(cameraHeading),
-    [cameraHeading],
+  const playerFeature = useMemo(
+    () =>
+      buildPlayerFeatureCollection(
+        playerLocation
+          ? {
+              latitude: playerLocation.coords.latitude,
+              longitude: playerLocation.coords.longitude,
+              heading: playerLocation.coords.heading,
+            }
+          : null,
+      ),
+    [playerLocation],
   );
-  const selectedModelStyle = useMemo(
-    () => buildSelectedModelStyle(cameraHeading),
-    [cameraHeading],
-  );
+  const playerModelStyle = useMemo(() => buildPlayerModelStyle(), []);
 
   useEffect(() => {
     async function requestLocationPermission() {
@@ -198,46 +130,73 @@ const App = () => {
     });
   }, []);
 
-  //zoom to pole
-  const focusPole = (pole: Pole) => {
-    setFollowPlayer(false);
-    setSelectedPoleId(pole.id);
-    cameraRef.current?.setCamera({
-      centerCoordinate: [pole.longitude, pole.latitude],
-      zoomLevel: 18,
-      pitch: 65,
-      heading: 35,
-      animationDuration: 900,
-    });
-  };
-
-  //sphere collision triger
-  const handlePolePress = (event: any) => {
-    const feature = event.features?.[0];
-    const poleId = feature?.properties?.poleId;
-    const pole = POLES.find(item => item.id === poleId);
-
-    if (pole) {
-      focusPole(pole);
-    }
-  };
-
-  const handleMapPress = (event: any) => {
-    const coordinates = event.geometry?.coordinates;
-    if (!coordinates) {
+  useEffect(() => {
+    if (!cameraRef.current || !isMapReady) {
       return;
     }
 
-    const [longitude, latitude] = coordinates;
-    const closestPole = findClosestPole(latitude, longitude, POLES);
-    focusPole(closestPole);
+    if (cameraMode.type === 'player') {
+      if (!playerCoordinate) {
+        return;
+      }
+
+      cameraRef.current.setCamera({
+        centerCoordinate: playerCoordinate,
+        zoomLevel: 17,
+        pitch: 80,
+        heading: playerLocation?.coords.heading ?? 0,
+        animationDuration: 600,
+      });
+      return;
+    }
+
+    if (cameraMode.type === 'free') {
+      return;
+    }
+
+    const bird = getPoleById(cameraMode.birdId);
+    if (!bird) {
+      return;
+    }
+
+    cameraRef.current.setCamera({
+      centerCoordinate: [bird.longitude, bird.latitude],
+      zoomLevel: 18,
+      pitch: 80,
+      heading: 35,
+      animationDuration: 900,
+    });
+  }, [cameraMode, isMapReady, playerCoordinate, playerLocation]);
+
+  useEffect(() => {
+    Animated.spring(detailsDrawerY, {
+      toValue: selectedBird ? 0 : 400,
+      useNativeDriver: true,
+      tension: 68,
+      friction: 11,
+    }).start();
+  }, [detailsDrawerY, selectedBird]);
+
+  const focusBird = (bird: Pole) => {
+    setSelectedBirdId(bird.id);
+    setCameraMode({type: 'bird', birdId: bird.id});
+  };
+
+  const handleNearestBird = () => {
+    if (!playerLocation) {
+      return;
+    }
+
+    const closestBird = findClosestPole(
+      playerLocation.coords.latitude,
+      playerLocation.coords.longitude,
+      POLES,
+    );
+    focusBird(closestBird);
   };
 
   const handlePlayerLocationUpdate = (location: Location) => {
     setPlayerLocation(location);
-    if (!followPlayer && !selectedPoleId) {
-      setFollowPlayer(true);
-    }
   };
 
   const handleFollowPlayer = () => {
@@ -245,18 +204,37 @@ const App = () => {
       return;
     }
 
-    setSelectedPoleId(null);
-    setFollowPlayer(true);
-    cameraRef.current?.setCamera({
-      centerCoordinate: [
-        playerLocation.coords.longitude,
-        playerLocation.coords.latitude,
-      ],
-      zoomLevel: 17,
-      pitch: 60,
-      heading: playerLocation.coords.heading ?? 0,
-      animationDuration: 700,
-    });
+    setSelectedBirdId(null);
+    setCameraMode({type: 'player'});
+  };
+
+  const handleFreeLook = () => {
+    setSelectedBirdId(null);
+    setCameraMode({type: 'free'});
+  };
+
+  const handleMapPress = () => {
+    if (cameraMode.type === 'free') {
+      return;
+    }
+
+    handleFreeLook();
+  };
+
+  const handleCameraPress = async () => {
+    setIsUploadingPhoto(true);
+
+    try {
+      await captureAndUploadPhoto();
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : 'Unable to capture a photo.';
+      if (message !== 'Camera capture was cancelled.') {
+        showCameraNotReadyAlert(message);
+      }
+    } finally {
+      setIsUploadingPhoto(false);
+    }
   };
 
   return (
@@ -266,32 +244,30 @@ const App = () => {
 
         {/*Base Map View*/}
         <MapView
+          attributionEnabled={false}
+          logoEnabled={false}
           style={styles.map}
-          styleURL={
-            mapStyle === 'satellite'
-              ? Mapbox.StyleURL.SatelliteStreet
-              : Mapbox.StyleURL.Street
-          }
+          styleJSON={JSON.stringify(gamifiedMapStyleLight)}
+          scaleBarEnabled
+          scaleBarPosition={{right: 200, top: 18}}
           onPress={handleMapPress}
-          scaleBarEnabled={false}
-          onCameraChanged={event => {
-          setCameraHeading(event.properties.heading ?? 0);
-  }}>
+          onDidFinishLoadingMap={() => {
+            setIsMapReady(true);
+          }}>
           <Camera
             ref={cameraRef}
-            centerCoordinate={[-90.09497, 29.98119]}
+            centerCoordinate={playerCoordinate ?? FALLBACK_CENTER}
             zoomLevel={17}
-            pitch={55}
+            pitch={80}
             heading={25}
-            followUserLocation={followPlayer}
-            followZoomLevel={17}
-            followPitch={60}
-            followHeading={playerLocation?.coords.heading ?? 0}
           />
+
+          <Atmosphere style={daytimeFogStyle} />
+          <SkyLayer id="pretty-sky" style={prettySkyStyle} />
 
           {hasLocationPermission ? (
             <UserLocation
-              visible
+              visible={false}
               animated
               minDisplacement={1}
               renderMode={UserLocationRenderMode.Native}
@@ -301,6 +277,16 @@ const App = () => {
             />
           ) : null}
 
+            {/*Bird Card Models*/}
+          <Models
+            models={{
+              [PLAYER_MODEL_ID]: playerModel,
+            }}
+          />
+
+            <ShapeSource id="player-source" shape={playerFeature}>
+            <ModelLayer id="player-model" style={playerModelStyle} />
+          </ShapeSource>
           {/*Map Box Building Modelss*/}
           <VectorSource
             id="composite-buildings"
@@ -311,48 +297,84 @@ const App = () => {
               filter={['==', ['get', 'extrude'], 'true']}
               minZoomLevel={15}
               maxZoomLevel={22}
-              style={buildingExtrusionStyle}
+              style={gamifiedBuildingExtrusion}
             />
           </VectorSource>
           
-          {/*Bird Card Models*/}
-          <Models
-            models={{
-              [INSPECTION_CARD_MODEL_ID]: inspectionCardModel,
-            }}
-          />
+        
 
-          {/*Bird Click Handling*/}
-          <ShapeSource id="pole-source" shape={poleFeatures} onPress={handlePolePress}>
-            <CircleLayer id="pole-hit-area" style={poleHitAreaStyle} />
-            <ModelLayer id="pole-cards-base" style={baseModelStyle} />
-            <ModelLayer
-              id="pole-cards-selected"
-              filter={['boolean', ['get', 'selected'], false]}
-              style={selectedModelStyle}
-            />
-          </ShapeSource>
+          {POLES.map(pole => (
+            <MarkerView
+              key={`pole-image-${pole.id}`}
+              coordinate={[pole.longitude, pole.latitude]}
+              anchor={{x: 0.5, y: 0.9}}
+              allowOverlap
+              allowOverlapWithPuck>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel={`Select bird ${pole.title}`}
+                onPress={() => focusBird(pole)}
+                style={styles.poleMarkerWrap}>
+                <View
+                  style={[
+                    styles.poleImageBillboard,
+                    selectedBirdId === pole.id && styles.poleImageBillboardSelected,
+                  ]}>
+                  <Image
+                    source={{uri: pole.imageUri}}
+                    style={styles.poleImage}
+                    resizeMode="cover"
+                  />
+                </View>
+                <View
+                  style={[
+                    styles.poleMarkerTail,
+                    selectedBirdId === pole.id && styles.poleMarkerTailSelected,
+                  ]}
+                />
+              </Pressable>
+            </MarkerView>
+          ))}
+
+        
         </MapView>
         
 
         {/*UI Navigatin*/}
         <View style={styles.topBar}>
-          <View style={styles.badge}>
-            <Text style={styles.badgeTitle}>3D Card Demo</Text>
-            <Text style={styles.badgeText}>
-              Using your exported local GLB card model now.
+          <Pressable
+            style={[
+              styles.secondaryMapButton,
+              cameraMode.type === 'free' && styles.secondaryMapButtonActive,
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Free look mode"
+            onPress={handleFreeLook}>
+            <Text
+              style={[
+                styles.secondaryMapButtonText,
+                cameraMode.type === 'free' && styles.secondaryMapButtonTextActive,
+              ]}>
+              Explore
             </Text>
-          </View>
+          </Pressable>
 
           <Pressable
-            style={styles.toggleButton}
-            onPress={() =>
-              setMapStyle(current =>
-                current === 'satellite' ? 'street' : 'satellite',
-              )
-            }>
-            <Text style={styles.toggleButtonText}>
-              {mapStyle === 'satellite' ? 'Street View' : 'Satellite View'}
+            style={[
+              styles.secondaryMapButton,
+              !playerLocation && styles.followButtonDisabled,
+              cameraMode.type === 'bird' && styles.secondaryMapButtonActive,
+            ]}
+            accessibilityRole="button"
+            accessibilityLabel="Focus nearest bird"
+            disabled={!playerLocation}
+            onPress={handleNearestBird}>
+            <Text
+              style={[
+                styles.secondaryMapButtonText,
+                cameraMode.type === 'bird' && styles.secondaryMapButtonTextActive,
+              ]}>
+              Nearest Bird
             </Text>
           </Pressable>
 
@@ -361,207 +383,61 @@ const App = () => {
               styles.followButton,
               !playerLocation && styles.followButtonDisabled,
             ]}
+            accessibilityRole="button"
+            accessibilityLabel="Follow your location"
             disabled={!playerLocation}
             onPress={handleFollowPlayer}>
-            <Text style={styles.followButtonTitle}>
-              {followPlayer ? 'Following You' : 'Follow Me'}
-            </Text>
-            <Text style={styles.followButtonText}>
-              {playerLocation
-                ? 'Jump to your live phone location.'
-                : hasLocationPermission
-                  ? 'Waiting for GPS signal...'
-                  : 'Location permission is off.'}
-            </Text>
+            <View style={styles.followIconOuterRing}>
+              <View style={styles.followIconInnerRing}>
+                <View
+                  style={[
+                    styles.followIconDot,
+                    cameraMode.type === 'player' && styles.followIconDotActive,
+                  ]}
+                />
+              </View>
+            </View>
           </Pressable>
         </View>
 
-        {selectedPole ? (
-          <View style={styles.detailsCard}>
-            <Image source={{uri: selectedPole.imageUri}} style={styles.thumbnail} />
+        <Animated.View
+          pointerEvents={selectedBird ? 'auto' : 'none'}
+          style={[
+            styles.detailsCard,
+            {
+              transform: [{translateY: detailsDrawerY}],
+            },
+          ]}>
+          {selectedBird ? (
+            <>
+            <Image source={{uri: selectedBird.imageUri}} style={styles.thumbnail} />
             <View style={styles.detailsText}>
-              <Text style={styles.detailsTitle}>{selectedPole.title}</Text>
+              <Text style={styles.detailsTitle}>{selectedBird.title}</Text>
               <Text style={styles.detailsStatus}>
-                Status: {selectedPole.status === 'bad' ? 'Needs repair' : 'Healthy'}
+                Status: {selectedBird.status === 'bad' ? 'Needs repair' : 'Healthy'}
               </Text>
               <Text style={styles.detailsBody}>
-                Tap anywhere on the map to select the nearest pole. Tap the model
-                directly to select it precisely.
+                Use the Nearest Bird button to jump to the closest bird, or tap a
+                bird marker directly to select it.
               </Text>
             </View>
-          </View>
-        ) : null}
+            </>
+          ) : null}
+        </Animated.View>
+
+        <BottomActionBar
+          busy={isUploadingPhoto}
+          onCameraPress={handleCameraPress}
+        />
+
+        <View style={styles.cameraModeDebug}>
+          <Text style={styles.cameraModeDebugText}>
+            Mode: {cameraMode.type}
+          </Text>
+        </View>
       </View>
     </SafeAreaView>
   );
 };
 
 export default App;
-
-//MapBox styling
-
-function buildBaseModelStyle(cameraHeading: number): any {
-  return {
-    modelId: ['get', 'modelId'],
-    modelType: 'common-3d',
-    modelScale: [10, 10, 0.6],
-    modelRotation: [90, 0, cameraHeading],
-    modelTranslation: [0, 0, 0],
-    modelOpacity: 0.95,
-    modelCastShadows: true,
-    modelReceiveShadows: true,
-    modelColorMixIntensity: 0.7,
-    modelColor: [
-      'case',
-      ['boolean', ['get', 'isBad'], false],
-      '#ef4444',
-      '#22c55e',
-    ],
-  };
-}
-
-function buildSelectedModelStyle(cameraHeading: number): any {
-  return {
-    modelId: ['get', 'modelId'],
-    modelType: 'common-3d',
-    modelScale: [12, 12, 0.8],
-    modelRotation: [90, 0, cameraHeading],
-    modelTranslation: [0, 0, 1.5],
-    modelOpacity: 1,
-    modelColorMixIntensity: 1,
-    modelColor: '#f59e0b',
-  };
-}
-
-const poleHitAreaStyle = {
-  circleRadius: 18,
-  circleOpacity: 0.01,
-  circleStrokeOpacity: 0,
-};
-
-const buildingExtrusionStyle: any = {
-  fillExtrusionColor: '#cbd5e1',
-  fillExtrusionOpacity: 0.72,
-  fillExtrusionHeight: [
-    'interpolate',
-    ['linear'],
-    ['zoom'],
-    15,
-    0,
-    15.05,
-    ['coalesce', ['get', 'height'], 0],
-  ],
-  fillExtrusionBase: [
-    'interpolate',
-    ['linear'],
-    ['zoom'],
-    15,
-    0,
-    15.05,
-    ['coalesce', ['get', 'min_height'], 0],
-  ],
-};
-
-const styles = StyleSheet.create({
-  screen: {
-    flex: 1,
-    backgroundColor: '#0f172a',
-  },
-  map: {
-    flex: 1,
-  },
-  topBar: {
-    position: 'absolute',
-    top: 18,
-    left: 16,
-    right: 16,
-    gap: 12,
-  },
-  badge: {
-    borderRadius: 18,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    backgroundColor: 'rgba(15, 23, 42, 0.88)',
-  },
-  badgeTitle: {
-    color: '#f8fafc',
-    fontSize: 16,
-    fontWeight: '700',
-    marginBottom: 4,
-  },
-  badgeText: {
-    color: '#cbd5e1',
-    fontSize: 13,
-    lineHeight: 18,
-  },
-  toggleButton: {
-    alignSelf: 'flex-start',
-    borderRadius: 999,
-    backgroundColor: '#f8fafc',
-    paddingHorizontal: 16,
-    paddingVertical: 10,
-  },
-  toggleButtonText: {
-    color: '#0f172a',
-    fontSize: 13,
-    fontWeight: '700',
-  },
-  followButton: {
-    alignSelf: 'flex-start',
-    borderRadius: 18,
-    backgroundColor: 'rgba(15, 23, 42, 0.92)',
-    paddingHorizontal: 16,
-    paddingVertical: 12,
-    minWidth: 170,
-  },
-  followButtonDisabled: {
-    opacity: 0.75,
-  },
-  followButtonTitle: {
-    color: '#f8fafc',
-    fontSize: 14,
-    fontWeight: '800',
-    marginBottom: 2,
-  },
-  followButtonText: {
-    color: '#cbd5e1',
-    fontSize: 12,
-    lineHeight: 16,
-  },
-  detailsCard: {
-    position: 'absolute',
-    left: 16,
-    right: 16,
-    bottom: 20,
-    flexDirection: 'row',
-    borderRadius: 24,
-    backgroundColor: 'rgba(255, 255, 255, 0.95)',
-    overflow: 'hidden',
-    minHeight: 140,
-  },
-  thumbnail: {
-    width: 120,
-    backgroundColor: '#cbd5e1',
-  },
-  detailsText: {
-    flex: 1,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    gap: 6,
-  },
-  detailsTitle: {
-    color: '#0f172a',
-    fontSize: 18,
-    fontWeight: '800',
-  },
-  detailsStatus: {
-    color: '#334155',
-    fontSize: 14,
-    fontWeight: '700',
-  },
-  detailsBody: {
-    color: '#475569',
-    fontSize: 14,
-    lineHeight: 20,
-  },
-});

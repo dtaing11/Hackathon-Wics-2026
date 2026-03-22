@@ -58,5 +58,7 @@
 	<string>BirdGo uses your location to show your live position on the map and follow you.</string>
 	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
 	<string>BirdGo uses your location to show your live position on the map and follow you.</string>
+	<key>NSCameraUsageDescription</key>
+	<string>BirdGo uses your camera to capture inspection photos for upload.</string>
 </dict>
 </plist>
