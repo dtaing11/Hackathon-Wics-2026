@@ -4,10 +4,6 @@ Frontend integration guide for the deployed backend.
 
 Base production URL:
 
-```text
-https://hackathon-wics-871757115753.us-central1.run.app
-```
-
 Local URL:
 
 ```text
