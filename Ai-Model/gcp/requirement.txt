@@ -1,0 +1,9 @@
+torch
+torchvision
+torchaudio
+pillow
+numpy
+fastapi
+uvicorn[standard]
+python-multipart
+google-cloud-storage

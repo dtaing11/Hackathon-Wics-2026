@@ -4,19 +4,19 @@ from PIL import Image
 import torch
 import torchvision.transforms as transforms
 import io
-from ResNet18.modelResnet import BirdResNet18
-from bird_classes import get_bird_name
 
-# 🔥 Load model ONCE
+from ResNet18.modelResnet import BirdResNet18
+from gcp.bird_classes import get_bird_name
+
 model = None
 device = None
+
 
 def load_model():
     global device, model
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
     print(f"Using device: {device}")
-    
-    # Create model instance and load weights
+
     model = BirdResNet18(num_classes=526)
     state_dict = torch.load("ResNet18/bird_resnet18.pth", map_location=device)
     model.load_state_dict(state_dict)
@@ -24,27 +24,35 @@ def load_model():
     model.eval()
     return model
 
+
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    # Startup
     load_model()
     print("Model loaded!")
     yield
-    # Shutdown
     print("Shutting down...")
+
 
 app = FastAPI(lifespan=lifespan)
 
-# 🏥 Health check endpoint
+
 @app.get("/")
 async def root():
-    return {"status": "ok", "message": "Bird species prediction API is running on GPU"}
+    return {
+        "status": "ok",
+        "message": "Bird species prediction API is running"
+    }
+
 
 @app.get("/health")
 async def health():
-    return {"status": "healthy", "device": str(device), "model_loaded": model is not None}
+    return {
+        "status": "healthy",
+        "device": str(device),
+        "model_loaded": model is not None
+    }
 
-# 🧪 Image preprocessing
+
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
     transforms.ToTensor(),
@@ -53,7 +61,8 @@ transform = transforms.Compose([
         std=[0.229, 0.224, 0.225]
     )
 ])
-# 🚀 Prediction endpoint
+
+
 @app.post("/predict")
 async def predict(file: UploadFile = File(...)):
     image_bytes = await file.read()
@@ -63,9 +72,9 @@ async def predict(file: UploadFile = File(...)):
 
     with torch.no_grad():
         outputs = model(input_tensor)
-        # Get probabilities using softmax
         probabilities = torch.softmax(outputs, dim=1)
         confidence, predicted = torch.max(probabilities, dim=1)
+
         confidence = confidence.item()
         predicted = predicted.item()
 

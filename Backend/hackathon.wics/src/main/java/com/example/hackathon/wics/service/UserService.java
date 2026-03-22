@@ -1,7 +1,9 @@
 package com.example.hackathon.wics.service;
 
+import com.example.hackathon.wics.exeception.ResourceNotFoundException;
 import com.example.hackathon.wics.model.Users;
 import com.example.hackathon.wics.repository.UserRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -31,6 +33,16 @@ public class UserService {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
         return userRepository.save(user);
+    }
+
+
+    @Transactional
+    public Users verifyUser(String username, String password) {
+       Users user = userRepository.getUserByUsername(username).orElseThrow(()-> new ResourceNotFoundException("Failed to Verify User"));
+       if (!passwordEncoder.matches(password, user.getPassword())) {
+           throw new RuntimeException("Username or password is incorrect");
+       }
+       return user;
     }
 
     public List<Users> getAllUsers() {
