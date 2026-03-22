@@ -32,19 +32,6 @@ public class BirdSpecieController {
         return ResponseEntity.ok(specie);
     }
 
-    @PostMapping
-    public ResponseEntity<BirdSpecie> createBirdSpecie(@RequestBody BirdSpecie birdSpecie) {
-        BirdSpecie created = birdSpecieService.createBirdSpecie(birdSpecie);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
-    }
-
-    @PutMapping("/{name}")
-    public ResponseEntity<BirdSpecie> updateBirdSpecie(
-            @PathVariable String name,
-            @RequestBody BirdSpecie updatedBirdSpecie) {
-        BirdSpecie updated = birdSpecieService.updateBirdSpecie(name, updatedBirdSpecie);
-        return ResponseEntity.ok(updated);
-    }
 
     @DeleteMapping("/{name}")
     public ResponseEntity<Void> deleteBirdSpecie(@PathVariable String name) {

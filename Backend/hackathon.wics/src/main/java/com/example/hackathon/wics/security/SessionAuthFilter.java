@@ -3,6 +3,7 @@ package com.example.hackathon.wics.security;
 import java.io.IOException;
 import java.util.List;
 
+import com.example.hackathon.wics.model.Users;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -27,8 +28,8 @@ public class SessionAuthFilter extends OncePerRequestFilter {
     protected boolean shouldNotFilter(HttpServletRequest request) {
         String path = request.getServletPath();
 
-        return path.equals("/user/login")
-            || path.equals("/user/register");
+        return path.equals("/api/users")
+            || path.equals("/api/users/login");
     }
 
     @Override
@@ -37,7 +38,8 @@ public class SessionAuthFilter extends OncePerRequestFilter {
 
     if (authCookie != null){
         try{
-            var user = userSessionService.getSessionBySessionId(authCookie);
+            Users user = userSessionService.getSessionBySessionId(authCookie);
+            System.out.println("authCookie: " + authCookie);
             var auth = new UsernamePasswordAuthenticationToken(
                 user, null, List.of()
             );
@@ -45,6 +47,7 @@ public class SessionAuthFilter extends OncePerRequestFilter {
 
         }catch(Exception e){
             response.setStatus(HttpStatus.UNAUTHORIZED.value());
+            System.out.println("authCookie: Failed " + authCookie);
             return;
         }
     }

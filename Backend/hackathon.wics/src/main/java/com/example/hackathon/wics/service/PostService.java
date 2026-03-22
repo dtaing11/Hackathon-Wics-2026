@@ -1,6 +1,8 @@
 package com.example.hackathon.wics.service;
 
+import com.example.hackathon.wics.exeception.ResourceNotFoundException;
 import com.example.hackathon.wics.model.Post;
+import com.example.hackathon.wics.model.Species;
 import com.example.hackathon.wics.repository.PostRepositroy;
 import jakarta.persistence.EntityNotFoundException;
 import jakarta.transaction.Transactional;
@@ -18,10 +20,12 @@ import java.util.UUID;
 public class PostService {
     private final GCSService gcsService;
     private final PostRepositroy postRepositroy;
+    private final SpeciesService speciesService;
 
-    public PostService(GCSService gcsService, PostRepositroy postRepositroy) {
+    public PostService(GCSService gcsService, PostRepositroy postRepositroy,  SpeciesService speciesService) {
         this.gcsService = gcsService;
         this.postRepositroy = postRepositroy;
+        this.speciesService = speciesService;
     }
 
     @Transactional
@@ -36,7 +40,14 @@ public class PostService {
                 longitude
         );
 
-        return postRepositroy.save(post);
+        Post savedPost = postRepositroy.save(post);
+
+        speciesService.createSpeciesAsync(
+                file,
+                savedPost.getId()
+        );
+
+        return savedPost;
     }
 
     public Post getPostById(UUID postId) {
@@ -52,20 +63,8 @@ public class PostService {
         return postRepositroy.findByUserId(userId);
     }
 
-    @Transactional
-    public Post updatePost(UUID postId, Double latitude, Double longitude) {
-        Post post = postRepositroy.findById(postId)
-                .orElseThrow(() -> new EntityNotFoundException("Post not found with id: " + postId));
-
-        if (latitude != null) {
-            post.setLatitude(latitude);
-        }
-
-        if (longitude != null) {
-            post.setLongitude(longitude);
-        }
-
-        return postRepositroy.save(post);
+    public List<Post> getPostsBySpeciesAndUserId(String species , UUID userId) {
+        return postRepositroy.findPostsByUserIdAndSpecies(userId,species).orElseThrow(()-> new ResourceNotFoundException("Post not found with species: " + species));
     }
 
     @Transactional

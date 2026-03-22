@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;
+import java.net.URL;
+import java.util.concurrent.TimeUnit;
 
 @Service
 public class GCSService {
@@ -17,6 +19,16 @@ public class GCSService {
     public GCSService(Storage storage, GCSConfig gcsConfig) {
         this.storage = storage;
         this.gcsConfig = gcsConfig;
+    }
+    public  String  generateSignedUrl(String objectName) {
+        BlobInfo blobInfo = BlobInfo.newBuilder(gcsConfig.getBucketName(), objectName).build();
+        URL url = storage.signUrl(
+                blobInfo,
+                15,
+                TimeUnit.MINUTES,
+                Storage.SignUrlOption.withV4Signature()
+        );
+        return url.toString();
     }
 
     public String uploadFile(MultipartFile file) throws IOException {

@@ -13,7 +13,6 @@ import java.util.UUID;
 @Getter
 @Setter
 @NoArgsConstructor
-@AllArgsConstructor
 
 public class Species {
 
@@ -23,12 +22,14 @@ public class Species {
     private UUID id;
     @Column(name="species", nullable = false)
     private String species;
+    @Column (name="confidence", nullable = false)
+    private Double confidence = 0.0;
     @Column(name = "post_id")
     private UUID postId;
 
-    public Species(String species, UUID post_id) {
+    public Species(String species, Double confidence,  UUID post_id) {
         this.species = species;
-        this.postId = post_id;
+        this.confidence = confidence;
         this.postId = post_id;
     }
 }

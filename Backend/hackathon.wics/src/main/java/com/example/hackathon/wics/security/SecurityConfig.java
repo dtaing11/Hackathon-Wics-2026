@@ -18,7 +18,6 @@ import org.springframework.web.cors.UrlBasedCorsConfigurationSource;
 import java.util.Arrays;
 
 @Configuration
-@EnableWebSecurity
 public class SecurityConfig {
     
     @Bean
@@ -31,7 +30,7 @@ public class SecurityConfig {
             .cors(cors -> cors.configurationSource(corsConfigurationSource()))
             .csrf(AbstractHttpConfigurer::disable)
             .authorizeHttpRequests(auth -> auth
-                .requestMatchers("/user/register", "/user/login").permitAll()
+                .requestMatchers("/api/users", "/api/users/login").permitAll()
                 .anyRequest().authenticated()
             )
             .addFilterBefore(sessionAuthFilter, UsernamePasswordAuthenticationFilter.class);
