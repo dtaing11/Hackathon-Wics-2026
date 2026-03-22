@@ -1,10 +1,10 @@
 # Flock Finder : The Lovers
 # Members
-Dina Tiang
-Lily Holliday
-Calvin Gavin
-Hudson Vu
-Daniel Guo
+Dina Tiang<br>
+Lily Holliday<br>
+Calvin Gavin<br>
+Hudson Vu<br>
+Daniel Guo<br>
 
 # About Our Software
 BirdWatch is a mobile application built with **React Native** that allows bird watchers to capture snapshots of birds, identify their species, and build a personal bird collection. 
