@@ -47,16 +47,18 @@ import {
 import {
   type CapturedPhoto,
   showCameraNotReadyAlert,
-  uploadCapturedPhoto,
 } from './src/services/cameraUpload';
+import {createPost} from './src/services/postsApi';
 import {
   buildPlayerFeatureCollection,
-  findClosestPole,
-  getPoleById,
   PLAYER_MODEL_ID,
-  POLES,
-  type Pole,
 } from './src/poles';
+import {getAllPosts, type PostRecord} from './src/services/postsApi';
+import {
+  getSpeciesDetailsForPost,
+  type SpeciesDetailRecord,
+} from './src/services/speciesApi';
+import {getBirdDescriptionBySpeciesName} from './src/services/birdDescriptionLookup';
 
 Mapbox.setAccessToken(
   MAPBOX_PUBLIC_API_KEY,
@@ -64,10 +66,67 @@ Mapbox.setAccessToken(
 
 type CameraMode =
   | {type: 'player'}
-  | {type: 'bird'; birdId: number}
+  | {type: 'bird'; birdId: string}
   | {type: 'free'};
 
-const FALLBACK_CENTER: [number, number] = [POLES[0].longitude, POLES[0].latitude];
+const DEFAULT_CENTER: [number, number] = [-91.1805, 30.4081];
+
+function getBirdById(birdId: string | null, birds: PostRecord[]) {
+  if (!birdId) {
+    return null;
+  }
+
+  return birds.find(bird => bird.postId === birdId) ?? null;
+}
+
+function getDistanceInMeters(
+  latitudeA: number,
+  longitudeA: number,
+  latitudeB: number,
+  longitudeB: number,
+) {
+  const toRadians = (degrees: number) => degrees * (Math.PI / 180);
+  const earthRadius = 6371000;
+
+  const psi1 = toRadians(latitudeA);
+  const psi2 = toRadians(latitudeB);
+  const deltaPsi = toRadians(latitudeB - latitudeA);
+  const deltaLambda = toRadians(longitudeB - longitudeA);
+
+  const a =
+    Math.sin(deltaPsi / 2) ** 2 +
+    Math.cos(psi1) * Math.cos(psi2) * Math.sin(deltaLambda / 2) ** 2;
+
+  const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+  return earthRadius * c;
+}
+
+function findClosestBird(
+  latitude: number,
+  longitude: number,
+  birds: PostRecord[],
+) {
+  if (birds.length === 0) {
+    return null;
+  }
+
+  return birds.reduce((closestBird, currentBird) => {
+    const currentDistance = getDistanceInMeters(
+      currentBird.latitude,
+      currentBird.longitude,
+      latitude,
+      longitude,
+    );
+    const closestDistance = getDistanceInMeters(
+      closestBird.latitude,
+      closestBird.longitude,
+      latitude,
+      longitude,
+    );
+
+    return currentDistance < closestDistance ? currentBird : closestBird;
+  });
+}
 
 function getPlayerCoordinate(location: Location | null): [number, number] | null {
   const longitude = location?.coords.longitude;
@@ -83,9 +142,9 @@ function getPlayerCoordinate(location: Location | null): [number, number] | null
 const App = () => {
   const insets = useSafeAreaInsets();
   const cameraRef = useRef<Camera>(null);
-  const nearbyBirdBob = useRef(new Animated.Value(0)).current;
   const previousZoomRef = useRef<number | null>(null);
-  const [selectedBirdId, setSelectedBirdId] = useState<number | null>(null);
+  const [birds, setBirds] = useState<PostRecord[]>([]);
+  const [selectedBirdId, setSelectedBirdId] = useState<string | null>(null);
   const [hasLocationPermission, setHasLocationPermission] = useState(
     Platform.OS === 'ios',
   );
@@ -93,13 +152,30 @@ const App = () => {
   const [isCameraOverlayVisible, setIsCameraOverlayVisible] = useState(false);
   const [isCharacterScreenVisible, setIsCharacterScreenVisible] = useState(false);
   const [isFriendsOpen, setIsFriendsOpen] = useState(false);
+  const [loggedInUsername, setLoggedInUsername] = useState<string | null>(null);
   const [playerLocation, setPlayerLocation] = useState<Location | null>(null);
   const [isUploadingPhoto, setIsUploadingPhoto] = useState(false);
   const [isMapReady, setIsMapReady] = useState(false);
   const [playerPulsePhase, setPlayerPulsePhase] = useState(0);
+  const [selectedBirdSpeciesDetails, setSelectedBirdSpeciesDetails] =
+    useState<SpeciesDetailRecord | null>(null);
+  const [isSelectedBirdDetailsLoading, setIsSelectedBirdDetailsLoading] =
+    useState(false);
   const detailsDrawerY = useRef(new Animated.Value(220)).current;
+  const bottomControlOffset = Math.max(insets.bottom - 6, 0);
+  const followButtonBottom = bottomControlOffset + 112;
 
-  const selectedBird = getPoleById(selectedBirdId);
+  const selectedBird = useMemo(
+    () => getBirdById(selectedBirdId, birds),
+    [birds, selectedBirdId],
+  );
+  const selectedBirdJsonDetails = useMemo(
+    () =>
+      getBirdDescriptionBySpeciesName(
+        selectedBirdSpeciesDetails?.name ?? selectedBirdSpeciesDetails?.species,
+      ),
+    [selectedBirdSpeciesDetails?.name, selectedBirdSpeciesDetails?.species],
+  );
   const playerCoordinate = useMemo(
     () => getPlayerCoordinate(playerLocation),
     [playerLocation],
@@ -109,12 +185,21 @@ const App = () => {
       return null;
     }
 
-    return findClosestPole(
+    return findClosestBird(
       playerLocation.coords.latitude,
       playerLocation.coords.longitude,
-      POLES,
+      birds,
     );
-  }, [playerLocation]);
+  }, [birds, playerLocation]);
+  const mapCenterFallback = useMemo<[number, number]>(() => {
+    const firstBird = birds[0];
+
+    if (firstBird) {
+      return [firstBird.longitude, firstBird.latitude];
+    }
+
+    return DEFAULT_CENTER;
+  }, [birds]);
   const playerFeature = useMemo(
     () =>
       buildPlayerFeatureCollection(
@@ -179,6 +264,61 @@ const App = () => {
   }, []);
 
   useEffect(() => {
+    async function loadBirds() {
+      try {
+        const nextBirds = await getAllPosts();
+        setBirds(nextBirds);
+      } catch {
+        setBirds([]);
+      }
+    }
+
+    loadBirds().catch(() => {
+      setBirds([]);
+    });
+  }, [loggedInUsername]);
+
+  useEffect(() => {
+    if (!selectedBird) {
+      setSelectedBirdSpeciesDetails(null);
+      setIsSelectedBirdDetailsLoading(false);
+      return;
+    }
+
+    let isCancelled = false;
+
+    async function loadSelectedBirdDetails() {
+      setIsSelectedBirdDetailsLoading(true);
+
+      try {
+        const nextDetails = await getSpeciesDetailsForPost(selectedBird.postId);
+        if (!isCancelled) {
+          setSelectedBirdSpeciesDetails(nextDetails);
+        }
+      } catch {
+        if (!isCancelled) {
+          setSelectedBirdSpeciesDetails(null);
+        }
+      } finally {
+        if (!isCancelled) {
+          setIsSelectedBirdDetailsLoading(false);
+        }
+      }
+    }
+
+    loadSelectedBirdDetails().catch(() => {
+      if (!isCancelled) {
+        setSelectedBirdSpeciesDetails(null);
+        setIsSelectedBirdDetailsLoading(false);
+      }
+    });
+
+    return () => {
+      isCancelled = true;
+    };
+  }, [selectedBird]);
+
+  useEffect(() => {
     if (!cameraRef.current || !isMapReady) {
       return;
     }
@@ -212,7 +352,7 @@ const App = () => {
       return;
     }
 
-    const bird = getPoleById(cameraMode.birdId);
+    const bird = getBirdById(cameraMode.birdId, birds);
     if (!bird) {
       return;
     }
@@ -230,7 +370,7 @@ const App = () => {
       },
       animationDuration: 900,
     });
-  }, [cameraMode, isMapReady, playerCoordinate, playerLocation]);
+  }, [birds, cameraMode, isMapReady, playerCoordinate, playerLocation]);
 
   useEffect(() => {
     Animated.spring(detailsDrawerY, {
@@ -252,32 +392,9 @@ const App = () => {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    const animation = Animated.loop(
-      Animated.sequence([
-        Animated.timing(nearbyBirdBob, {
-          toValue: -6,
-          duration: 900,
-          useNativeDriver: true,
-        }),
-        Animated.timing(nearbyBirdBob, {
-          toValue: 0,
-          duration: 900,
-          useNativeDriver: true,
-        }),
-      ]),
-    );
-
-    animation.start();
-
-    return () => {
-      animation.stop();
-    };
-  }, [nearbyBirdBob]);
-
-  const focusBird = (bird: Pole) => {
-    setSelectedBirdId(bird.id);
-    setCameraMode({type: 'bird', birdId: bird.id});
+  const focusBird = (bird: PostRecord) => {
+    setSelectedBirdId(bird.postId);
+    setCameraMode({type: 'bird', birdId: bird.postId});
   };
 
   const handleNearestBird = () => {
@@ -330,10 +447,22 @@ const App = () => {
   };
 
   const handleCameraCapture = async (photo: CapturedPhoto) => {
+    if (!playerLocation) {
+      showCameraNotReadyAlert(
+        'Your location is required before creating a post. Wait for GPS, then try again.',
+      );
+      return;
+    }
+
     setIsUploadingPhoto(true);
 
     try {
-      await uploadCapturedPhoto(photo);
+      const createdBird = await createPost(photo, {
+        latitude: playerLocation.coords.latitude,
+        longitude: playerLocation.coords.longitude,
+      });
+      setBirds(currentBirds => [createdBird, ...currentBirds]);
+      focusBird(createdBird);
     } catch (error) {
       const message =
         error instanceof Error ? error.message : 'Unable to capture a photo.';
@@ -368,6 +497,10 @@ const App = () => {
     setIsCharacterScreenVisible(false);
   };
 
+  const handleLoginStateChange = (username: string) => {
+    setLoggedInUsername(username);
+  };
+
   const handleFriendsToggle = () => {
     setIsFriendsOpen(current => !current);
   };
@@ -395,7 +528,7 @@ const App = () => {
           }}>
           <Camera
             ref={cameraRef}
-            centerCoordinate={playerCoordinate ?? FALLBACK_CENTER}
+            centerCoordinate={playerCoordinate ?? mapCenterFallback}
             zoomLevel={17}
             pitch={80}
             heading={25}
@@ -444,25 +577,26 @@ const App = () => {
           
         
 
-          {POLES.map(pole => (
+          {birds.map(bird => (
             <MarkerView
-              key={`pole-image-${pole.id}`}
-              coordinate={[pole.longitude, pole.latitude]}
+              key={`bird-image-${bird.postId}`}
+              coordinate={[bird.longitude, bird.latitude]}
               anchor={{x: 0.5, y: 0.9}}
               allowOverlap
               allowOverlapWithPuck>
               <Pressable
                 accessibilityRole="button"
-                accessibilityLabel={`Select bird ${pole.title}`}
-                onPress={() => focusBird(pole)}
+                accessibilityLabel="Select bird post"
+                onPress={() => focusBird(bird)}
                 style={styles.poleMarkerWrap}>
                 <View
                   style={[
                     styles.poleImageBillboard,
-                    selectedBirdId === pole.id && styles.poleImageBillboardSelected,
+                    selectedBirdId === bird.postId &&
+                      styles.poleImageBillboardSelected,
                   ]}>
                   <Image
-                    source={{uri: pole.imageUri}}
+                    source={{uri: bird.imageUrl}}
                     style={styles.poleImage}
                     resizeMode="cover"
                   />
@@ -470,7 +604,8 @@ const App = () => {
                 <View
                   style={[
                     styles.poleMarkerTail,
-                    selectedBirdId === pole.id && styles.poleMarkerTailSelected,
+                    selectedBirdId === bird.postId &&
+                      styles.poleMarkerTailSelected,
                   ]}
                 />
               </Pressable>
@@ -489,11 +624,11 @@ const App = () => {
           />
         </View>
 
-        <Animated.View
+        <View
           style={[
             styles.nearbyBirdCardWrap,
             {
-              transform: [{translateY: nearbyBirdBob}],
+              bottom: bottomControlOffset,
             },
           ]}>
           <Pressable
@@ -505,7 +640,7 @@ const App = () => {
             accessibilityRole="button"
             accessibilityLabel={
               nearestBird
-                ? `Focus nearby bird ${nearestBird.title}`
+                ? 'Focus nearby bird'
                 : 'Nearby bird unavailable'
             }
             disabled={!nearestBird}
@@ -514,7 +649,7 @@ const App = () => {
             {nearestBird ? (
               <View style={styles.nearbyBirdImageFrame}>
                 <Image
-                  source={{uri: nearestBird.imageUri}}
+                  source={{uri: nearestBird.imageUrl}}
                   style={styles.nearbyBirdImage}
                   resizeMode="cover"
                 />
@@ -523,13 +658,16 @@ const App = () => {
               <View style={styles.nearbyBirdPlaceholder} />
             )}
           </Pressable>
-        </Animated.View>
+        </View>
 
         <Pressable
           style={[
             styles.followButtonFloating,
             styles.followButton,
             !playerLocation && styles.followButtonDisabled,
+            {
+              bottom: followButtonBottom,
+            },
           ]}
           accessibilityRole="button"
           accessibilityLabel="Follow your location"
@@ -554,7 +692,7 @@ const App = () => {
           style={[
             styles.characterButton,
             {
-              bottom: Math.max(insets.bottom - 6, 0),
+              bottom: bottomControlOffset,
             },
           ]}>
           <Image
@@ -562,6 +700,7 @@ const App = () => {
             style={styles.characterButtonImage}
             resizeMode="contain"
           />
+          {loggedInUsername ? <View style={styles.characterOnlineDot} /> : null}
         </Pressable>
 
         <Animated.View
@@ -574,15 +713,38 @@ const App = () => {
           ]}>
           {selectedBird ? (
             <>
-            <Image source={{uri: selectedBird.imageUri}} style={styles.thumbnail} />
+            <Image source={{uri: selectedBird.imageUrl}} style={styles.thumbnail} />
             <View style={styles.detailsText}>
-              <Text style={styles.detailsTitle}>{selectedBird.title}</Text>
+              <Text style={styles.detailsTitle}>
+                {selectedBirdSpeciesDetails?.name ??
+                  selectedBirdJsonDetails?.species ??
+                  'Bird Sighting'}
+              </Text>
               <Text style={styles.detailsStatus}>
-                Status: {selectedBird.status === 'bad' ? 'Needs repair' : 'Healthy'}
+                {selectedBirdSpeciesDetails?.species ??
+                  selectedBirdJsonDetails?.rarity ??
+                  'Community post'}
               </Text>
               <Text style={styles.detailsBody}>
-                Use the Nearest Bird button to jump to the closest bird, or tap a
-                bird marker directly to select it.
+                {isSelectedBirdDetailsLoading
+                  ? 'Loading bird details...'
+                  : selectedBirdSpeciesDetails?.description ??
+                    selectedBirdJsonDetails?.description ??
+                    'No bird description is available for this post yet.'}
+              </Text>
+              {selectedBirdJsonDetails?.geographic_range ? (
+                <Text style={styles.detailsMeta}>
+                  Range: {selectedBirdJsonDetails.geographic_range}
+                </Text>
+              ) : null}
+              {selectedBirdJsonDetails?.average_weight ? (
+                <Text style={styles.detailsMeta}>
+                  Average weight: {selectedBirdJsonDetails.average_weight}
+                </Text>
+              ) : null}
+              <Text style={styles.detailsMeta}>
+                Captured at {selectedBird.latitude.toFixed(4)},{' '}
+                {selectedBird.longitude.toFixed(4)}
               </Text>
             </View>
             </>
@@ -592,6 +754,7 @@ const App = () => {
         <BottomActionBar
           busy={isUploadingPhoto}
           onCameraPress={handleCameraPress}
+          style={{bottom: bottomControlOffset}}
         />
 
         <CameraOverlay
@@ -604,13 +767,33 @@ const App = () => {
         <CharacterScreen
           visible={isCharacterScreenVisible}
           onClose={handleCharacterScreenClose}
+          onLoginStateChange={handleLoginStateChange}
         />
 
-        <View style={styles.cameraModeDebug}>
+        {!loggedInUsername ? (
+          <View style={styles.authGateOverlay} pointerEvents="box-none">
+            <View style={styles.authGateCard}>
+              <Text style={styles.authGateTitle}>Log in to see birds</Text>
+              <Text style={styles.authGateBody}>
+                Sign in to load community posts and explore bird sightings on the
+                map.
+              </Text>
+              <Pressable
+                accessibilityRole="button"
+                accessibilityLabel="Open login"
+                onPress={handleCharacterPress}
+                style={styles.authGateButton}>
+                <Text style={styles.authGateButtonText}>Open Login</Text>
+              </Pressable>
+            </View>
+          </View>
+        ) : null}
+
+        {/* <View style={styles.cameraModeDebug}>
           <Text style={styles.cameraModeDebugText}>
             Mode: {cameraMode.type}
           </Text>
-        </View>
+        </View> */}
       </View>
     </SafeAreaView>
   );

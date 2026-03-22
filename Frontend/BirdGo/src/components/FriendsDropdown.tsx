@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {Animated, Pressable, Text, TextInput, View} from 'react-native';
+import {Animated, Modal, Pressable, Text, TextInput, View} from 'react-native';
 
 import {styles} from '../appStyles';
 
@@ -82,22 +82,17 @@ export function FriendsDropdown({
           accessibilityRole="button"
           accessibilityLabel="Open friends list"
           onPress={onToggle}
-          style={[
-            styles.secondaryMapButton,
-            open && styles.secondaryMapButtonActive,
-          ]}>
-          <Text
-            style={[
-              styles.secondaryMapButtonText,
-              open && styles.secondaryMapButtonTextActive,
-            ]}>
-            Friends
-          </Text>
+          style={styles.secondaryMapButton}>
+          <Text style={styles.secondaryMapButtonText}>Friends</Text>
         </Pressable>
       </View>
 
       {open ? (
-        <>
+        <Modal
+          animationType="none"
+          transparent
+          visible={open}
+          onRequestClose={onToggle}>
           <Pressable style={styles.friendsDrawerBackdrop} onPress={onToggle} />
           <Animated.View
             style={[
@@ -150,7 +145,7 @@ export function FriendsDropdown({
                     <View style={styles.friendTopRow}>
                       <Text style={styles.friendUsername}>{friend.username}</Text>
                       <Text style={styles.friendCatchText}>
-                        Last caught - {getFakeLastCaughtBird(friend.username, index)}
+                        Last spotted - {getFakeLastCaughtBird(friend.username, index)}
                       </Text>
                     </View>
                     <Text style={styles.friendLastOnline}>
@@ -163,7 +158,7 @@ export function FriendsDropdown({
               ))}
             </View>
           </Animated.View>
-        </>
+        </Modal>
       ) : null}
     </>
   );

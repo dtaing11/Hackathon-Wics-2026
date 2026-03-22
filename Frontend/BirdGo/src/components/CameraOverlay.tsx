@@ -71,9 +71,9 @@ export function CameraOverlay({
 
         <View style={styles.cameraOverlayContent}>
           <View style={styles.cameraOverlayHeader}>
-            <Text style={styles.cameraOverlayTitle}>Camera</Text>
+            <Text style={styles.cameraOverlayTitle}>Bird Sighting Detection</Text>
             <Text style={styles.cameraOverlaySubtitle}>
-              Frame the bird inside the guide
+              Frame the Bird Inside the Guide
             </Text>
           </View>
 

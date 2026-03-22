@@ -70,7 +70,7 @@ export const styles = StyleSheet.create({
   },
   friendsDrawerBackdrop: {
     ...StyleSheet.absoluteFillObject,
-    backgroundColor: 'rgba(15, 23, 42, 0.24)',
+    backgroundColor: 'transparent',
     zIndex: 20,
   },
   friendsDrawer: {
@@ -181,8 +181,7 @@ export const styles = StyleSheet.create({
   },
   nearbyBirdCardWrap: {
     position: 'absolute',
-    top: 100,
-    alignSelf: 'center',
+    right: 16,
   },
   nearbyBirdCard: {
     minWidth: 92,
@@ -239,7 +238,6 @@ export const styles = StyleSheet.create({
   followButtonFloating: {
     position: 'absolute',
     right: 16,
-    bottom: 108,
   },
   characterButton: {
     position: 'absolute',
@@ -257,6 +255,17 @@ export const styles = StyleSheet.create({
     width: 88,
     height: 88,
     borderRadius: 44,
+  },
+  characterOnlineDot: {
+    position: 'absolute',
+    top: 6,
+    right: 6,
+    width: 14,
+    height: 14,
+    borderRadius: 7,
+    backgroundColor: '#86efac',
+    borderWidth: 2,
+    borderColor: '#f8fafc',
   },
   followButtonDisabled: {
     opacity: 0.75,
@@ -323,6 +332,13 @@ export const styles = StyleSheet.create({
     color: '#475569',
     fontSize: 14,
     lineHeight: 20,
+  },
+  detailsMeta: {
+    color: '#64748b',
+    fontSize: 12,
+    lineHeight: 18,
+    fontWeight: '600',
+    marginTop: 2,
   },
   poleMarkerWrap: {
     alignItems: 'center',
@@ -415,6 +431,53 @@ export const styles = StyleSheet.create({
   cameraModeDebugText: {
     color: '#f8fafc',
     fontSize: 11,
+    fontWeight: '700',
+  },
+  authGateOverlay: {
+    ...StyleSheet.absoluteFillObject,
+    alignItems: 'center',
+    justifyContent: 'center',
+    paddingHorizontal: 24,
+  },
+  authGateCard: {
+    width: '100%',
+    maxWidth: 320,
+    borderRadius: 28,
+    backgroundColor: 'rgba(255, 255, 255, 0.97)',
+    paddingHorizontal: 22,
+    paddingVertical: 22,
+    shadowColor: '#0f172a',
+    shadowOpacity: 0.18,
+    shadowRadius: 18,
+    shadowOffset: {
+      width: 0,
+      height: 10,
+    },
+    elevation: 8,
+    gap: 10,
+  },
+  authGateTitle: {
+    color: '#0f172a',
+    fontSize: 22,
+    fontWeight: '800',
+  },
+  authGateBody: {
+    color: '#475569',
+    fontSize: 14,
+    lineHeight: 21,
+    fontWeight: '600',
+  },
+  authGateButton: {
+    alignSelf: 'flex-start',
+    marginTop: 6,
+    borderRadius: 999,
+    backgroundColor: '#0f172a',
+    paddingHorizontal: 18,
+    paddingVertical: 12,
+  },
+  authGateButtonText: {
+    color: '#f8fafc',
+    fontSize: 14,
     fontWeight: '700',
   },
   cameraOverlayBackdrop: {
@@ -570,6 +633,9 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 24,
     paddingBottom: 40,
   },
+  characterScreenScroll: {
+    paddingBottom: 24,
+  },
   characterScreenHeader: {
     gap: 8,
     marginBottom: 32,
@@ -584,18 +650,119 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     lineHeight: 22,
   },
-  characterScreenBody: {
-    flex: 1,
+  authModeRow: {
+    flexDirection: 'row',
+    gap: 10,
+    marginBottom: 18,
+  },
+  authModeButton: {
+    borderRadius: 999,
+    backgroundColor: '#e2e8f0',
+    paddingHorizontal: 18,
+    paddingVertical: 10,
+  },
+  authModeButtonActive: {
+    backgroundColor: '#0f172a',
+  },
+  authModeButtonText: {
+    color: '#0f172a',
+    fontSize: 14,
+    fontWeight: '700',
+  },
+  authModeButtonTextActive: {
+    color: '#f8fafc',
+  },
+  authCard: {
     borderRadius: 28,
     backgroundColor: '#e2e8f0',
-    padding: 24,
-    justifyContent: 'center',
+    padding: 20,
+    gap: 14,
   },
-  characterScreenBodyText: {
+  authWelcomeCard: {
+    borderRadius: 28,
+    backgroundColor: '#e2e8f0',
+    padding: 20,
+    gap: 6,
+  },
+  authWelcomeEyebrow: {
+    color: '#64748b',
+    fontSize: 12,
+    fontWeight: '800',
+    letterSpacing: 0.8,
+    textTransform: 'uppercase',
+  },
+  authWelcomeUsername: {
     color: '#0f172a',
-    fontSize: 18,
-    lineHeight: 28,
+    fontSize: 28,
+    fontWeight: '800',
+  },
+  authInput: {
+    borderRadius: 16,
+    backgroundColor: '#f8fafc',
+    borderWidth: 1,
+    borderColor: '#cbd5e1',
+    paddingHorizontal: 14,
+    paddingVertical: 12,
+    color: '#0f172a',
+    fontSize: 15,
     fontWeight: '600',
+  },
+  authStatusText: {
+    color: '#475569',
+    fontSize: 13,
+    lineHeight: 20,
+    fontWeight: '600',
+  },
+  authSubmitButton: {
+    alignSelf: 'flex-start',
+    borderRadius: 999,
+    backgroundColor: '#0f172a',
+    paddingHorizontal: 18,
+    paddingVertical: 12,
+  },
+  authSubmitButtonText: {
+    color: '#f8fafc',
+    fontSize: 15,
+    fontWeight: '700',
+  },
+  gallerySection: {
+    marginTop: 24,
+    gap: 14,
+  },
+  gallerySectionHeader: {
+    gap: 4,
+  },
+  gallerySectionTitle: {
+    color: '#0f172a',
+    fontSize: 24,
+    fontWeight: '800',
+  },
+  gallerySectionSubtitle: {
+    color: '#64748b',
+    fontSize: 13,
+    fontWeight: '600',
+  },
+  galleryStatusText: {
+    color: '#64748b',
+    fontSize: 14,
+    fontWeight: '600',
+    lineHeight: 20,
+  },
+  galleryGrid: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    marginHorizontal: -4,
+  },
+  galleryTile: {
+    width: '33.3333%',
+    paddingHorizontal: 4,
+    paddingBottom: 8,
+  },
+  galleryImage: {
+    width: '100%',
+    aspectRatio: 1,
+    borderRadius: 14,
+    backgroundColor: '#cbd5e1',
   },
   characterScreenCloseButton: {
     alignSelf: 'flex-start',
