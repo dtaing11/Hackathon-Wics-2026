@@ -1,0 +1,2622 @@
+[
+  {
+    "species": "ABBOTTS BABBLER",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "ABBOTTS BOOBY",
+    "rarity_rank": 4,
+    "location": "Christmas Island"
+  },
+  {
+    "species": "ABYSSINIAN GROUND HORNBILL",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "AFRICAN CROWNED CRANE",
+    "rarity_rank": 4,
+    "location": "Eastern and Southern Africa"
+  },
+  {
+    "species": "AFRICAN EMERALD CUCKOO",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "AFRICAN FIREFINCH",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "AFRICAN OYSTER CATCHER",
+    "rarity_rank": 4,
+    "location": "Southern Africa coasts"
+  },
+  {
+    "species": "AFRICAN PIED HORNBILL",
+    "rarity_rank": 4,
+    "location": "West and Central Africa"
+  },
+  {
+    "species": "AFRICAN PYGMY GOOSE",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "ALBATROSS",
+    "rarity_rank": 4,
+    "location": "Southern Ocean and North Pacific"
+  },
+  {
+    "species": "ALBERTS TOWHEE",
+    "rarity_rank": 4,
+    "location": "Southwestern United States"
+  },
+  {
+    "species": "ALEXANDRINE PARAKEET",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "ALPINE CHOUGH",
+    "rarity_rank": 4,
+    "location": "High mountains of Europe and Asia"
+  },
+  {
+    "species": "ALTAMIRA YELLOWTHROAT",
+    "rarity_rank": 4,
+    "location": "Mexico"
+  },
+  {
+    "species": "AMERICAN AVOCET",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMERICAN BITTERN",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMERICAN COOT",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMERICAN DIPPER",
+    "rarity_rank": 4,
+    "location": "Western North America"
+  },
+  {
+    "species": "AMERICAN FLAMINGO",
+    "rarity_rank": 3,
+    "location": "Caribbean and South America"
+  },
+  {
+    "species": "AMERICAN GOLDFINCH",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMERICAN KESTREL",
+    "rarity_rank": 1,
+    "location": "North and South America"
+  },
+  {
+    "species": "AMERICAN PIPIT",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMERICAN REDSTART",
+    "rarity_rank": 1,
+    "location": "North and South America"
+  },
+  {
+    "species": "AMERICAN ROBIN",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMERICAN WIGEON",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "AMETHYST WOODSTAR",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "ANDEAN GOOSE",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "ANDEAN LAPWING",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "ANDEAN SISKIN",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "ANHINGA",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "ANIANIAU",
+    "rarity_rank": 4,
+    "location": "Hawaii (Kauai)"
+  },
+  {
+    "species": "ANNAS HUMMINGBIRD",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "ANTBIRD",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "ANTILLEAN EUPHONIA",
+    "rarity_rank": 4,
+    "location": "Caribbean Islands"
+  },
+  {
+    "species": "APAPANE",
+    "rarity_rank": 4,
+    "location": "Hawaii"
+  },
+  {
+    "species": "APOSTLEBIRD",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "ARARIPE MANAKIN",
+    "rarity_rank": 4,
+    "location": "Brazil"
+  },
+  {
+    "species": "ASHY STORM PETREL",
+    "rarity_rank": 4,
+    "location": "Northeast Pacific Ocean"
+  },
+  {
+    "species": "ASHY THRUSHBIRD",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "ASIAN CRESTED IBIS",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "ASIAN DOLLARD BIRD",
+    "rarity_rank": 4,
+    "location": "Asia and Australia"
+  },
+  {
+    "species": "ASIAN GREEN BEE EATER",
+    "rarity_rank": 4,
+    "location": "Southern Asia"
+  },
+  {
+    "species": "ASIAN OPENBILL STORK",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "AUCKLAND SHAQ",
+    "rarity_rank": 4,
+    "location": "Auckland Islands, New Zealand"
+  },
+  {
+    "species": "AUSTRAL CANASTERO",
+    "rarity_rank": 4,
+    "location": "Southern South America"
+  },
+  {
+    "species": "AUSTRALASIAN FIGBIRD",
+    "rarity_rank": 4,
+    "location": "Australia and New Guinea"
+  },
+  {
+    "species": "AVADAVAT",
+    "rarity_rank": 4,
+    "location": "Tropical Asia"
+  },
+  {
+    "species": "AZARAS SPINETAIL",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "AZURE BREASTED PITTA",
+    "rarity_rank": 4,
+    "location": "Philippines"
+  },
+  {
+    "species": "AZURE JAY",
+    "rarity_rank": 4,
+    "location": "South America (Brazil, Argentina)"
+  },
+  {
+    "species": "AZURE TANAGER",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "AZURE TIT",
+    "rarity_rank": 4,
+    "location": "Russia and Central Asia"
+  },
+  {
+    "species": "BAIKAL TEAL",
+    "rarity_rank": 3,
+    "location": "East Asia"
+  },
+  {
+    "species": "BALD EAGLE",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "BALD IBIS",
+    "rarity_rank": 4,
+    "location": "Middle East, North Africa, Europe"
+  },
+  {
+    "species": "BALI STARLING",
+    "rarity_rank": 4,
+    "location": "Bali, Indonesia"
+  },
+  {
+    "species": "BALTIMORE ORIOLE",
+    "rarity_rank": 1,
+    "location": "North and South America"
+  },
+  {
+    "species": "BANANAQUIT",
+    "rarity_rank": 4,
+    "location": "Caribbean and Central/South America"
+  },
+  {
+    "species": "BAND TAILED GUAN",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "BANDED BROADBILL",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "BANDED PITA",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "BANDED STILT",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "BAR-TAILED GODWIT",
+    "rarity_rank": 3,
+    "location": "Global (Arctic breeding, Southern hemisphere wintering)"
+  },
+  {
+    "species": "BARN OWL",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "BARN SWALLOW",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "BARRED PUFFBIRD",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "BARROWS GOLDENEYE",
+    "rarity_rank": 3,
+    "location": "North America and Iceland"
+  },
+  {
+    "species": "BAY-BREASTED WARBLER",
+    "rarity_rank": 1,
+    "location": "North and South America"
+  },
+  {
+    "species": "BEARDED BARBET",
+    "rarity_rank": 4,
+    "location": "West Africa"
+  },
+  {
+    "species": "BEARDED BELLBIRD",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "BEARDED REEDLING",
+    "rarity_rank": 4,
+    "location": "Europe and Asia"
+  },
+  {
+    "species": "BELTED KINGFISHER",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "BIRD OF PARADISE",
+    "rarity_rank": 4,
+    "location": "New Guinea and Australia"
+  },
+  {
+    "species": "BLACK AND YELLOW BROADBILL",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "BLACK BAZA",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "BLACK BREASTED PUFFBIRD",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "BLACK COCKATO",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "BLACK FACED SPOONBILL",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "BLACK FRANCOLIN",
+    "rarity_rank": 1,
+    "location": "Southern Asia and Middle East"
+  },
+  {
+    "species": "BLACK HEADED CAIQUE",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "BLACK NECKED STILT",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "BLACK SKIMMER",
+    "rarity_rank": 1,
+    "location": "Coastal Americas"
+  },
+  {
+    "species": "BLACK SWAN",
+    "rarity_rank": 3,
+    "location": "Australia"
+  },
+  {
+    "species": "BLACK TAIL CRAKE",
+    "rarity_rank": 4,
+    "location": "Asia"
+  },
+  {
+    "species": "BLACK THROATED BUSHTIT",
+    "rarity_rank": 4,
+    "location": "Himalayas and Southeast Asia"
+  },
+  {
+    "species": "BLACK THROATED HUET",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "BLACK THROATED WARBLER",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "BLACK VENTED SHEARWATER",
+    "rarity_rank": 4,
+    "location": "Pacific Coast of Mexico and USA"
+  },
+  {
+    "species": "BLACK VULTURE",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "BLACK-CAPPED CHICKADEE",
+    "rarity_rank": 4,
+    "location": "North America"
+  },
+  {
+    "species": "BLACK-NECKED GREBE",
+    "rarity_rank": 2,
+    "location": "Global"
+  },
+  {
+    "species": "BLACK-THROATED SPARROW",
+    "rarity_rank": 3,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "BLACKBURNIAM WARBLER",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "BLONDE CRESTED WOODPECKER",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "BLOOD PHEASANT",
+    "rarity_rank": 4,
+    "location": "Himalayas and China"
+  },
+  {
+    "species": "BLUE COAU",
+    "rarity_rank": 4,
+    "location": "Madagascar"
+  },
+  {
+    "species": "BLUE DACNIS",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "BLUE GRAY GNATCATCHER",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "BLUE GROSBEAK",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "BLUE GROUSE",
+    "rarity_rank": 4,
+    "location": "Western North America"
+  },
+  {
+    "species": "BLUE HERON",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "BLUE MALKOHA",
+    "rarity_rank": 4,
+    "location": "Africa"
+  },
+  {
+    "species": "BLUE THROATED PIPING GUAN",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "BLUE THROATED TOUCANET",
+    "rarity_rank": 4,
+    "location": "Central America"
+  },
+  {
+    "species": "BOBOLINK",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "BORNEAN BRISTLEHEAD",
+    "rarity_rank": 4,
+    "location": "Borneo"
+  },
+  {
+    "species": "BORNEAN LEAFBIRD",
+    "rarity_rank": 4,
+    "location": "Borneo"
+  },
+  {
+    "species": "BORNEAN PHEASANT",
+    "rarity_rank": 4,
+    "location": "Borneo"
+  },
+  {
+    "species": "BRANDT CORMARANT",
+    "rarity_rank": 4,
+    "location": "Pacific Coast of North America"
+  },
+  {
+    "species": "BREWERS BLACKBIRD",
+    "rarity_rank": 1,
+    "location": "Western North America"
+  },
+  {
+    "species": "BROWN CREPPER",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "BROWN HEADED COWBIRD",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "BROWN NOODY",
+    "rarity_rank": 3,
+    "location": "Tropical Oceans"
+  },
+  {
+    "species": "BROWN THRASHER",
+    "rarity_rank": 1,
+    "location": "Eastern North America"
+  },
+  {
+    "species": "BUFFLEHEAD",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "BULWERS PHEASANT",
+    "rarity_rank": 4,
+    "location": "Borneo"
+  },
+  {
+    "species": "BURCHELLS COURSER",
+    "rarity_rank": 4,
+    "location": "Southern Africa"
+  },
+  {
+    "species": "BUSH TURKEY",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "CAATINGA CACHOLOTE",
+    "rarity_rank": 4,
+    "location": "Northeast Brazil"
+  },
+  {
+    "species": "CABOTS TRAGOPAN",
+    "rarity_rank": 4,
+    "location": "Southeast China"
+  },
+  {
+    "species": "CACTUS WREN",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "CALIFORNIA CONDOR",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "CALIFORNIA GULL",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "CALIFORNIA QUAIL",
+    "rarity_rank": 4,
+    "location": "Western North America"
+  },
+  {
+    "species": "CAMPO FLICKER",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "CANARY",
+    "rarity_rank": 4,
+    "location": "Macaronesia (Canary Islands, Azores)"
+  },
+  {
+    "species": "CANVASBACK",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "CAPE GLOSSY STARLING",
+    "rarity_rank": 4,
+    "location": "Southern Africa"
+  },
+  {
+    "species": "CAPE LONGCLAW",
+    "rarity_rank": 4,
+    "location": "South Africa"
+  },
+  {
+    "species": "CAPE MAY WARBLER",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "CAPE ROCK THRUSH",
+    "rarity_rank": 4,
+    "location": "Southern Africa"
+  },
+  {
+    "species": "CAPPED HERON",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "CAPUCHINBIRD",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "CARMINE BEE-EATER",
+    "rarity_rank": 4,
+    "location": "Africa"
+  },
+  {
+    "species": "CASPIAN TERN",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "CASSOWARY",
+    "rarity_rank": 4,
+    "location": "New Guinea and Australia"
+  },
+  {
+    "species": "CEDAR WAXWING",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "CERULEAN WARBLER",
+    "rarity_rank": 1,
+    "location": "North and South America"
+  },
+  {
+    "species": "CHARA DE COLLAR",
+    "rarity_rank": 4,
+    "location": "Central America"
+  },
+  {
+    "species": "CHATTERING LORY",
+    "rarity_rank": 4,
+    "location": "Indonesia"
+  },
+  {
+    "species": "CHESTNET BELLIED EUPHONIA",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "CHESTNUT WINGED CUCKOO",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "CHINESE BAMBOO PARTRIDGE",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "CHINESE POND HERON",
+    "rarity_rank": 4,
+    "location": "East and Southeast Asia"
+  },
+  {
+    "species": "CHIPPING SPARROW",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "CHUCAO TAPACULO",
+    "rarity_rank": 4,
+    "location": "Chile and Argentina"
+  },
+  {
+    "species": "CHUKAR PARTRIDGE",
+    "rarity_rank": 4,
+    "location": "Eurasia (introduced to North America)"
+  },
+  {
+    "species": "CINNAMON ATTILA",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "CINNAMON FLYCATCHER",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "CINNAMON TEAL",
+    "rarity_rank": 2,
+    "location": "Americas"
+  },
+  {
+    "species": "CLARKS GREBE",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "CLARKS NUTCRACKER",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "COCK OF THE ROCK",
+    "rarity_rank": 4,
+    "location": "Andes and Amazon Basin"
+  },
+  {
+    "species": "COCKATOO",
+    "rarity_rank": 4,
+    "location": "Australia and Southeast Asia"
+  },
+  {
+    "species": "COLLARED ARACARI",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "COLLARED CRESCENTCHEST",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "COMMON FIRECREST",
+    "rarity_rank": 4,
+    "location": "Europe and North Africa"
+  },
+  {
+    "species": "COMMON GRACKLE",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "COMMON HOUSE MARTIN",
+    "rarity_rank": 4,
+    "location": "Eurasia and Africa"
+  },
+  {
+    "species": "COMMON IORA",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "COMMON LOON",
+    "rarity_rank": 1,
+    "location": "North America and Eurasia"
+  },
+  {
+    "species": "COMMON POORWILL",
+    "rarity_rank": 4,
+    "location": "Western North America"
+  },
+  {
+    "species": "COMMON STARLING",
+    "rarity_rank": 1,
+    "location": "Global (Native to Eurasia)"
+  },
+  {
+    "species": "COPPERSMITH BARBET",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "COPPERY TAILED COUCAL",
+    "rarity_rank": 4,
+    "location": "Southern Africa"
+  },
+  {
+    "species": "CRAB PLover",
+    "rarity_rank": 4,
+    "location": "Indian Ocean coasts"
+  },
+  {
+    "species": "CRANE HAWK",
+    "rarity_rank": 4,
+    "location": "Americas"
+  },
+  {
+    "species": "CREAM COLORED WOODPECKER",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "CRESTED AUKLET",
+    "rarity_rank": 4,
+    "location": "North Pacific"
+  },
+  {
+    "species": "CRESTED CARACARA",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "CRESTED COUA",
+    "rarity_rank": 4,
+    "location": "Madagascar"
+  },
+  {
+    "species": "CRESTED FIREBACK",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "CRESTED KINGFISHER",
+    "rarity_rank": 4,
+    "location": "Asia"
+  },
+  {
+    "species": "CRESTED NUTHATCH",
+    "rarity_rank": 4,
+    "location": "Himalayas and Southeast Asia"
+  },
+  {
+    "species": "CRESTED OROPENDOLA",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "CRESTED SERPENT EAGLE",
+    "rarity_rank": 4,
+    "location": "Tropical Asia"
+  },
+  {
+    "species": "CRESTED SHRIKETIT",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "CRESTED WOOD PARTRIDGE",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "CRIMSON CHAT",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "CRIMSON SUNBIRD",
+    "rarity_rank": 4,
+    "location": "Tropical Southern Asia"
+  },
+  {
+    "species": "CROW",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "CUBAN TODY",
+    "rarity_rank": 4,
+    "location": "Cuba"
+  },
+  {
+    "species": "CUBAN TROGON",
+    "rarity_rank": 4,
+    "location": "Cuba"
+  },
+  {
+    "species": "CURL CRESTED ARACURI",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "D-ARNAUDS BARBET",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "DALMATIAN PELICAN",
+    "rarity_rank": 4,
+    "location": "Eurasia"
+  },
+  {
+    "species": "DARJEELING WOODPECKER",
+    "rarity_rank": 4,
+    "location": "Himalayas and Southeast Asia"
+  },
+  {
+    "species": "DARK EYED JUNCO",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "DAURIAN REDSTART",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "DEMOISELLE CRANE",
+    "rarity_rank": 4,
+    "location": "Central Eurasia"
+  },
+  {
+    "species": "DOUBLE BARRED FINCH",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "DOUBLE BRESTED CORMARANT",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "DOUBLE EYED FIG PARROT",
+    "rarity_rank": 4,
+    "location": "New Guinea and Australia"
+  },
+  {
+    "species": "DOWNY WOODPECKER",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "DUNLIN",
+    "rarity_rank": 1,
+    "location": "Global (Arctic breeding)"
+  },
+  {
+    "species": "DUSKY LORY",
+    "rarity_rank": 4,
+    "location": "New Guinea"
+  },
+  {
+    "species": "DUSKY ROBIN",
+    "rarity_rank": 4,
+    "location": "Tasmania, Australia"
+  },
+  {
+    "species": "EARED PITA",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "EASTERN BLUEBIRD",
+    "rarity_rank": 1,
+    "location": "Eastern North America"
+  },
+  {
+    "species": "EASTERN BLUEBONNET",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "EASTERN GOLDEN WEAVER",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "EASTERN MEADOWLARK",
+    "rarity_rank": 1,
+    "location": "Eastern North America and South America"
+  },
+  {
+    "species": "EASTERN ROSELLA",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "EASTERN TOWEE",
+    "rarity_rank": 1,
+    "location": "Eastern North America"
+  },
+  {
+    "species": "EASTERN WIP POOR WILL",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "EASTERN YELLOW ROBIN",
+    "rarity_rank": 4,
+    "location": "Eastern Australia"
+  },
+  {
+    "species": "ECUADORIAN HILLSTAR",
+    "rarity_rank": 4,
+    "location": "Andes (Ecuador)"
+  },
+  {
+    "species": "EGYPTIAN GOOSE",
+    "rarity_rank": 3,
+    "location": "Africa and Europe"
+  },
+  {
+    "species": "ELEGANT TROGON",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "ELLIOTS PHEASANT",
+    "rarity_rank": 4,
+    "location": "Southeast China"
+  },
+  {
+    "species": "EMERALD TANAGER",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "EMPEROR PENGUIN",
+    "rarity_rank": 4,
+    "location": "Antarctica"
+  },
+  {
+    "species": "EMU",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "ENGGANO MYNA",
+    "rarity_rank": 4,
+    "location": "Enggano Island, Indonesia"
+  },
+  {
+    "species": "EURASIAN BULLFINCH",
+    "rarity_rank": 4,
+    "location": "Europe and Asia"
+  },
+  {
+    "species": "EURASIAN GOLDEN ORIOLE",
+    "rarity_rank": 4,
+    "location": "Europe, Asia, and Africa"
+  },
+  {
+    "species": "EURASIAN MAGPIE",
+    "rarity_rank": 4,
+    "location": "Eurasia and North Africa"
+  },
+  {
+    "species": "EUROPEAN GOLDFINCH",
+    "rarity_rank": 4,
+    "location": "Europe, North Africa, and Western Asia"
+  },
+  {
+    "species": "EUROPEAN TURTLE DOVE",
+    "rarity_rank": 4,
+    "location": "Europe, Africa, and Asia"
+  },
+  {
+    "species": "EVENING GROSBEAK",
+    "rarity_rank": 3,
+    "location": "North America"
+  },
+  {
+    "species": "FAIRY BLUEBIRD",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "FAIRY PENGUIN",
+    "rarity_rank": 4,
+    "location": "Australia and New Zealand"
+  },
+  {
+    "species": "FAIRY TERN",
+    "rarity_rank": 4,
+    "location": "Australia and New Zealand"
+  },
+  {
+    "species": "FAN TAILED WIDOW",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "FASCIATED WREN",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "FIERY MINIVET",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "FIORDLAND PENGUIN",
+    "rarity_rank": 4,
+    "location": "New Zealand"
+  },
+  {
+    "species": "FIRE TAILLED MYZORNIS",
+    "rarity_rank": 4,
+    "location": "Himalayas"
+  },
+  {
+    "species": "FLAME BOWERBIRD",
+    "rarity_rank": 4,
+    "location": "New Guinea"
+  },
+  {
+    "species": "FLAME TANAGER",
+    "rarity_rank": 4,
+    "location": "Central America"
+  },
+  {
+    "species": "FOREST WAGTAIL",
+    "rarity_rank": 4,
+    "location": "East and Southeast Asia"
+  },
+  {
+    "species": "FRIGATE",
+    "rarity_rank": 1,
+    "location": "Tropical Oceans"
+  },
+  {
+    "species": "FRILL BACK PIGEON",
+    "rarity_rank": 4,
+    "location": "Global (Captive/Domestic)"
+  },
+  {
+    "species": "GAMBELS QUAIL",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "GANG GANG COCKATOO",
+    "rarity_rank": 4,
+    "location": "Southeastern Australia"
+  },
+  {
+    "species": "GILA WOODPECKER",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "GILDED FLICKER",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "GLOSSY IBIS",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "GO AWAY BIRD",
+    "rarity_rank": 4,
+    "location": "Southern Africa"
+  },
+  {
+    "species": "GOLD WING WARBLER",
+    "rarity_rank": 2,
+    "location": "North and South America"
+  },
+  {
+    "species": "GOLDEN BOWER BIRD",
+    "rarity_rank": 4,
+    "location": "Queensland, Australia"
+  },
+  {
+    "species": "GOLDEN CHEEKED WARBLER",
+    "rarity_rank": 4,
+    "location": "USA (Texas) and Central America"
+  },
+  {
+    "species": "GOLDEN CHLOROPHONIA",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "GOLDEN EAGLE",
+    "rarity_rank": 3,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "GOLDEN PARAKEET",
+    "rarity_rank": 4,
+    "location": "Brazil"
+  },
+  {
+    "species": "GOLDEN PHEASANT",
+    "rarity_rank": 4,
+    "location": "China"
+  },
+  {
+    "species": "GOLDEN PIPIT",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "GOULDIAN FINCH",
+    "rarity_rank": 4,
+    "location": "Northern Australia"
+  },
+  {
+    "species": "GRANDALA",
+    "rarity_rank": 4,
+    "location": "Himalayas and China"
+  },
+  {
+    "species": "GRAY CATBIRD",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "GRAY KINGBIRD",
+    "rarity_rank": 3,
+    "location": "Coastal Americas and Caribbean"
+  },
+  {
+    "species": "GRAY PARTRIDGE",
+    "rarity_rank": 4,
+    "location": "Eurasia and North America"
+  },
+  {
+    "species": "GREAT ARGUS",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "GREAT GRAY OWL",
+    "rarity_rank": 4,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "GREAT JACAMAR",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "GREAT KISKADEE",
+    "rarity_rank": 3,
+    "location": "Americas"
+  },
+  {
+    "species": "GREAT POTOO",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "GREAT TINAMOU",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "GREAT XENOPS",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "GREATER PEWEE",
+    "rarity_rank": 4,
+    "location": "North and Central America"
+  },
+  {
+    "species": "GREATER PRAIRIE CHICKEN",
+    "rarity_rank": 4,
+    "location": "Central North America"
+  },
+  {
+    "species": "GREATOR SAGE GROUSE",
+    "rarity_rank": 4,
+    "location": "Western North America"
+  },
+  {
+    "species": "GREEN BROADBILL",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "GREEN JAY",
+    "rarity_rank": 4,
+    "location": "Americas"
+  },
+  {
+    "species": "GREEN MAGPIE",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "GREEN WINGED DOVE",
+    "rarity_rank": 4,
+    "location": "South Asia and Australia"
+  },
+  {
+    "species": "GREY CUCKOOSHRIKE",
+    "rarity_rank": 4,
+    "location": "Australia and Asia"
+  },
+  {
+    "species": "GREY HEADED CHACHALACA",
+    "rarity_rank": 4,
+    "location": "Central America"
+  },
+  {
+    "species": "GREY HEADED FISH EAGLE",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "GREY PLOVER",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "GROVED BILLED ANI",
+    "rarity_rank": 2,
+    "location": "Americas"
+  },
+  {
+    "species": "GUINEA TURACO",
+    "rarity_rank": 4,
+    "location": "West Africa"
+  },
+  {
+    "species": "GUINEAFOWL",
+    "rarity_rank": 4,
+    "location": "Africa"
+  },
+  {
+    "species": "GURNEYS PITTA",
+    "rarity_rank": 4,
+    "location": "Thailand and Myanmar"
+  },
+  {
+    "species": "GYRFALCON",
+    "rarity_rank": 4,
+    "location": "Arctic regions"
+  },
+  {
+    "species": "HAMERKOP",
+    "rarity_rank": 4,
+    "location": "Africa and Arabia"
+  },
+  {
+    "species": "HARLEQUIN DUCK",
+    "rarity_rank": 3,
+    "location": "North America and Eurasia"
+  },
+  {
+    "species": "HARLEQUIN QUAIL",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "HARPY EAGLE",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "HAWAIIAN GOOSE",
+    "rarity_rank": 4,
+    "location": "Hawaii"
+  },
+  {
+    "species": "HAWFINCH",
+    "rarity_rank": 4,
+    "location": "Eurasia"
+  },
+  {
+    "species": "HELMET VANGA",
+    "rarity_rank": 4,
+    "location": "Madagascar"
+  },
+  {
+    "species": "HEPATIC TANAGER",
+    "rarity_rank": 3,
+    "location": "Americas"
+  },
+  {
+    "species": "HIMALAYAN BLUETAIL",
+    "rarity_rank": 4,
+    "location": "Himalayas and Southeast Asia"
+  },
+  {
+    "species": "HIMALAYAN MONAL",
+    "rarity_rank": 4,
+    "location": "Himalayas"
+  },
+  {
+    "species": "HOATZIN",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "HOODED MERGANSER",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "HOOPOES",
+    "rarity_rank": 4,
+    "location": "Africa and Eurasia"
+  },
+  {
+    "species": "HORNED GUAN",
+    "rarity_rank": 4,
+    "location": "Mexico and Guatemala"
+  },
+  {
+    "species": "HORNED LARK",
+    "rarity_rank": 2,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "HORNED SUNGEM",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "HOUSE FINCH",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "HOUSE SPARROW",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "HYACINTH MACAW",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "IBERIAN MAGPIE",
+    "rarity_rank": 4,
+    "location": "Iberian Peninsula"
+  },
+  {
+    "species": "IBISBILL",
+    "rarity_rank": 4,
+    "location": "Central Asia and Himalayas"
+  },
+  {
+    "species": "IMPERIAL SHAQ",
+    "rarity_rank": 4,
+    "location": "Southern South America and Antarctica"
+  },
+  {
+    "species": "INCA TERN",
+    "rarity_rank": 4,
+    "location": "Humboldt Current (South America)"
+  },
+  {
+    "species": "INDIAN BUSTARD",
+    "rarity_rank": 4,
+    "location": "India"
+  },
+  {
+    "species": "INDIAN PITTA",
+    "rarity_rank": 4,
+    "location": "Indian Subcontinent"
+  },
+  {
+    "species": "INDIAN ROLLER",
+    "rarity_rank": 4,
+    "location": "Southern Asia"
+  },
+  {
+    "species": "INDIAN VULTURE",
+    "rarity_rank": 4,
+    "location": "Indian Subcontinent"
+  },
+  {
+    "species": "INDIGO BUNTING",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "INDIGO FLYCATCHER",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "INLAND DOTTEREL",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "IVORY BILLED ARACARI",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "IVORY GULL",
+    "rarity_rank": 3,
+    "location": "Arctic Ocean"
+  },
+  {
+    "species": "IWI",
+    "rarity_rank": 4,
+    "location": "Hawaii"
+  },
+  {
+    "species": "JABIRU",
+    "rarity_rank": 3,
+    "location": "Americas"
+  },
+  {
+    "species": "JACK SNIPE",
+    "rarity_rank": 4,
+    "location": "Eurasia and Africa"
+  },
+  {
+    "species": "JACOBIN PIGEON",
+    "rarity_rank": 4,
+    "location": "Global (Domestic)"
+  },
+  {
+    "species": "JANDAYA PARAKEET",
+    "rarity_rank": 4,
+    "location": "Northeastern Brazil"
+  },
+  {
+    "species": "JAPANESE ROBIN",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "JAVA SPARROW",
+    "rarity_rank": 4,
+    "location": "Indonesia (Java and Bali)"
+  },
+  {
+    "species": "JOCOTOCO ANTPITTA",
+    "rarity_rank": 4,
+    "location": "Ecuador and Peru"
+  },
+  {
+    "species": "KAGU",
+    "rarity_rank": 4,
+    "location": "New Caledonia"
+  },
+  {
+    "species": "KAKAPO",
+    "rarity_rank": 4,
+    "location": "New Zealand"
+  },
+  {
+    "species": "KILLDEAR",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "KING EIDER",
+    "rarity_rank": 3,
+    "location": "Arctic Regions"
+  },
+  {
+    "species": "KING VULTURE",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "KIWI",
+    "rarity_rank": 4,
+    "location": "New Zealand"
+  },
+  {
+    "species": "KNOB BILLED DUCK",
+    "rarity_rank": 4,
+    "location": "Africa, South America, and South Asia"
+  },
+  {
+    "species": "KOOKABURRA",
+    "rarity_rank": 4,
+    "location": "Australia and New Guinea"
+  },
+  {
+    "species": "LARK BUNTING",
+    "rarity_rank": 3,
+    "location": "Central North America"
+  },
+  {
+    "species": "LAUGHING GULL",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "LAZULI BUNTING",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "LESSER ADJUTANT",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "LILAC ROLLER",
+    "rarity_rank": 4,
+    "location": "Eastern and Southern Africa"
+  },
+  {
+    "species": "LIMPKIN",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "LITTLE AUK",
+    "rarity_rank": 4,
+    "location": "North Atlantic and Arctic Oceans"
+  },
+  {
+    "species": "LOGGERHEAD SHRIKE",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "LONG-EARED OWL",
+    "rarity_rank": 3,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "LOONEY BIRDS",
+    "rarity_rank": 1,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "LUCIFER HUMMINGBIRD",
+    "rarity_rank": 3,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "MAGPIE GOOSE",
+    "rarity_rank": 4,
+    "location": "Australia and New Guinea"
+  },
+  {
+    "species": "MALABAR HORNBILL",
+    "rarity_rank": 4,
+    "location": "Indian Subcontinent"
+  },
+  {
+    "species": "MALACHITE KINGFISHER",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "MALAGASY WHITE EYE",
+    "rarity_rank": 4,
+    "location": "Madagascar"
+  },
+  {
+    "species": "MALEO",
+    "rarity_rank": 4,
+    "location": "Sulawesi, Indonesia"
+  },
+  {
+    "species": "MALLARD DUCK",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "MANDRIN DUCK",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "MANGROVE CUCKOO",
+    "rarity_rank": 3,
+    "location": "Coastal Americas and Caribbean"
+  },
+  {
+    "species": "MARABOU STORK",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "MASKED BOBWHITE",
+    "rarity_rank": 4,
+    "location": "USA (Arizona) and Mexico"
+  },
+  {
+    "species": "MASKED BOOBY",
+    "rarity_rank": 3,
+    "location": "Tropical Oceans"
+  },
+  {
+    "species": "MASKED LAPWING",
+    "rarity_rank": 4,
+    "location": "Australia and New Guinea"
+  },
+  {
+    "species": "MCKAYS BUNTING",
+    "rarity_rank": 4,
+    "location": "Bering Sea Islands"
+  },
+  {
+    "species": "MERLIN",
+    "rarity_rank": 1,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "MIKADO PHEASANT",
+    "rarity_rank": 4,
+    "location": "Taiwan"
+  },
+  {
+    "species": "MILITARY MACAW",
+    "rarity_rank": 4,
+    "location": "Americas"
+  },
+  {
+    "species": "MOURNING DOVE",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "MYNA",
+    "rarity_rank": 4,
+    "location": "Asia (Global introduction)"
+  },
+  {
+    "species": "NICOBAR PIGEON",
+    "rarity_rank": 4,
+    "location": "Southeast Asia and Indian Ocean"
+  },
+  {
+    "species": "NOISY FRIARBIRD",
+    "rarity_rank": 4,
+    "location": "Australia and New Guinea"
+  },
+  {
+    "species": "NORTHERN BEARDLESS TYRANNULET",
+    "rarity_rank": 4,
+    "location": "USA (Arizona/Texas) to Central America"
+  },
+  {
+    "species": "NORTHERN CARDINAL",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "NORTHERN FLICKER",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "NORTHERN FULMAR",
+    "rarity_rank": 3,
+    "location": "North Atlantic and North Pacific"
+  },
+  {
+    "species": "NORTHERN GANNET",
+    "rarity_rank": 1,
+    "location": "North Atlantic Oceans"
+  },
+  {
+    "species": "NORTHERN GOSHAWK",
+    "rarity_rank": 3,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "NORTHERN JACANA",
+    "rarity_rank": 3,
+    "location": "Central America and Caribbean"
+  },
+  {
+    "species": "NORTHERN MOCKINGBIRD",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "NORTHERN PARULA",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "NORTHERN RED BISHOP",
+    "rarity_rank": 4,
+    "location": "Africa"
+  },
+  {
+    "species": "NORTHERN SHOVELER",
+    "rarity_rank": 1,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "OCELLATED TURKEY",
+    "rarity_rank": 4,
+    "location": "Yucatán Peninsula"
+  },
+  {
+    "species": "OILBIRD",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "OKINAWA RAIL",
+    "rarity_rank": 4,
+    "location": "Okinawa Island, Japan"
+  },
+  {
+    "species": "ORANGE BREASTED TROGON",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "ORANGE BRESTED BUNTING",
+    "rarity_rank": 4,
+    "location": "Mexico"
+  },
+  {
+    "species": "ORIENTAL BAY OWL",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "ORNATE HAWK EAGLE",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "OSPREY",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "OSTRICH",
+    "rarity_rank": 4,
+    "location": "Africa"
+  },
+  {
+    "species": "OVENBIRD",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "OYSTER CATCHER",
+    "rarity_rank": 1,
+    "location": "Global Coasts"
+  },
+  {
+    "species": "PAINTED BUNTING",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "PALILA",
+    "rarity_rank": 4,
+    "location": "Hawaii (Mauna Kea)"
+  },
+  {
+    "species": "PALM NUT VULTURE",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "PARADISE TANAGER",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "PARAKETT AUKLET",
+    "rarity_rank": 4,
+    "location": "North Pacific"
+  },
+  {
+    "species": "PARUS MAJOR",
+    "rarity_rank": 4,
+    "location": "Eurasia and North Africa"
+  },
+  {
+    "species": "PATAGONIAN SIERRA FINCH",
+    "rarity_rank": 4,
+    "location": "Southern South America"
+  },
+  {
+    "species": "PEACOCK",
+    "rarity_rank": 4,
+    "location": "South Asia"
+  },
+  {
+    "species": "PEREGRINE FALCON",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "PHAINOPEPLA",
+    "rarity_rank": 3,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "PHILIPPINE EAGLE",
+    "rarity_rank": 4,
+    "location": "Philippines"
+  },
+  {
+    "species": "PINK ROBIN",
+    "rarity_rank": 4,
+    "location": "Southeastern Australia"
+  },
+  {
+    "species": "PLUSH CRESTED JAY",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "POMARINE JAEGER",
+    "rarity_rank": 2,
+    "location": "Global (Arctic breeding)"
+  },
+  {
+    "species": "PUFFIN",
+    "rarity_rank": 4,
+    "location": "North Atlantic and North Pacific"
+  },
+  {
+    "species": "PUNA TEAL",
+    "rarity_rank": 4,
+    "location": "Andes, South America"
+  },
+  {
+    "species": "PURPLE FINCH",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "PURPLE GALLINULE",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "PURPLE MARTIN",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "PURPLE SWAMPHEN",
+    "rarity_rank": 4,
+    "location": "Eurasia, Africa, and Oceania"
+  },
+  {
+    "species": "PYGMY KINGFISHER",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "PYRRHULOXIA",
+    "rarity_rank": 3,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "QUETZAL",
+    "rarity_rank": 4,
+    "location": "Central America"
+  },
+  {
+    "species": "RAINBOW LORIKEET",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "RAZORBILL",
+    "rarity_rank": 3,
+    "location": "North Atlantic"
+  },
+  {
+    "species": "RED BEARDED BEE EATER",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "RED BELLIED PITTA",
+    "rarity_rank": 4,
+    "location": "Southeast Asia and Oceania"
+  },
+  {
+    "species": "RED BILLED TROPICBIRD",
+    "rarity_rank": 3,
+    "location": "Tropical Oceans"
+  },
+  {
+    "species": "RED BROWED FINCH",
+    "rarity_rank": 4,
+    "location": "Eastern Australia"
+  },
+  {
+    "species": "RED CROSSBILL",
+    "rarity_rank": 3,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "RED FACED CORMORANT",
+    "rarity_rank": 4,
+    "location": "North Pacific"
+  },
+  {
+    "species": "RED FACED WARBLER",
+    "rarity_rank": 4,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "RED FODY",
+    "rarity_rank": 4,
+    "location": "Madagascar"
+  },
+  {
+    "species": "RED HEADED DUCK",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "RED HEADED WOODPECKER",
+    "rarity_rank": 1,
+    "location": "Eastern North America"
+  },
+  {
+    "species": "RED KNOT",
+    "rarity_rank": 2,
+    "location": "Global"
+  },
+  {
+    "species": "RED LEGGED HONEYCREEPER",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "RED NAPED TROGON",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "RED SHOULDERED HAWK",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "RED TAILED HAWK",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "RED TAILED THRUSH",
+    "rarity_rank": 4,
+    "location": "Asia"
+  },
+  {
+    "species": "RED WINGED BLACKBIRD",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "RED WISKERED BULBUL",
+    "rarity_rank": 4,
+    "location": "Asia (Global introduction)"
+  },
+  {
+    "species": "REGENT BOWERBIRD",
+    "rarity_rank": 4,
+    "location": "Eastern Australia"
+  },
+  {
+    "species": "RING-NECKED PHEASANT",
+    "rarity_rank": 4,
+    "location": "Global (Native to Asia)"
+  },
+  {
+    "species": "ROADRUNNER",
+    "rarity_rank": 1,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "ROCK DOVE",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "ROSE BREASTED COCKATOO",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "ROSE BREASTED GROSBEAK",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "ROSEATE SPOONBILL",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "ROSY FACED LOVEBIRD",
+    "rarity_rank": 4,
+    "location": "Southwestern Africa"
+  },
+  {
+    "species": "ROUGH LEG BUZZARD",
+    "rarity_rank": 3,
+    "location": "Northern Hemisphere"
+  },
+  {
+    "species": "ROYAL FLYCATCHER",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "RUBY CROWNED KINGLET",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "RUBY THROATED HUMMINGBIRD",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "RUDDY SHELDUCK",
+    "rarity_rank": 4,
+    "location": "Eurasia and North Africa"
+  },
+  {
+    "species": "RUDY KINGFISHER",
+    "rarity_rank": 4,
+    "location": "East and Southeast Asia"
+  },
+  {
+    "species": "RUFOUS TREPE",
+    "rarity_rank": 4,
+    "location": "Indian Subcontinent and Southeast Asia"
+  },
+  {
+    "species": "RUFUOS MOTMOT",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "SAMATRAN THRUSH",
+    "rarity_rank": 4,
+    "location": "Sumatra, Indonesia"
+  },
+  {
+    "species": "SAND MARTIN",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "SANDHILL CRANE",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "SATYR TRAGOPAN",
+    "rarity_rank": 4,
+    "location": "Himalayas"
+  },
+  {
+    "species": "SAYS PHOEBE",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "SCARLET CROWNED FRUIT DOVE",
+    "rarity_rank": 4,
+    "location": "Southeast Asia and Oceania"
+  },
+  {
+    "species": "SCARLET FACED LIOCICHLA",
+    "rarity_rank": 4,
+    "location": "China and Southeast Asia"
+  },
+  {
+    "species": "SCARLET IBIS",
+    "rarity_rank": 3,
+    "location": "South America and Caribbean"
+  },
+  {
+    "species": "SCARLET MACAW",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "SCARLET TANAGER",
+    "rarity_rank": 1,
+    "location": "North and South America"
+  },
+  {
+    "species": "SHOEBILL",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "SHORT BILLED DOWITCHER",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "SMITHS LONGSPUR",
+    "rarity_rank": 2,
+    "location": "North America"
+  },
+  {
+    "species": "SNOW GOOSE",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "SNOW PARTRIDGE",
+    "rarity_rank": 4,
+    "location": "Himalayas and China"
+  },
+  {
+    "species": "SNOWY EGRET",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "SNOWY OWL",
+    "rarity_rank": 3,
+    "location": "Arctic regions"
+  },
+  {
+    "species": "SNOWY PLOVER",
+    "rarity_rank": 2,
+    "location": "Global"
+  },
+  {
+    "species": "SNOWY SHEATHBILL",
+    "rarity_rank": 4,
+    "location": "Antarctica"
+  },
+  {
+    "species": "SORA",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "SPANGLED COTINGA",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "SPLENDID WREN",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "SPOON BILED SANDPIPER",
+    "rarity_rank": 4,
+    "location": "East Asia"
+  },
+  {
+    "species": "SPOTTED CATBIRD",
+    "rarity_rank": 4,
+    "location": "Australia and New Guinea"
+  },
+  {
+    "species": "SPOTTED WHISTLING DUCK",
+    "rarity_rank": 4,
+    "location": "Southeast Asia and Oceania"
+  },
+  {
+    "species": "SQUACCO HERON",
+    "rarity_rank": 4,
+    "location": "Africa, Europe, and Middle East"
+  },
+  {
+    "species": "SRI LANKA BLUE MAGPIE",
+    "rarity_rank": 4,
+    "location": "Sri Lanka"
+  },
+  {
+    "species": "STEAMER DUCK",
+    "rarity_rank": 4,
+    "location": "Southern South America"
+  },
+  {
+    "species": "STORK BILLED KINGFISHER",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "STRIATED CARACARA",
+    "rarity_rank": 4,
+    "location": "Southern South America"
+  },
+  {
+    "species": "STRIPED OWL",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "STRIPPED MANAKIN",
+    "rarity_rank": 4,
+    "location": "South America"
+  },
+  {
+    "species": "STRIPPED SWALLOW",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "SUNBITTERN",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "SUPERB STARLING",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "SURF SCOTER",
+    "rarity_rank": 2,
+    "location": "North America"
+  },
+  {
+    "species": "SWINHOES PHEASANT",
+    "rarity_rank": 4,
+    "location": "Taiwan"
+  },
+  {
+    "species": "TAILORBIRD",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "TAIWAN MAGPIE",
+    "rarity_rank": 4,
+    "location": "Taiwan"
+  },
+  {
+    "species": "TAKAHE",
+    "rarity_rank": 4,
+    "location": "New Zealand"
+  },
+  {
+    "species": "TASMANIAN HEN",
+    "rarity_rank": 4,
+    "location": "Tasmania, Australia"
+  },
+  {
+    "species": "TAWNY FROGMOUTH",
+    "rarity_rank": 4,
+    "location": "Australia"
+  },
+  {
+    "species": "TEAL DUCK",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "TIT MOUSE",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "TOUCHAN",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "TOWNSENDS WARBLER",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "TREE SWALLOW",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "TRICOLORED BLACKBIRD",
+    "rarity_rank": 4,
+    "location": "Western North America (primarily California)"
+  },
+  {
+    "species": "TROPICAL KINGBIRD",
+    "rarity_rank": 3,
+    "location": "Americas"
+  },
+  {
+    "species": "TRUMPTER SWAN",
+    "rarity_rank": 3,
+    "location": "North America"
+  },
+  {
+    "species": "TURKEY VULTURE",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "TURQUOISE MOTMOT",
+    "rarity_rank": 4,
+    "location": "Central America"
+  },
+  {
+    "species": "UMBRELLA BIRD",
+    "rarity_rank": 4,
+    "location": "Central and South America"
+  },
+  {
+    "species": "VARIED THRUSH",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "VEERY",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "VENEZUELIAN TROUPIAL",
+    "rarity_rank": 4,
+    "location": "South America and Caribbean"
+  },
+  {
+    "species": "VERDIN",
+    "rarity_rank": 3,
+    "location": "Southwestern USA and Mexico"
+  },
+  {
+    "species": "VERMILION FLYCATHER",
+    "rarity_rank": 2,
+    "location": "Americas"
+  },
+  {
+    "species": "VICTORIA CROWNED PIGEON",
+    "rarity_rank": 4,
+    "location": "New Guinea"
+  },
+  {
+    "species": "VIOLET BACKED STARLING",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "VIOLET CUCKOO",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "VIOLET GREEN SWALLOW",
+    "rarity_rank": 3,
+    "location": "Western North America"
+  },
+  {
+    "species": "VIOLET TURACO",
+    "rarity_rank": 4,
+    "location": "West Africa"
+  },
+  {
+    "species": "VISAYAN HORNBILL",
+    "rarity_rank": 4,
+    "location": "Philippines"
+  },
+  {
+    "species": "VULTURINE GUINEAFOWL",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "WALL CREAPER",
+    "rarity_rank": 4,
+    "location": "Eurasia"
+  },
+  {
+    "species": "WATTLED CURASSOW",
+    "rarity_rank": 4,
+    "location": "Amazon Basin"
+  },
+  {
+    "species": "WATTLED LAPWING",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "WHIMBREL",
+    "rarity_rank": 1,
+    "location": "Global"
+  },
+  {
+    "species": "WHITE BREASTED WATERHEN",
+    "rarity_rank": 4,
+    "location": "South and Southeast Asia"
+  },
+  {
+    "species": "WHITE BROWED CRAKE",
+    "rarity_rank": 4,
+    "location": "Southeast Asia and Oceania"
+  },
+  {
+    "species": "WHITE CHEEKED TURACO",
+    "rarity_rank": 4,
+    "location": "East Africa"
+  },
+  {
+    "species": "WHITE CRESTED HORNBILL",
+    "rarity_rank": 4,
+    "location": "West and Central Africa"
+  },
+  {
+    "species": "WHITE EARED HUMMINGBIRD",
+    "rarity_rank": 3,
+    "location": "Mexico and Central America"
+  },
+  {
+    "species": "WHITE NECKED RAVEN",
+    "rarity_rank": 4,
+    "location": "Southern and Eastern Africa"
+  },
+  {
+    "species": "WHITE TAILED TROPIC",
+    "rarity_rank": 3,
+    "location": "Tropical Oceans"
+  },
+  {
+    "species": "WHITE THROATED BEE EATER",
+    "rarity_rank": 4,
+    "location": "Africa and Arabia"
+  },
+  {
+    "species": "WILD TURKEY",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "WILLOW PTARMIGAN",
+    "rarity_rank": 4,
+    "location": "Arctic and Subarctic regions"
+  },
+  {
+    "species": "WILSONS BIRD OF PARADISE",
+    "rarity_rank": 4,
+    "location": "Indonesia (Waigeo and Batanta)"
+  },
+  {
+    "species": "WOOD DUCK",
+    "rarity_rank": 1,
+    "location": "North America"
+  },
+  {
+    "species": "WOOD THRUSH",
+    "rarity_rank": 1,
+    "location": "Americas"
+  },
+  {
+    "species": "WOODLAND KINGFISHER",
+    "rarity_rank": 4,
+    "location": "Sub-Saharan Africa"
+  },
+  {
+    "species": "WRENTIT",
+    "rarity_rank": 4,
+    "location": "Western North America"
+  },
+  {
+    "species": "YELLOW BELLIED FLOWERPECKER",
+    "rarity_rank": 4,
+    "location": "Southeast Asia"
+  },
+  {
+    "species": "YELLOW BREASTED CHAT",
+    "rarity_rank": 1,
+    "location": "North and Central America"
+  },
+  {
+    "species": "YELLOW CACIQUE",
+    "rarity_rank": 4,
+    "location": "Mexico"
+  },
+  {
+    "species": "YELLOW HEADED BLACKBIRD",
+    "rarity_rank": 2,
+    "location": "Western North America"
+  },
+  {
+    "species": "ZEBRA DOVE",
+    "rarity_rank": 4,
+    "location": "Southeast Asia (Global introduction)"
+  }
+]
