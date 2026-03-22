@@ -1,7 +1,8 @@
 import React from 'react';
-import {Pressable, type ViewStyle, View} from 'react-native';
+import {Image, Pressable, type ViewStyle, View} from 'react-native';
 
 import {styles} from '../appStyles';
+import cameraButton from '../../Camera_Button.png';
 
 type BottomActionBarProps = {
   busy?: boolean;
@@ -22,11 +23,12 @@ export function BottomActionBar({
         style={[styles.bottomBarButton, busy && styles.bottomBarButtonDisabled]}
         disabled={busy}
         onPress={onCameraPress}>
-        <View style={styles.cameraIconBody}>
-          <View style={styles.cameraIconTop} />
-          <View style={styles.cameraIconLensOuter}>
-            <View style={styles.cameraIconLensInner} />
-          </View>
+        <View style={styles.cameraButtonCircle}>
+          <Image
+            source={cameraButton}
+            style={styles.cameraButtonImage}
+            resizeMode="contain"
+          />
         </View>
       </Pressable>
     </View>

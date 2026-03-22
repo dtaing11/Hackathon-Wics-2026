@@ -9,6 +9,21 @@ export type CapturedPhoto = {
   uri: string;
 };
 
+export function buildCapturedPhotoFromPath(path: string): CapturedPhoto {
+  const normalizedUri =
+    Platform.OS === 'android' && !path.startsWith('file://')
+      ? `file://${path}`
+      : path;
+  const fileName =
+    normalizedUri.split('/').pop() ?? `inspection-${Date.now()}.jpg`;
+
+  return {
+    fileName,
+    type: 'image/jpeg',
+    uri: normalizedUri,
+  };
+}
+
 async function ensureCameraPermission() {
   if (Platform.OS !== 'android') {
     return true;

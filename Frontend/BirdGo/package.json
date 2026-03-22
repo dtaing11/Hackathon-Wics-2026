@@ -10,13 +10,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "@react-native-vector-icons/material-icons": "^12.5.0",
     "@react-native/new-app-screen": "0.84.1",
     "@rnmapbox/maps": "^10.2.10",
+    "lucide-react-native": "^0.577.0",
     "react": "19.2.3",
     "react-native": "0.84.1",
     "react-native-dotenv": "^3.4.11",
     "react-native-image-picker": "^8.2.1",
-    "react-native-safe-area-context": "^5.5.2"
+    "react-native-safe-area-context": "^5.5.2",
+    "react-native-vector-icons": "^10.3.0",
+    "react-native-vision-camera": "^4.7.3"
   },
   "devDependencies": {
     "@babel/core": "^7.25.2",
@@ -31,6 +35,7 @@
     "@react-native/typescript-config": "0.84.1",
     "@types/jest": "^29.5.13",
     "@types/react": "^19.2.0",
+    "@types/react-native-vector-icons": "^6.4.18",
     "@types/react-test-renderer": "^19.1.0",
     "dotenv": "^17.3.1",
     "eslint": "^8.19.0",

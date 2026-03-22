@@ -37,14 +37,12 @@ export function buildPlayerModelStyle(): any {
   return {
     modelId: ['get', 'modelId'],
     modelType: 'common-3d',
-    modelScale: [1.8, 1.8, 1.8],
+    modelScale: [4, 4, 4],
     modelRotation: [0, 0, ['get', 'heading']],
     modelTranslation: [0, 0, 0.5],
     modelOpacity: 1,
-    modelColorMixIntensity: 0.15,
-    modelColor: '#0f172a',
-    modelCastShadows: true,
-    modelReceiveShadows: true,
+    modelCastShadows: false,
+    modelReceiveShadows: false,
   };
 }
 
@@ -83,7 +81,7 @@ export const daytimeFogStyle: any = {
 };
 
 export const buildingExtrusionStyle: any = {
-  fillExtrusionColor: '#cbd5e1',
+  fillExtrusionColor: '#4c88d1',
   fillExtrusionOpacity: 0.55,
   fillExtrusionHeight: [
     'interpolate',
@@ -597,9 +595,7 @@ export const gamifiedMapStyle: any = {
       },
     },
 
-    // ═══════════════════════════════════════════════════════════════
     // RAILWAYS - Subtle track lines
-    // ═══════════════════════════════════════════════════════════════
     {
       id: 'railway',
       type: 'line',
@@ -614,9 +610,7 @@ export const gamifiedMapStyle: any = {
       },
     },
 
-    // ═══════════════════════════════════════════════════════════════
     // ADMIN BOUNDARIES - Subtle border lines
-    // ═══════════════════════════════════════════════════════════════
     {
       id: 'admin-boundary',
       type: 'line',
@@ -645,12 +639,12 @@ export const gamifiedBuildingExtrusion: any = {
   fillExtrusionColor: [
     'interpolate',
     ['linear'],
-    ['get', 'height'],
-    0, '#f8fafc',
-    20, '#e2e8f0',
-    50, '#cbd5e1',
+    ['coalesce', ['get', 'height'], 0],
+    0, '#8fd3ff',
+    30, '#5eb9ff',
+    80, '#009cff',
   ],
-  fillExtrusionOpacity: 0.75,
+  fillExtrusionOpacity: 0.5,
   fillExtrusionHeight: [
     'interpolate',
     ['linear'],
@@ -658,7 +652,7 @@ export const gamifiedBuildingExtrusion: any = {
     15,
     0,
     15.05,
-    ['coalesce', ['get', 'height'], 5],
+    ['*', ['coalesce', ['get', 'height'], 5], 0.42],
   ],
   fillExtrusionBase: [
     'interpolate',
@@ -667,7 +661,7 @@ export const gamifiedBuildingExtrusion: any = {
     15,
     0,
     15.05,
-    ['coalesce', ['get', 'min_height'], 0],
+    ['*', ['coalesce', ['get', 'min_height'], 0], 0.42],
   ],
 };
 
