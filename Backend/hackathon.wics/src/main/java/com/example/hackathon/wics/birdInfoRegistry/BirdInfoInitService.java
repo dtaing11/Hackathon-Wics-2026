@@ -13,6 +13,11 @@ public class BirdInfoInitService {
         this.birdInfoRegistry = birdInfoRegistry;
     }
 
+
+    public BirdInfoDefinition getName(String name){
+        return birdInfoRegistry.get(name);
+    }
+
     @Async
     @EventListener(ApplicationReadyEvent.class)
     public void init() {

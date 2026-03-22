@@ -24,7 +24,7 @@ public class Species {
     private String species;
     @Column (name="confidence", nullable = false)
     private Double confidence = 0.0;
-    @Column(name = "post_id")
+    @Column(name = "post_id", unique = true, nullable = false)
     private UUID postId;
 
     public Species(String species, Double confidence,  UUID post_id) {

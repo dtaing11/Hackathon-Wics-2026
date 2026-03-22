@@ -50,8 +50,9 @@ public class UserController {
                 .secure(true)
                 .sameSite("None")
                 .build();
+        String partitionedCookie = cookie.toString() + "; Partitioned";
         return ResponseEntity.ok()
-                .header(HttpHeaders.SET_COOKIE, cookie.toString())
+                .header(HttpHeaders.SET_COOKIE, partitionedCookie)
                 .body("login successful");
     }
 

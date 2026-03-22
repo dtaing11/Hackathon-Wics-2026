@@ -6,7 +6,7 @@ import torchvision.transforms as transforms
 import io
 
 from ResNet18.modelResnet import BirdResNet18
-from bird_classes import get_bird_name
+from gcp.bird_classes import get_bird_name
 
 model = None
 device = None

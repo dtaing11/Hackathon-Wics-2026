@@ -1,5 +1,8 @@
 package com.example.hackathon.wics.controller;
 
+import com.example.hackathon.wics.birdInfoRegistry.BirdInfoDefinition;
+import com.example.hackathon.wics.birdInfoRegistry.BirdInfoInitService;
+import com.example.hackathon.wics.controller.dto.GetSpeciesRes;
 import com.example.hackathon.wics.model.Species;
 import com.example.hackathon.wics.service.SpeciesService;
 import org.springframework.http.HttpStatus;
@@ -16,9 +19,11 @@ import java.util.UUID;
 public class SpeciesController {
 
     private final SpeciesService speciesService;
+    private final BirdInfoInitService birdInfoInitService;
 
-    public SpeciesController(SpeciesService speciesService) {
+    public SpeciesController(SpeciesService speciesService,  BirdInfoInitService birdInfoInitService) {
         this.speciesService = speciesService;
+        this.birdInfoInitService = birdInfoInitService;
     }
 
     @GetMapping
@@ -31,6 +36,22 @@ public class SpeciesController {
     public ResponseEntity<Species> getSpeciesById(@PathVariable UUID id) {
         Species species = speciesService.getSpeciesById(id);
         return ResponseEntity.ok(species);
+    }
+    @GetMapping("/{id}/more")
+    public ResponseEntity<GetSpeciesRes> getMoreInfo (@PathVariable UUID id) {
+        Species species = speciesService.getSpeciesById(id);
+        BirdInfoDefinition birdInfoDefinition = birdInfoInitService.getName(species.getSpecies());
+
+        GetSpeciesRes getSpeciesRes = new GetSpeciesRes(
+                birdInfoDefinition.getBirdName(),
+                birdInfoDefinition.getSpeciesName(),
+                birdInfoDefinition.getAverageWeightSpecies(),
+                birdInfoDefinition.getDescription(),
+                birdInfoDefinition.getGeography(),
+                birdInfoDefinition.getRarity()
+        );
+
+        return ResponseEntity.ok().body(getSpeciesRes);
     }
 
     @PutMapping("/{id}")

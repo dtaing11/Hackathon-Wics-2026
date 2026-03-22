@@ -20,7 +20,7 @@ import java.util.UUID;
 @Service
 public class SpeciesService {
 
-    private final String url = "http://127.0.0.1:8000/predict";
+    private final String url = "https://bird-classifier-api-871757115753.us-central1.run.app/predict";
     private final SpeciesRepository speciesRepository;
     private final RestTemplate restTemplate;
 
