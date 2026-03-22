@@ -2,7 +2,11 @@
 
 Frontend integration guide for the deployed backend.
 
-Base production URL:
+Base URL:
+
+```text
+https://<your-backend-host>
+```
 
 Local URL:
 
@@ -314,54 +318,21 @@ Success response:
 
 ## Species
 
-### Get all species
+### Get species info by post ID
 
-`GET /api/species`
-
-Auth required: yes
-
-Success response:
-
-```json
-[
-  {
-    "id": "fcb1d2b5-0f09-4fbc-b7c4-f8e6f6d8a2d8",
-    "species": "Blue Jay",
-    "confidence": 0.98,
-    "postId": "74db17a1-687a-47e7-afcd-22505dd32f8d"
-  }
-]
-```
-
-### Get species by ID
-
-`GET /api/species/{id}`
+`GET /api/species/post/{id}`
 
 Auth required: yes
 
-Success response:
+Path params:
 
-```json
-{
-  "id": "fcb1d2b5-0f09-4fbc-b7c4-f8e6f6d8a2d8",
-  "species": "Blue Jay",
-  "confidence": 0.98,
-  "postId": "74db17a1-687a-47e7-afcd-22505dd32f8d"
-}
-```
-
-### Get extended species info
-
-`GET /api/species/{id}/more`
-
-Auth required: yes
+- `id`: post UUID
 
 Success response:
 
 ```json
 {
   "name": "Blue Jay",
-  "species": "Cyanocitta cristata",
   "weightRange": "70g - 100g",
   "description": "Example description",
   "geography": "North America",
@@ -369,38 +340,20 @@ Success response:
 }
 ```
 
-### Update species
+Frontend note:
 
-`PUT /api/species/{id}`
-
-Auth required: yes
-
-Request body:
-
-```json
-{
-  "species": "Blue Jay",
-  "confidence": 0.98,
-  "postId": "74db17a1-687a-47e7-afcd-22505dd32f8d"
-}
-```
-
-Success response:
-
-```json
-{
-  "id": "fcb1d2b5-0f09-4fbc-b7c4-f8e6f6d8a2d8",
-  "species": "Blue Jay",
-  "confidence": 0.98,
-  "postId": "74db17a1-687a-47e7-afcd-22505dd32f8d"
-}
-```
+- This route looks up the species attached to a post, then expands it using the bird info registry
+- The path parameter is the post ID, not the species ID
 
 ### Delete species
 
 `DELETE /api/species/{id}`
 
 Auth required: yes
+
+Path params:
+
+- `id`: species UUID
 
 Success response:
 
@@ -470,7 +423,7 @@ Success response:
 - Send `credentials: "include"` on login and all protected requests
 - Use `multipart/form-data` for post creation
 - Treat `imageUrl` in post responses as a direct display URL
-- URL-encode path params like species names and bird names
+- URL-encode path params like species names, bird names, and post IDs passed in URLs
 - Expect empty bodies for some successful actions like create user and deletes
 - Handle `401`, `403`, and `404` in UI
 
@@ -479,5 +432,14 @@ Success response:
 1. `POST /api/users`
 2. `POST /api/users/login`
 3. `GET /api/posts/user/me` or `POST /api/posts`
-4. `GET /api/species` or `GET /api/posts`
+4. `GET /api/species/post/{postId}` or `GET /api/posts`
 
+## Test page
+
+If you package the included tester page with the backend, it can be served from:
+
+```text
+/index.html
+```
+
+That page defaults to the current host at runtime, so it does not need a hardcoded production base URL.

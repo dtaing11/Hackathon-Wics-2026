@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WICS API Test Console</title>
+  <style>
+    * { box-sizing: border-box; }
+
+    :root {
+      --bg: #f2efe8;
+      --panel: #fffdf8;
+      --ink: #1e293b;
+      --muted: #64748b;
+      --line: #d8d1c3;
+      --accent: #0f766e;
+      --accent-dark: #115e59;
+      --danger: #b91c1c;
+      --code: #0f172a;
+      --code-ink: #e2e8f0;
+    }
+
+    body {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      background:
+        radial-gradient(circle at top left, rgba(15,118,110,0.08), transparent 28%),
+        radial-gradient(circle at top right, rgba(180,83,9,0.08), transparent 24%),
+        linear-gradient(180deg, #f8f5ee 0%, var(--bg) 100%);
+      color: var(--ink);
+    }
+
+    .container {
+      max-width: 1360px;
+      margin: 0 auto;
+      padding: 24px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, rgba(15,118,110,0.10), rgba(255,255,255,0.85));
+      border: 1px solid rgba(15,118,110,0.18);
+      border-radius: 22px;
+      padding: 24px;
+      margin-bottom: 20px;
+    }
+
+    h1, h2, h3, p {
+      margin-top: 0;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 16px;
+      max-width: 760px;
+      line-height: 1.5;
+      margin-bottom: 0;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+      box-shadow: 0 12px 30px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    label {
+      display: block;
+      margin-top: 12px;
+      margin-bottom: 6px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      border-radius: 12px;
+      font-size: 14px;
+    }
+
+    input, textarea {
+      border: 1px solid var(--line);
+      padding: 11px 12px;
+      background: #fff;
+      color: var(--ink);
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+    }
+
+    button {
+      margin-top: 14px;
+      padding: 12px 14px;
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-dark);
+    }
+
+    .button-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .wide {
+      grid-column: 1 / -1;
+    }
+
+    .response {
+      background: var(--code);
+      color: var(--code-ink);
+      border-radius: 16px;
+      padding: 16px;
+      min-height: 260px;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      overflow-x: auto;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+    }
+
+    .post-card {
+      background: white;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      padding: 14px;
+    }
+
+    .post-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-top: 10px;
+      background: #e5e7eb;
+    }
+
+    .mini {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .tip {
+      background: rgba(15,118,110,0.08);
+      border: 1px solid rgba(15,118,110,0.18);
+      color: var(--accent-dark);
+      border-radius: 14px;
+      padding: 12px 14px;
+      margin-bottom: 18px;
+      font-size: 14px;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 720px) {
+      .container {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      .button-row {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>WICS API Test Console</h1>
+      <p class="subtitle">
+        Manual testing page for your backend. This uses cookie auth, so login first and keep
+        <code>credentials: "include"</code> on protected requests.
+      </p>
+    </section>
+
+    <div class="tip">
+      When served by the backend, this page defaults to the current host automatically. For local testing, you can also point it at <code>http://localhost:8080</code>.
+    </div>
+
+    <div class="grid">
+      <section class="card wide">
+        <h2>Base URL</h2>
+        <label for="baseUrl">Backend URL</label>
+        <input id="baseUrl" />
+      </section>
+
+      <section class="card">
+        <h2>Create User</h2>
+        <p>POST <code>/api/users</code></p>
+        <label for="createEmail">Email</label>
+        <input id="createEmail" placeholder="name@example.com" />
+        <label for="createUsername">Username</label>
+        <input id="createUsername" placeholder="birdlover" />
+        <label for="createPassword">Password</label>
+        <input id="createPassword" type="password" placeholder="secret123" />
+        <button onclick="createUser()">Create User</button>
+      </section>
+
+      <section class="card">
+        <h2>Login</h2>
+        <p>POST <code>/api/users/login</code></p>
+        <label for="loginUsername">Username</label>
+        <input id="loginUsername" placeholder="birdlover" />
+        <label for="loginPassword">Password</label>
+        <input id="loginPassword" type="password" placeholder="secret123" />
+        <button onclick="loginUser()">Login</button>
+      </section>
+
+      <section class="card">
+        <h2>Users</h2>
+        <p>Protected routes for lookup and delete.</p>
+        <label for="userId">User ID</label>
+        <input id="userId" placeholder="user uuid" />
+        <div class="button-row">
+          <button onclick="getUserById()">Get User</button>
+          <button onclick="deleteUser()">Delete User</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Create Post</h2>
+        <p>POST <code>/api/posts</code> with multipart form data.</p>
+        <label for="latitude">Latitude</label>
+        <input id="latitude" type="number" step="any" placeholder="30.4515" />
+        <label for="longtitude">Longtitude</label>
+        <input id="longtitude" type="number" step="any" placeholder="-91.1871" />
+        <label for="file">Image File</label>
+        <input id="file" type="file" accept="image/*" />
+        <button onclick="createPost()">Create Post</button>
+      </section>
+
+      <section class="card">
+        <h2>Posts</h2>
+        <p>Protected post lookup and delete routes.</p>
+        <label for="postId">Post ID</label>
+        <input id="postId" placeholder="post uuid" />
+        <label for="speciesName">Species Name</label>
+        <input id="speciesName" placeholder="Blue Jay" />
+        <div class="button-row">
+          <button onclick="getAllPosts()">Get All Posts</button>
+          <button onclick="getMyPosts()">Get My Posts</button>
+          <button onclick="getPostById()">Get Post By ID</button>
+          <button onclick="getMyPostsBySpecies()">My Posts By Species</button>
+          <button onclick="deletePost()" class="wide">Delete Post</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Species</h2>
+        <p>Lookup species info by post ID, or delete a species by species ID.</p>
+        <label for="speciesPostId">Post ID</label>
+        <input id="speciesPostId" placeholder="post uuid" />
+        <label for="speciesId">Species ID</label>
+        <input id="speciesId" placeholder="species uuid to delete" />
+        <div class="button-row">
+          <button onclick="getSpeciesByPostId()">Get Species By Post ID</button>
+          <button onclick="deleteSpecies()">Delete Species</button>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Bird Registry</h2>
+        <p>Name-based bird registry routes.</p>
+        <label for="birdName">Bird Name</label>
+        <input id="birdName" placeholder="Blue Jay" />
+        <div class="button-row">
+          <button onclick="getAllBirds()">Get All Birds</button>
+          <button onclick="getBirdByName()">Get Bird By Name</button>
+          <button onclick="deleteBirdByName()" class="wide">Delete Bird By Name</button>
+        </div>
+      </section>
+
+      <section class="card wide">
+        <h2>Raw Response</h2>
+        <div id="response" class="response">No request sent yet.</div>
+      </section>
+
+      <section class="card wide">
+        <h2>Rendered Posts</h2>
+        <div id="postGallery" class="gallery"></div>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const baseUrlInput = document.getElementById("baseUrl");
+      if (!baseUrlInput.value.trim()) {
+        baseUrlInput.value = window.location.origin || "http://localhost:8080";
+      }
+    });
+
+    function getBaseUrl() {
+      return document.getElementById("baseUrl").value.trim();
+    }
+
+    function showResponse(title, payload) {
+      const el = document.getElementById("response");
+      const content = typeof payload === "string" ? payload : JSON.stringify(payload, null, 2);
+      el.textContent = `${title}\n\n${content}`;
+    }
+
+    async function parseResponse(res) {
+      const contentType = res.headers.get("content-type") || "";
+      let body = "";
+
+      if (contentType.includes("application/json")) {
+        try {
+          body = await res.json();
+        } catch (error) {
+          body = "Invalid JSON response";
+        }
+      } else {
+        body = await res.text();
+      }
+
+      return {
+        status: res.status,
+        ok: res.ok,
+        body,
+        headers: Object.fromEntries(res.headers.entries())
+      };
+    }
+
+    function clearGallery() {
+      document.getElementById("postGallery").innerHTML = "";
+    }
+
+    function renderPosts(posts) {
+      clearGallery();
+      const container = document.getElementById("postGallery");
+
+      if (!Array.isArray(posts) || posts.length === 0) {
+        container.innerHTML = "<p class='mini'>No posts to display.</p>";
+        return;
+      }
+
+      posts.forEach((post) => {
+        const card = document.createElement("div");
+        card.className = "post-card";
+
+        const meta = document.createElement("div");
+        meta.innerHTML = `
+          <strong>${post.postId || "No postId"}</strong><br>
+          <span class="mini">Type: ${post.contentType || "-"}</span><br>
+          <span class="mini">Lat: ${post.latitude ?? "-"}</span><br>
+          <span class="mini">Lng: ${post.longitude ?? "-"}</span>
+        `;
+
+        card.appendChild(meta);
+
+        if (post.imageUrl) {
+          const img = document.createElement("img");
+          img.src = post.imageUrl;
+          img.alt = "post image";
+          img.referrerPolicy = "no-referrer";
+          card.appendChild(img);
+        }
+
+        container.appendChild(card);
+      });
+    }
+
+    async function sendJson(title, url, method, body) {
+      try {
+        const res = await fetch(url, {
+          method,
+          headers: {
+            "Content-Type": "application/json"
+          },
+          credentials: "include",
+          body: body ? JSON.stringify(body) : undefined
+        });
+        const data = await parseResponse(res);
+        showResponse(title, data);
+        return data;
+      } catch (error) {
+        showResponse(`${title} ERROR`, String(error));
+        return null;
+      }
+    }
+
+    async function sendRequest(title, url, options = {}) {
+      try {
+        const res = await fetch(url, {
+          credentials: "include",
+          ...options
+        });
+        const data = await parseResponse(res);
+        showResponse(title, data);
+        return data;
+      } catch (error) {
+        showResponse(`${title} ERROR`, String(error));
+        return null;
+      }
+    }
+
+    async function createUser() {
+      const base = getBaseUrl();
+      await sendJson("CREATE USER RESULT", `${base}/api/users`, "POST", {
+        email: document.getElementById("createEmail").value.trim(),
+        username: document.getElementById("createUsername").value.trim(),
+        password: document.getElementById("createPassword").value
+      });
+    }
+
+    async function loginUser() {
+      const base = getBaseUrl();
+      await sendJson("LOGIN RESULT", `${base}/api/users/login`, "POST", {
+        username: document.getElementById("loginUsername").value.trim(),
+        password: document.getElementById("loginPassword").value
+      });
+    }
+
+    async function getUserById() {
+      const base = getBaseUrl();
+      const id = document.getElementById("userId").value.trim();
+      await sendRequest("GET USER RESULT", `${base}/api/users/${encodeURIComponent(id)}`);
+    }
+
+    async function deleteUser() {
+      const base = getBaseUrl();
+      const id = document.getElementById("userId").value.trim();
+      await sendRequest("DELETE USER RESULT", `${base}/api/users/${encodeURIComponent(id)}`, {
+        method: "DELETE"
+      });
+    }
+
+    async function createPost() {
+      const base = getBaseUrl();
+      const file = document.getElementById("file").files[0];
+
+      if (!file) {
+        showResponse("CREATE POST ERROR", "Please choose an image file.");
+        return;
+      }
+
+      const form = new FormData();
+      form.append("latitude", document.getElementById("latitude").value);
+      form.append("longtitude", document.getElementById("longtitude").value);
+      form.append("file", file);
+
+      const data = await sendRequest("CREATE POST RESULT", `${base}/api/posts`, {
+        method: "POST",
+        body: form
+      });
+
+      if (data && data.ok && data.body) {
+        renderPosts([data.body]);
+      }
+    }
+
+    async function getAllPosts() {
+      const base = getBaseUrl();
+      const data = await sendRequest("GET ALL POSTS RESULT", `${base}/api/posts`);
+      if (data && data.ok && Array.isArray(data.body)) {
+        renderPosts(data.body);
+      }
+    }
+
+    async function getPostById() {
+      const base = getBaseUrl();
+      const id = document.getElementById("postId").value.trim();
+      const data = await sendRequest("GET POST RESULT", `${base}/api/posts/${encodeURIComponent(id)}`);
+      if (data && data.ok && data.body) {
+        renderPosts([data.body]);
+      }
+    }
+
+    async function getMyPosts() {
+      const base = getBaseUrl();
+      const data = await sendRequest("GET MY POSTS RESULT", `${base}/api/posts/user/me`);
+      if (data && data.ok && Array.isArray(data.body)) {
+        renderPosts(data.body);
+      }
+    }
+
+    async function getMyPostsBySpecies() {
+      const base = getBaseUrl();
+      const species = document.getElementById("speciesName").value.trim();
+      const data = await sendRequest(
+        "GET MY POSTS BY SPECIES RESULT",
+        `${base}/api/posts/posts/species/${encodeURIComponent(species)}`
+      );
+      if (data && data.ok && Array.isArray(data.body)) {
+        renderPosts(data.body);
+      }
+    }
+
+    async function deletePost() {
+      const base = getBaseUrl();
+      const id = document.getElementById("postId").value.trim();
+      clearGallery();
+      await sendRequest("DELETE POST RESULT", `${base}/api/posts/${encodeURIComponent(id)}`, {
+        method: "DELETE"
+      });
+    }
+
+    async function getSpeciesByPostId() {
+      const base = getBaseUrl();
+      const id = document.getElementById("speciesPostId").value.trim();
+      await sendRequest("GET SPECIES BY POST RESULT", `${base}/api/species/post/${encodeURIComponent(id)}`);
+    }
+
+    async function deleteSpecies() {
+      const base = getBaseUrl();
+      const id = document.getElementById("speciesId").value.trim();
+      await sendRequest("DELETE SPECIES RESULT", `${base}/api/species/${encodeURIComponent(id)}`, {
+        method: "DELETE"
+      });
+    }
+
+    async function getAllBirds() {
+      const base = getBaseUrl();
+      await sendRequest("GET ALL BIRDS RESULT", `${base}/api/birds`);
+    }
+
+    async function getBirdByName() {
+      const base = getBaseUrl();
+      const name = document.getElementById("birdName").value.trim();
+      await sendRequest("GET BIRD RESULT", `${base}/api/birds/${encodeURIComponent(name)}`);
+    }
+
+    async function deleteBirdByName() {
+      const base = getBaseUrl();
+      const name = document.getElementById("birdName").value.trim();
+      await sendRequest("DELETE BIRD RESULT", `${base}/api/birds/${encodeURIComponent(name)}`, {
+        method: "DELETE"
+      });
+    }
+  </script>
+</body>
+</html>

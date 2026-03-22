@@ -64,6 +64,10 @@ public class SpeciesService {
         return speciesRepository.findAll();
     }
 
+    public Species getSpeciesByPostId (UUID postID) {
+        return speciesRepository.getSpeciesByPostId(postID).orElseThrow(()-> new ResourceNotFoundException("Species not found with postId: " + postID));
+    }
+
     public Species getSpeciesById(UUID id) {
         return speciesRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Species not found with id: " + id));

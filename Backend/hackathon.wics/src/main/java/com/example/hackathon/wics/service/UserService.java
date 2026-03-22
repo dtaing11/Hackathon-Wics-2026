@@ -55,6 +55,11 @@ public class UserService {
                 .orElseThrow(() -> new ResourceNotFoundException("User not found with id: " + id));
     }
 
+    public int getPoints(UUID id) {
+        Users user = getUserById(id);
+        return user.getPoints();
+    }
+
     @Async
     @Transactional
     public void updatePointsAsync(UUID id, int points) {
