@@ -44,7 +44,8 @@ public class PostService {
 
         speciesService.createSpeciesAsync(
                 file,
-                savedPost.getId()
+                savedPost.getId(),
+                userId
         );
 
         return savedPost;
@@ -52,7 +53,7 @@ public class PostService {
 
     public Post getPostById(UUID postId) {
         return postRepositroy.findById(postId)
-                .orElseThrow(() -> new EntityNotFoundException("Post not found with id: " + postId));
+                .orElseThrow(() -> new ResourceNotFoundException("Post not found with id: " + postId));
     }
 
     public List<Post> getAllPosts() {
