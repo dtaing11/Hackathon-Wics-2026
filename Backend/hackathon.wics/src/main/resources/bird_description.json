@@ -1,6 +1,6 @@
 [
   {
-    "bird_name": "Abbott's Babbler",
+    "bird_name": "Abbotts Babbler",
     "species_name": "Malacocincla abbotti",
     "average_weight_species": "23g - 33g",
     "description": "A small, drab brown bird with a short tail and robust bill, often found in thick undergrowth.",
@@ -8,7 +8,7 @@
     "rarity": "Common"
   },
   {
-    "bird_name": "Abbott's Booby",
+    "bird_name": "Abbotts Booby",
     "species_name": "Papasula abbotti",
     "average_weight_species": "1.3kg - 1.7kg",
     "description": "A large, endangered seabird with a long neck and black-and-white plumage.",
@@ -72,7 +72,7 @@
     "rarity": "Common"
   },
   {
-    "bird_name": "Albatross (Wandering)",
+    "bird_name": "Albatross Wandering",
     "species_name": "Diomedea exulans",
     "average_weight_species": "6kg - 12kg",
     "description": "Large seabird known for having the largest wingspan of any living bird.",
@@ -776,7 +776,7 @@
     "rarity": "Common"
   },
   {
-    "bird_name": "Bald Ibis (Northern)",
+    "bird_name": "Bald Ibis",
     "species_name": "Geronticus eremita",
     "average_weight_species": "1kg - 1.3kg",
     "description": "Large, dark bird with a bare red head and long, curved bill.",
@@ -808,7 +808,7 @@
     "rarity": "Common"
   },
   {
-    "bird_name": "Band-tailed Guan",
+    "bird_name": "Band Tailed Guan",
     "species_name": "Penelope argyrotis",
     "average_weight_species": "650g - 900g",
     "description": "A large, forest-dwelling bird with a distinct band on its tail.",
@@ -920,7 +920,7 @@
     "rarity": "Common"
   },
   {
-    "bird_name": "Bird of Paradise (Greater)",
+    "bird_name": "Bird of Paradise",
     "species_name": "Paradisaea apoda",
     "average_weight_species": "170g - 450g",
     "description": "Known for the male's spectacular yellow and white ornamental flank plumes used in courtship.",
@@ -1264,7 +1264,7 @@
     "rarity": "Common"
   },
   {
-    "bird_name": "Bulwer's Pheasant",
+    "bird_name": "Bulwers Pheasant",
     "species_name": "Lophura bulweri",
     "average_weight_species": "1kg - 1.5kg",
     "description": "A forest pheasant where males possess a spectacular white tail and bright blue facial wattles.",
@@ -1272,7 +1272,7 @@
     "rarity": "Rare"
   },
   {
-    "bird_name": "Burchell's Courser",
+    "bird_name": "Burchells Courser",
     "species_name": "Cursorius rufus",
     "average_weight_species": "65g - 80g",
     "description": "A ground-dwelling bird with sandy-brown plumage and a distinctive black and white head pattern.",
