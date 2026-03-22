@@ -2,9 +2,6 @@
 
 This service is set up to deploy to Google Cloud Run with:
 
-- `PROJECT_ID=possible-byte-437704-m6`
-- `REGION=us-central1`
-- Cloud SQL instance `possible-byte-437704-m6:us-central1:hackathon`
 
 ## One-time setup
 
