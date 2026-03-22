@@ -19,7 +19,6 @@ This creates a game-like collection experience where users are encouraged to dis
 - Android
 - iOS
 - Windows
-# Important Links
 
 # How to Run Dev and Test Environment
 
