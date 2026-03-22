@@ -1,10 +1,13 @@
 package com.example.hackathon.wics.controller;
 
+import com.example.hackathon.wics.controller.dto.CreateUserReq;
+import com.example.hackathon.wics.controller.dto.LoginUserReq;
+import com.example.hackathon.wics.model.UserSession;
 import com.example.hackathon.wics.model.Users;
 import com.example.hackathon.wics.service.UserService;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
-import org.springframework.http.ResponseEntity;
+import com.example.hackathon.wics.service.UserSessionService;
+import org.springframework.http.*;
+import org.springframework.security.core.parameters.P;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -12,19 +15,44 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/api/users", produces = MediaType.APPLICATION_JSON_VALUE)
-@CrossOrigin(origins = "*")
 public class UserController {
 
     private final UserService userService;
+    private final UserSessionService userSessionService;
 
-    public UserController(UserService userService) {
+    public UserController(UserService userService, UserSessionService userSessionService) {
         this.userService = userService;
+        this.userSessionService = userSessionService;
     }
 
-    @GetMapping
-    public ResponseEntity<List<Users>> getAllUsers() {
-        List<Users> users = userService.getAllUsers();
-        return ResponseEntity.ok(users);
+    @PostMapping
+    public ResponseEntity<?> createUser(@RequestBody CreateUserReq createUserReq) {
+        Users user = new Users(
+                createUserReq.email(),
+                createUserReq.username(),
+                createUserReq.password(),
+                0
+        );
+        userService.createUser(user);
+
+      return new ResponseEntity<>(HttpStatus.OK);
+    }
+
+
+    @PostMapping("/login")
+    public ResponseEntity<?> login(@RequestBody LoginUserReq loginUserReq) {
+        Users user = userService.verifyUser(loginUserReq.username(), loginUserReq.password());
+        UserSession userSession = userSessionService.createSession(user.getId());
+
+        ResponseCookie cookie = ResponseCookie.from("auth", userSession.getSession())
+                .httpOnly(true)
+                .path("/")
+                .secure(true)
+                .sameSite("None")
+                .build();
+        return ResponseEntity.ok()
+                .header(HttpHeaders.SET_COOKIE, cookie.toString())
+                .body("login successful");
     }
 
     @GetMapping("/{id}")
@@ -33,22 +61,9 @@ public class UserController {
         return ResponseEntity.ok(user);
     }
 
-    @PostMapping
-    public ResponseEntity<Users> createUser(@RequestBody Users user) {
-        Users created = userService.createUser(user);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
-    }
-
-    @PutMapping("/{id}")
-    public ResponseEntity<Users> updateUser(
-            @PathVariable UUID id,
-            @RequestBody Users updatedUser) {
-        Users updated = userService.updateUser(id, updatedUser);
-        return ResponseEntity.ok(updated);
-    }
 
     @DeleteMapping("/{id}")
-    public ResponseEntity<Void> deleteUser(@PathVariable UUID id) {
+    public ResponseEntity<?> deleteUser(@PathVariable UUID id) {
         userService.deleteUser(id);
         return ResponseEntity.noContent().build();
     }

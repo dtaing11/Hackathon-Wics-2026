@@ -33,12 +33,6 @@ public class SpeciesController {
         return ResponseEntity.ok(species);
     }
 
-    @PostMapping
-    public ResponseEntity<Species> createSpecies(@RequestBody Species species) {
-        Species created = speciesService.createSpecies(species);
-        return ResponseEntity.status(HttpStatus.CREATED).body(created);
-    }
-
     @PutMapping("/{id}")
     public ResponseEntity<Species> updateSpecies(
             @PathVariable UUID id,

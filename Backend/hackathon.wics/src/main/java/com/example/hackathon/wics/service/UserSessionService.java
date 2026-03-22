@@ -1,6 +1,7 @@
 package com.example.hackathon.wics.service;
 
 import com.example.hackathon.wics.model.UserSession;
+import com.example.hackathon.wics.model.Users;
 import com.example.hackathon.wics.repository.UserSessionRepository;
 import org.springframework.stereotype.Service;
 
@@ -10,9 +11,11 @@ import java.util.UUID;
 public class UserSessionService {
 
     private final UserSessionRepository userSessionRepository;
+    private final UserService userService;
 
-    public UserSessionService(UserSessionRepository userSessionRepository) {
+    public UserSessionService(UserSessionRepository userSessionRepository, UserService userService ) {
         this.userSessionRepository = userSessionRepository;
+        this.userService = userService;
     }
 
     public UserSession createSession(UUID userId) {
@@ -23,9 +26,11 @@ public class UserSessionService {
         return userSessionRepository.save(newSession);
     }
 
-    public UserSession getSessionBySessionId(String session) {
-        return userSessionRepository.findById(session)
+    public Users getSessionBySessionId(String session) {
+      UserSession userSession = userSessionRepository.findById(session)
                 .orElseThrow(() -> new RuntimeException("Session not found"));
+      return userService.getUserById(userSession.getUserId());
+
     }
 
     public UserSession getSessionByUserId(UUID userId) {
