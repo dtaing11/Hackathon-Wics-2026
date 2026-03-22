@@ -1,0 +1,4546 @@
+[
+  {
+    "bird_name": "Abbott's Babbler",
+    "species_name": "Malacocincla abbotti",
+    "average_weight_species": "23g - 33g",
+    "description": "A small, drab brown bird with a short tail and robust bill, often found in thick undergrowth.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Abbott's Booby",
+    "species_name": "Papasula abbotti",
+    "average_weight_species": "1.3kg - 1.7kg",
+    "description": "A large, endangered seabird with a long neck and black-and-white plumage.",
+    "geography": "Christmas Island (Indian Ocean)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Abyssinian Ground Hornbill",
+    "species_name": "Bucorvus abyssinicus",
+    "average_weight_species": "3kg - 5kg",
+    "description": "Large, terrestrial bird with black feathers and striking blue/red facial patches.",
+    "geography": "Northern sub-Saharan Africa",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "African Crowned Crane",
+    "species_name": "Balearica regulorum",
+    "average_weight_species": "3kg - 4kg",
+    "description": "Famed for its golden 'crown' of feathers and grey body plumage.",
+    "geography": "Eastern and Southern Africa",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "African Emerald Cuckoo",
+    "species_name": "Chrysococcyx cupreus",
+    "average_weight_species": "35g - 45g",
+    "description": "Small bird with brilliant metallic green plumage and a yellow belly.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Firefinch",
+    "species_name": "Lagonosticta rubricata",
+    "average_weight_species": "8.5g - 11g",
+    "description": "Small passerine with deep red plumage on the face and underparts.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Oystercatcher",
+    "species_name": "Haematopus moquini",
+    "average_weight_species": "580g - 750g",
+    "description": "Sturdy black shorebird with a bright orange-red bill and eyes.",
+    "geography": "Coasts of Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Pied Hornbill",
+    "species_name": "Lophoceros fasciatus",
+    "average_weight_species": "250g - 310g",
+    "description": "A black hornbill with white underparts and a pale yellow bill.",
+    "geography": "Equatorial Africa forests",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Pygmy Goose",
+    "species_name": "Nettapus auritus",
+    "average_weight_species": "260g - 300g",
+    "description": "A tiny, colorful perching duck with a bright orange bill.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Albatross (Wandering)",
+    "species_name": "Diomedea exulans",
+    "average_weight_species": "6kg - 12kg",
+    "description": "Large seabird known for having the largest wingspan of any living bird.",
+    "geography": "Southern Oceans",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Albert's Towhee",
+    "species_name": "Melozone aberti",
+    "average_weight_species": "40g - 53g",
+    "description": "A plain, tan sparrow-like bird with a distinctive black face mask.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Alexandrine Parakeet",
+    "species_name": "Psittacula eupatria",
+    "average_weight_species": "200g - 300g",
+    "description": "Large green parrot with a massive red beak and maroon shoulder patches.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Alpine Chough",
+    "species_name": "Pyrrhocorax graculus",
+    "average_weight_species": "190g - 280g",
+    "description": "Black crow-like bird with a yellow bill and red legs, living at high altitudes.",
+    "geography": "High mountains of Eurasia and North Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Altamira Yellowthroat",
+    "species_name": "Geothlypis flavovelata",
+    "average_weight_species": "10g - 12g",
+    "description": "A small warbler with a bright yellow throat and a black mask in males.",
+    "geography": "Northeastern Mexico",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "American Avocet",
+    "species_name": "Recurvirostra americana",
+    "average_weight_species": "275g - 350g",
+    "description": "Elegant shorebird with long blue legs and a slender upturned bill.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Bittern",
+    "species_name": "Botaurus lentiginosus",
+    "average_weight_species": "600g - 850g",
+    "description": "A secretive, streaked brown heron known for its booming call.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Coot",
+    "species_name": "Fulica americana",
+    "average_weight_species": "450g - 800g",
+    "description": "Plump, dark waterbird with a white bill and lobed feet.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Dipper",
+    "species_name": "Cinclus mexicanus",
+    "average_weight_species": "45g - 65g",
+    "description": "The only North American songbird that swims and dives underwater.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Flamingo",
+    "species_name": "Phoenicopterus ruber",
+    "average_weight_species": "2.2kg - 4.5kg",
+    "description": "Highly social wading bird famous for its bright pink/orange feathers.",
+    "geography": "The Americas and Caribbean",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Goldfinch",
+    "species_name": "Spinus tristis",
+    "average_weight_species": "11g - 20g",
+    "description": "Small finch; males are bright yellow with black wings in summer.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Kestrel",
+    "species_name": "Falco sparverius",
+    "average_weight_species": "80g - 165g",
+    "description": "North America's smallest falcon, colorful with a distinctive face pattern.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Pipit",
+    "species_name": "Anthus rubescens",
+    "average_weight_species": "18g - 25g",
+    "description": "Slender, brown-streaked songbird that often bobs its tail.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Redstart",
+    "species_name": "Setophaga ruticilla",
+    "average_weight_species": "6g - 10g",
+    "description": "A lively warbler; males are black with bright orange patches.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Robin",
+    "species_name": "Turdus migratorius",
+    "average_weight_species": "65g - 95g",
+    "description": "Large thrush with a warm orange breast and a cheery song.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Wigeon",
+    "species_name": "Mareca americana",
+    "average_weight_species": "500g - 1.1kg",
+    "description": "Dabbling duck with a white cap and green eye patch in males.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Amethyst Woodstar",
+    "species_name": "Calliphlox amethystina",
+    "average_weight_species": "2.3g - 2.8g",
+    "description": "Tiny hummingbird with a brilliant amethyst throat in males.",
+    "geography": "South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Andean Goose",
+    "species_name": "Chloephaga melanoptera",
+    "average_weight_species": "2.7kg - 3.6kg",
+    "description": "Stout white goose with black wings and a pink bill.",
+    "geography": "High Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Andean Lapwing",
+    "species_name": "Vanellus resplendens",
+    "average_weight_species": "370g - 430g",
+    "description": "Shorebird with a grey head, bronze wings, and red eyes.",
+    "geography": "Andean highlands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Andean Siskin",
+    "species_name": "Spinus spinescens",
+    "average_weight_species": "11g - 13g",
+    "description": "Small yellow-green finch common in high-altitude shrublands.",
+    "geography": "Northern Andes",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Anhinga",
+    "species_name": "Anhinga anhinga",
+    "average_weight_species": "1kg - 1.4kg",
+    "description": "Waterbird with a long, snake-like neck and sharp bill.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Anianiau",
+    "species_name": "Magumma montana",
+    "average_weight_species": "9g - 11g",
+    "description": "The smallest Hawaiian honeycreeper, bright yellow in color.",
+    "geography": "Kauai, Hawaii",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Anna's Hummingbird",
+    "species_name": "Calypte anna",
+    "average_weight_species": "3.5g - 6g",
+    "description": "Stout hummingbird with iridescent rose-pink throat and crown in males.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Antbird (Great Antshrike)",
+    "species_name": "Taraba major",
+    "average_weight_species": "50g - 70g",
+    "description": "A large, heavy-billed passerine that follows ant swarms.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Antillean Euphonia",
+    "species_name": "Euphonia musica",
+    "average_weight_species": "11g - 16g",
+    "description": "Colorful finch-like bird with a bright blue crown.",
+    "geography": "Lesser Antilles",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Apapane",
+    "species_name": "Himatione sanguinea",
+    "average_weight_species": "13g - 17g",
+    "description": "Vibrant crimson Hawaiian honeycreeper with a slightly curved black bill.",
+    "geography": "Hawaiian Islands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Apostlebird",
+    "species_name": "Struthidea cinerea",
+    "average_weight_species": "110g - 150g",
+    "description": "Grey, social bird known for living in groups of about twelve.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Araripe Manakin",
+    "species_name": "Antilophia bokermanni",
+    "average_weight_species": "18g - 22g",
+    "description": "Striking white bird with a red helmet and black wings.",
+    "geography": "Araripe Plateau, Brazil",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Ashy Storm Petrel",
+    "species_name": "Hydrobates homochroa",
+    "average_weight_species": "35g - 40g",
+    "description": "Small, smoke-gray seabird that nests in rocky crevices.",
+    "geography": "California and Baja coast",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Ashy Thrushbird",
+    "species_name": "Geokichla cinerea",
+    "average_weight_species": "60g - 72g",
+    "description": "Forest-dwelling thrush with grey upperparts and spotted underparts.",
+    "geography": "Philippines",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Asian Crested Ibis",
+    "species_name": "Nipponia nippon",
+    "average_weight_species": "800g - 1.2kg",
+    "description": "White ibis with a red face and a long drooping crest.",
+    "geography": "East Asia (China)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Asian Dollarbird",
+    "species_name": "Eurystomus orientalis",
+    "average_weight_species": "120g - 180g",
+    "description": "Broad-billed roller with blue-green plumage and a red bill.",
+    "geography": "Asia and Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Asian Green Bee-eater",
+    "species_name": "Merops orientalis",
+    "average_weight_species": "15g - 20g",
+    "description": "Slender green bird with central tail streamers and a black throat band.",
+    "geography": "Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Asian Openbill Stork",
+    "species_name": "Anastomus oscitans",
+    "average_weight_species": "1.3kg - 2.1kg",
+    "description": "Large greyish-white stork with a unique gap between its bill mandibles.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Abbott's Babbler",
+    "species_name": "Malacocincla abbotti",
+    "average_weight_species": "23g - 33g",
+    "description": "A small, drab brown bird with a short tail and robust bill, often found in thick undergrowth.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Abbott's Booby",
+    "species_name": "Papasula abbotti",
+    "average_weight_species": "1.3kg - 1.7kg",
+    "description": "A large, endangered seabird with a long neck and black-and-white plumage.",
+    "geography": "Christmas Island (Indian Ocean)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Abyssinian Ground Hornbill",
+    "species_name": "Bucorvus abyssinicus",
+    "average_weight_species": "3kg - 5kg",
+    "description": "Large, terrestrial bird with black feathers and striking blue/red facial patches.",
+    "geography": "Northern sub-Saharan Africa",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "African Crowned Crane",
+    "species_name": "Balearica regulorum",
+    "average_weight_species": "3kg - 4kg",
+    "description": "Famed for its golden 'crown' of feathers and grey body plumage.",
+    "geography": "Eastern and Southern Africa",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "African Emerald Cuckoo",
+    "species_name": "Chrysococcyx cupreus",
+    "average_weight_species": "35g - 45g",
+    "description": "Small bird with brilliant metallic green plumage and a yellow belly.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Firefinch",
+    "species_name": "Lagonosticta rubricata",
+    "average_weight_species": "8.5g - 11g",
+    "description": "Small passerine with deep red plumage on the face and underparts.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Oystercatcher",
+    "species_name": "Haematopus moquini",
+    "average_weight_species": "580g - 750g",
+    "description": "Sturdy black shorebird with a bright orange-red bill and eyes.",
+    "geography": "Coasts of Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Pied Hornbill",
+    "species_name": "Lophoceros fasciatus",
+    "average_weight_species": "250g - 310g",
+    "description": "A black hornbill with white underparts and a pale yellow bill.",
+    "geography": "Equatorial Africa forests",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "African Pygmy Goose",
+    "species_name": "Nettapus auritus",
+    "average_weight_species": "260g - 300g",
+    "description": "A tiny, colorful perching duck with a bright orange bill.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Albatross (Wandering)",
+    "species_name": "Diomedea exulans",
+    "average_weight_species": "6kg - 12kg",
+    "description": "Large seabird known for having the largest wingspan of any living bird.",
+    "geography": "Southern Oceans",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Albert's Towhee",
+    "species_name": "Melozone aberti",
+    "average_weight_species": "40g - 53g",
+    "description": "A plain, tan sparrow-like bird with a distinctive black face mask.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Alexandrine Parakeet",
+    "species_name": "Psittacula eupatria",
+    "average_weight_species": "200g - 300g",
+    "description": "Large green parrot with a massive red beak and maroon shoulder patches.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Alpine Chough",
+    "species_name": "Pyrrhocorax graculus",
+    "average_weight_species": "190g - 280g",
+    "description": "Black crow-like bird with a yellow bill and red legs, living at high altitudes.",
+    "geography": "High mountains of Eurasia and North Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Altamira Yellowthroat",
+    "species_name": "Geothlypis flavovelata",
+    "average_weight_species": "10g - 12g",
+    "description": "A small warbler with a bright yellow throat and a black mask in males.",
+    "geography": "Northeastern Mexico",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "American Avocet",
+    "species_name": "Recurvirostra americana",
+    "average_weight_species": "275g - 350g",
+    "description": "Elegant shorebird with long blue legs and a slender upturned bill.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Bittern",
+    "species_name": "Botaurus lentiginosus",
+    "average_weight_species": "600g - 850g",
+    "description": "A secretive, streaked brown heron known for its booming call.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Coot",
+    "species_name": "Fulica americana",
+    "average_weight_species": "450g - 800g",
+    "description": "Plump, dark waterbird with a white bill and lobed feet.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Dipper",
+    "species_name": "Cinclus mexicanus",
+    "average_weight_species": "45g - 65g",
+    "description": "The only North American songbird that swims and dives underwater.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Flamingo",
+    "species_name": "Phoenicopterus ruber",
+    "average_weight_species": "2.2kg - 4.5kg",
+    "description": "Highly social wading bird famous for its bright pink/orange feathers.",
+    "geography": "The Americas and Caribbean",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Goldfinch",
+    "species_name": "Spinus tristis",
+    "average_weight_species": "11g - 20g",
+    "description": "Small finch; males are bright yellow with black wings in summer.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Kestrel",
+    "species_name": "Falco sparverius",
+    "average_weight_species": "80g - 165g",
+    "description": "North America's smallest falcon, colorful with a distinctive face pattern.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Pipit",
+    "species_name": "Anthus rubescens",
+    "average_weight_species": "18g - 25g",
+    "description": "Slender, brown-streaked songbird that often bobs its tail.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Redstart",
+    "species_name": "Setophaga ruticilla",
+    "average_weight_species": "6g - 10g",
+    "description": "A lively warbler; males are black with bright orange patches.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Robin",
+    "species_name": "Turdus migratorius",
+    "average_weight_species": "65g - 95g",
+    "description": "Large thrush with a warm orange breast and a cheery song.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "American Wigeon",
+    "species_name": "Mareca americana",
+    "average_weight_species": "500g - 1.1kg",
+    "description": "Dabbling duck with a white cap and green eye patch in males.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Amethyst Woodstar",
+    "species_name": "Calliphlox amethystina",
+    "average_weight_species": "2.3g - 2.8g",
+    "description": "Tiny hummingbird with a brilliant amethyst throat in males.",
+    "geography": "South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Andean Goose",
+    "species_name": "Chloephaga melanoptera",
+    "average_weight_species": "2.7kg - 3.6kg",
+    "description": "Stout white goose with black wings and a pink bill.",
+    "geography": "High Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Andean Lapwing",
+    "species_name": "Vanellus resplendens",
+    "average_weight_species": "370g - 430g",
+    "description": "Shorebird with a grey head, bronze wings, and red eyes.",
+    "geography": "Andean highlands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Andean Siskin",
+    "species_name": "Spinus spinescens",
+    "average_weight_species": "11g - 13g",
+    "description": "Small yellow-green finch common in high-altitude shrublands.",
+    "geography": "Northern Andes",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Anhinga",
+    "species_name": "Anhinga anhinga",
+    "average_weight_species": "1kg - 1.4kg",
+    "description": "Waterbird with a long, snake-like neck and sharp bill.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Anianiau",
+    "species_name": "Magumma montana",
+    "average_weight_species": "9g - 11g",
+    "description": "The smallest Hawaiian honeycreeper, bright yellow in color.",
+    "geography": "Kauai, Hawaii",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Anna's Hummingbird",
+    "species_name": "Calypte anna",
+    "average_weight_species": "3.5g - 6g",
+    "description": "Stout hummingbird with iridescent rose-pink throat and crown in males.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Antbird (Great Antshrike)",
+    "species_name": "Taraba major",
+    "average_weight_species": "50g - 70g",
+    "description": "A large, heavy-billed passerine that follows ant swarms.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Antillean Euphonia",
+    "species_name": "Euphonia musica",
+    "average_weight_species": "11g - 16g",
+    "description": "Colorful finch-like bird with a bright blue crown.",
+    "geography": "Lesser Antilles",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Apapane",
+    "species_name": "Himatione sanguinea",
+    "average_weight_species": "13g - 17g",
+    "description": "Vibrant crimson Hawaiian honeycreeper with a slightly curved black bill.",
+    "geography": "Hawaiian Islands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Apostlebird",
+    "species_name": "Struthidea cinerea",
+    "average_weight_species": "110g - 150g",
+    "description": "Grey, social bird known for living in groups of about twelve.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Araripe Manakin",
+    "species_name": "Antilophia bokermanni",
+    "average_weight_species": "18g - 22g",
+    "description": "Striking white bird with a red helmet and black wings.",
+    "geography": "Araripe Plateau, Brazil",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Ashy Storm Petrel",
+    "species_name": "Hydrobates homochroa",
+    "average_weight_species": "35g - 40g",
+    "description": "Small, smoke-gray seabird that nests in rocky crevices.",
+    "geography": "California and Baja coast",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Ashy Thrushbird",
+    "species_name": "Geokichla cinerea",
+    "average_weight_species": "60g - 72g",
+    "description": "Forest-dwelling thrush with grey upperparts and spotted underparts.",
+    "geography": "Philippines",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Asian Crested Ibis",
+    "species_name": "Nipponia nippon",
+    "average_weight_species": "800g - 1.2kg",
+    "description": "White ibis with a red face and a long drooping crest.",
+    "geography": "East Asia (China)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Asian Dollarbird",
+    "species_name": "Eurystomus orientalis",
+    "average_weight_species": "120g - 180g",
+    "description": "Broad-billed roller with blue-green plumage and a red bill.",
+    "geography": "Asia and Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Asian Green Bee-eater",
+    "species_name": "Merops orientalis",
+    "average_weight_species": "15g - 20g",
+    "description": "Slender green bird with central tail streamers and a black throat band.",
+    "geography": "Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Asian Openbill Stork",
+    "species_name": "Anastomus oscitans",
+    "average_weight_species": "1.3kg - 2.1kg",
+    "description": "Large greyish-white stork with a unique gap between its bill mandibles.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Auckland Shag",
+    "species_name": "Leucocarbo colensoi",
+    "average_weight_species": "1.8kg - 2.2kg",
+    "description": "A black-and-white cormorant with pink feet and a blue eye ring.",
+    "geography": "Auckland Islands (New Zealand)",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Austral Canastero",
+    "species_name": "Asthenes anthoides",
+    "average_weight_species": "18g - 23g",
+    "description": "Small, streaked furnariid bird found in grassy or shrubby habitats.",
+    "geography": "Chile and Argentina",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Australasian Figbird",
+    "species_name": "Sphecotheres vieilloti",
+    "average_weight_species": "115g - 130g",
+    "description": "A colorful oriole relative with a bare patch of red skin around the eyes.",
+    "geography": "Australia, Indonesia, Papua New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Avadavat (Red Munia)",
+    "species_name": "Amandava amandava",
+    "average_weight_species": "8g - 10g",
+    "description": "Small finch; males in breeding plumage are bright red with white spots.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Azara's Spinetail",
+    "species_name": "Synallaxis azarae",
+    "average_weight_species": "12g - 16g",
+    "description": "A rufous-capped, long-tailed bird that frequents forest edges and scrub.",
+    "geography": "Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Azure-breasted Pitta",
+    "species_name": "Pitta steerii",
+    "average_weight_species": "90g - 110g",
+    "description": "A shy, ground-dwelling bird with brilliant blue and green plumage.",
+    "geography": "Philippines",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Azure Jay",
+    "species_name": "Cyanocorax caeruleus",
+    "average_weight_species": "250g - 290g",
+    "description": "Large jay with intense blue plumage and a black head.",
+    "geography": "South America (Brazil, Argentina)",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Azure Tanager",
+    "species_name": "Tangara cabanisi",
+    "average_weight_species": "20g - 25g",
+    "description": "A rare, brightly colored songbird with blue and turquoise plumage.",
+    "geography": "Mexico and Guatemala",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Azure Tit",
+    "species_name": "Cyanistes cyanus",
+    "average_weight_species": "10g - 13g",
+    "description": "A beautiful white and blue tit with a distinctive dark eye line.",
+    "geography": "Eurasia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Baikal Teal",
+    "species_name": "Sibirionetta formosa",
+    "average_weight_species": "360g - 520g",
+    "description": "A small duck with a complex, strikingly patterned face in males.",
+    "geography": "East Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bald Eagle",
+    "species_name": "Haliaeetus leucocephalus",
+    "average_weight_species": "3kg - 6.3kg",
+    "description": "A massive bird of prey with a white head and dark brown body.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bald Ibis (Northern)",
+    "species_name": "Geronticus eremita",
+    "average_weight_species": "1kg - 1.3kg",
+    "description": "Large, dark bird with a bare red head and long, curved bill.",
+    "geography": "Middle East, Northern Africa, Europe",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Bali Starling",
+    "species_name": "Leucopsar rothschildi",
+    "average_weight_species": "75g - 100g",
+    "description": "Stunning white bird with blue bare skin around the eyes.",
+    "geography": "Bali, Indonesia",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Baltimore Oriole",
+    "species_name": "Icterus galbula",
+    "average_weight_species": "30g - 40g",
+    "description": "Bright orange and black songbird known for its flute-like whistle.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bananaquit",
+    "species_name": "Coereba flaveola",
+    "average_weight_species": "8g - 11g",
+    "description": "Tiny bird with a down-curved bill, black upperparts, and yellow belly.",
+    "geography": "Caribbean, Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Band-tailed Guan",
+    "species_name": "Penelope argyrotis",
+    "average_weight_species": "650g - 900g",
+    "description": "A large, forest-dwelling bird with a distinct band on its tail.",
+    "geography": "Colombia and Venezuela",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Banded Broadbill",
+    "species_name": "Eurylaimus javanicus",
+    "average_weight_species": "65g - 80g",
+    "description": "A heavy-billed forest bird with striking purple, yellow, and black plumage.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Banded Pitta",
+    "species_name": "Hydrornis guajanus",
+    "average_weight_species": "80g - 110g",
+    "description": "Small ground bird with a bright blue tail and yellow-and-black barred belly.",
+    "geography": "Southeast Asia (Java, Bali)",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Banded Stilt",
+    "species_name": "Cladorhynchus leucocephalus",
+    "average_weight_species": "190g - 260g",
+    "description": "A nomadic shorebird with white plumage and a distinct chestnut breast band.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bar-tailed Godwit",
+    "species_name": "Limosa lapponica",
+    "average_weight_species": "230g - 450g",
+    "description": "Long-billed shorebird famous for performing the longest non-stop migratory flight.",
+    "geography": "Worldwide coasts",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Barn Owl",
+    "species_name": "Tyto alba",
+    "average_weight_species": "250g - 700g",
+    "description": "Pale, heart-faced owl known for its silent flight and ghostly appearance.",
+    "geography": "Global (except Antarctica)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Barn Swallow",
+    "species_name": "Hirundo rustica",
+    "average_weight_species": "16g - 22g",
+    "description": "The most widespread swallow in the world, with a deeply forked tail.",
+    "geography": "Global",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Barred Puffbird",
+    "species_name": "Nystalus radiatus",
+    "average_weight_species": "55g - 65g",
+    "description": "A stout, large-headed bird with heavy black-and-tan barring.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Barrow's Goldeneye",
+    "species_name": "Bucephala islandica",
+    "average_weight_species": "1kg - 1.3kg",
+    "description": "A medium-sized sea duck; males have a white crescent on a dark face.",
+    "geography": "North America and Iceland",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bay-breasted Warbler",
+    "species_name": "Setophaga castanea",
+    "average_weight_species": "11g - 14g",
+    "description": "A small warbler; breeding males have a chestnut cap and breast.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bearded Barbet",
+    "species_name": "Lybius dubius",
+    "average_weight_species": "80g - 100g",
+    "description": "Large, colorful barbet with a massive bill and bristly 'beard'.",
+    "geography": "West Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bearded Bellbird",
+    "species_name": "Procnias averano",
+    "average_weight_species": "150g - 180g",
+    "description": "Known for its loud metallic call and the black wattles on its throat.",
+    "geography": "Northern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bearded Reedling",
+    "species_name": "Panurus biarmicus",
+    "average_weight_species": "12g - 18g",
+    "description": "Small, long-tailed bird of reed beds; males have black 'mustache' streaks.",
+    "geography": "Eurasia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Belted Kingfisher",
+    "species_name": "Megaceryle alcyon",
+    "average_weight_species": "140g - 170g",
+    "description": "Stocky kingfisher with a shaggy crest and blue-grey plumage.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bird of Paradise (Greater)",
+    "species_name": "Paradisaea apoda",
+    "average_weight_species": "170g - 450g",
+    "description": "Known for the male's spectacular yellow and white ornamental flank plumes used in courtship.",
+    "geography": "New Guinea and Aru Islands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-and-yellow Broadbill",
+    "species_name": "Eurylaimus ochromalus",
+    "average_weight_species": "31g - 39g",
+    "description": "A small, colorful forest bird with a bright yellow body, black wings, and a blue bill.",
+    "geography": "Southeast Asia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Black Baza",
+    "species_name": "Aviceda leuphotes",
+    "average_weight_species": "160g - 225g",
+    "description": "A small, distinctively crested bird of prey with black, white, and chestnut plumage.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-breasted Puffbird",
+    "species_name": "Notharchus pectoralis",
+    "average_weight_species": "60g - 75g",
+    "description": "A sit-and-wait predator with a large head, heavy bill, and a broad black breast band.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black Cockatoo (Red-tailed)",
+    "species_name": "Calyptorhynchus banksii",
+    "average_weight_species": "600g - 900g",
+    "description": "Large, dark parrot with a prominent crest and vibrant red panels in the tail.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-faced Spoonbill",
+    "species_name": "Platalea minor",
+    "average_weight_species": "1.5kg - 2kg",
+    "description": "A rare wading bird with white plumage and a distinctive flat, spatula-shaped black bill.",
+    "geography": "East Asian coasts",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Black Francolin",
+    "species_name": "Francolinus francolinus",
+    "average_weight_species": "400g - 550g",
+    "description": "A ground-dwelling gamebird; males are black with white spots and a chestnut collar.",
+    "geography": "Asia and Middle East",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-headed Caique",
+    "species_name": "Pionites melanocephalus",
+    "average_weight_species": "130g - 170g",
+    "description": "Highly energetic parrot with a black crown, orange thighs, and a white belly.",
+    "geography": "Amazon Basin",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-necked Stilt",
+    "species_name": "Himantopus mexicanus",
+    "average_weight_species": "150g - 220g",
+    "description": "Shorebird with exceptionally long pink legs and a needle-like black bill.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black Skimmer",
+    "species_name": "Rynchops niger",
+    "average_weight_species": "250g - 400g",
+    "description": "Seabird with a unique lower mandible longer than the upper, used to 'skim' water for fish.",
+    "geography": "Coasts of the Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black Swan",
+    "species_name": "Cygnus atratus",
+    "average_weight_species": "4kg - 8kg",
+    "description": "Large waterbird with soot-black plumage and a bright red bill.",
+    "geography": "Australia and New Zealand",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-tailed Crake",
+    "species_name": "Zapornia bicolor",
+    "average_weight_species": "70g - 90g",
+    "description": "Secretive wetland bird with a grey head, rufous-brown back, and red legs.",
+    "geography": "Himalayas to Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-throated Bushtit",
+    "species_name": "Aegithalos concinnus",
+    "average_weight_species": "4g - 9g",
+    "description": "Tiny, social songbird with a distinctive black throat patch and rufous crown.",
+    "geography": "Himalayas to East Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-throated Huet-huet",
+    "species_name": "Pteroptochos tarnii",
+    "average_weight_species": "150g - 185g",
+    "description": "Large, dark terrestrial bird known for its loud, barking calls.",
+    "geography": "Chile and Argentina",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-throated Warbler (Blue)",
+    "species_name": "Setophaga caerulescens",
+    "average_weight_species": "9g - 12g",
+    "description": "Small songbird; males have a deep blue back and a clean black face and throat.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-vented Shearwater",
+    "species_name": "Puffinus opisthomelas",
+    "average_weight_species": "350g - 450g",
+    "description": "Medium-sized seabird that nests in burrows on offshore islands.",
+    "geography": "Pacific coast of Mexico/USA",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Black Vulture",
+    "species_name": "Coragyps atratus",
+    "average_weight_species": "1.6kg - 2.2kg",
+    "description": "Stout scavenger with black plumage, a bare grey head, and white wing tips.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-capped Chickadee",
+    "species_name": "Poecile atricapillus",
+    "average_weight_species": "9g - 14g",
+    "description": "Tiny, curious bird with a black cap and bib and white cheeks.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-necked Grebe",
+    "species_name": "Podiceps nigricollis",
+    "average_weight_species": "250g - 450g",
+    "description": "Waterbird with golden ear tufts and a black neck during the breeding season.",
+    "geography": "Eurasia, Africa, and Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Black-throated Sparrow",
+    "species_name": "Amphispiza bilineata",
+    "average_weight_species": "11g - 15g",
+    "description": "Desert bird with a sharp black throat, white eyebrow, and grey-brown body.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blackburnian Warbler",
+    "species_name": "Setophaga fusca",
+    "average_weight_species": "8g - 13g",
+    "description": "Small songbird with a brilliant flaming-orange throat and face in breeding males.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blond-crested Woodpecker",
+    "species_name": "Celeus flavescens",
+    "average_weight_species": "110g - 165g",
+    "description": "Distinctive woodpecker with a prominent pale-yellow crest and black-and-white barred body.",
+    "geography": "South America (Brazil, Paraguay, Argentina)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blood Pheasant",
+    "species_name": "Ithaginis cruentus",
+    "average_weight_species": "400g - 650g",
+    "description": "Small, short-tailed pheasant with green plumage and bright red splashes on the throat and breast.",
+    "geography": "Himalayas and Western China",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue Coua",
+    "species_name": "Coua caerulea",
+    "average_weight_species": "220g - 250g",
+    "description": "A non-parasitic cuckoo with deep blue plumage and a patch of bare blue skin around the eye.",
+    "geography": "Madagascar",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue Dacnis",
+    "species_name": "Dacnis cayana",
+    "average_weight_species": "10g - 15g",
+    "description": "Small, turquoise-blue honeycreeper with a black mask and black wings.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue-gray Gnatcatcher",
+    "species_name": "Polioptila caerulea",
+    "average_weight_species": "5g - 7g",
+    "description": "Tiny, active bird with a blue-gray back, white underparts, and a long black tail.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue Grosbeak",
+    "species_name": "Passerina caerulea",
+    "average_weight_species": "26g - 31g",
+    "description": "Stocky songbird; males are deep blue with two chestnut-colored wing bars.",
+    "geography": "Southern US to Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue Grouse (Dusky)",
+    "species_name": "Dendragapus obscurus",
+    "average_weight_species": "750g - 1.3kg",
+    "description": "Large, gray-brown forest bird known for the hooting display calls of the males.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue Heron (Great Blue)",
+    "species_name": "Ardea herodias",
+    "average_weight_species": "2.1kg - 2.5kg",
+    "description": "Large, majestic wading bird with slate-blue flight feathers and a long, yellow bill.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue Malkoha",
+    "species_name": "Ceuthmochares aereus",
+    "average_weight_species": "55g - 75g",
+    "description": "A slender cuckoo with glossy green-blue plumage and a bright yellow bill.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue-throated Piping Guan",
+    "species_name": "Pipile cumanensis",
+    "average_weight_species": "1.1kg - 1.4kg",
+    "description": "Large forest bird with white wing patches and a distinctive blue wattle on the throat.",
+    "geography": "Amazon Basin",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Blue-throated Toucanet",
+    "species_name": "Aulacorhynchus caeruleogularis",
+    "average_weight_species": "150g - 230g",
+    "description": "Small, green toucan with a blue throat and a colorful, large bill.",
+    "geography": "Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bobolink",
+    "species_name": "Dolichonyx oryzivorus",
+    "average_weight_species": "28g - 55g",
+    "description": "Known for the male's 'backward' plumage (black below, white above) and bubbly song.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bornean Bristlehead",
+    "species_name": "Pityriasis gymnocephala",
+    "average_weight_species": "120g - 150g",
+    "description": "Unique, heavy-billed bird with a red head and bare skin covered in short 'bristles'.",
+    "geography": "Borneo",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Bornean Leafbird",
+    "species_name": "Chloropsis kinabaluensis",
+    "average_weight_species": "25g - 35g",
+    "description": "Vibrant green bird that blends perfectly into the foliage, found in montane forests.",
+    "geography": "Borneo",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bornean Pheasant (Bulwer's)",
+    "species_name": "Lophura bulweri",
+    "average_weight_species": "1kg - 1.5kg",
+    "description": "Large pheasant; males have an incredible white tail and blue facial wattles.",
+    "geography": "Borneo",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Brandt's Cormorant",
+    "species_name": "Urile penicillatus",
+    "average_weight_species": "1.4kg - 2.4kg",
+    "description": "Seabird with black plumage that displays a vibrant blue throat pouch during breeding.",
+    "geography": "Pacific Coast of North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Brewer's Blackbird",
+    "species_name": "Euphagus cyanocephalus",
+    "average_weight_species": "60g - 75g",
+    "description": "Social blackbird with glossy iridescent plumage and striking white eyes in males.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Brown Creeper",
+    "species_name": "Certhia americana",
+    "average_weight_species": "8g - 10g",
+    "description": "Small, camouflaged bird that spirals up tree trunks searching for insects.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Brown-headed Cowbird",
+    "species_name": "Molothrus ater",
+    "average_weight_species": "38g - 50g",
+    "description": "A brood parasite with a brown head and glossy black body in males; known for laying eggs in other birds' nests.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Brown Noddy",
+    "species_name": "Anous stolidus",
+    "average_weight_species": "160g - 205g",
+    "description": "A dark brown tropical tern with a distinctive pale-grey to white cap.",
+    "geography": "Tropical oceans worldwide",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Brown Thrasher",
+    "species_name": "Toxostoma rufum",
+    "average_weight_species": "61g - 89g",
+    "description": "A large, rufous-brown songbird with a heavily spotted breast and a long, slightly curved bill.",
+    "geography": "Central and Eastern North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bufflehead",
+    "species_name": "Bucephala albeola",
+    "average_weight_species": "270g - 450g",
+    "description": "One of the smallest ducks in North America; males have a large white patch on a glossy dark head.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Bulwer's Pheasant",
+    "species_name": "Lophura bulweri",
+    "average_weight_species": "1kg - 1.5kg",
+    "description": "A forest pheasant where males possess a spectacular white tail and bright blue facial wattles.",
+    "geography": "Borneo",
+    "rarity": "Rare"
+  },
+  {
+    "bird_name": "Burchell's Courser",
+    "species_name": "Cursorius rufus",
+    "average_weight_species": "65g - 80g",
+    "description": "A ground-dwelling bird with sandy-brown plumage and a distinctive black and white head pattern.",
+    "geography": "Southern Africa",
+    "rarity": "Uncommon"
+  },
+  {
+    "bird_name": "Bush Turkey (Australian)",
+    "species_name": "Alectura lathami",
+    "average_weight_species": "2.1kg - 2.4kg",
+    "description": "A large megapode that builds massive mounds of decaying vegetation to incubate its eggs.",
+    "geography": "Eastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Caatinga Cacholote",
+    "species_name": "Pseudoseisura cristata",
+    "average_weight_species": "65g - 85g",
+    "description": "A rufous, crest-wearing bird known for building very large, conspicuous stick nests.",
+    "geography": "Northeastern Brazil",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cabot's Tragopan",
+    "species_name": "Tragopan caboti",
+    "average_weight_species": "1kg - 1.4kg",
+    "description": "A stocky, shy pheasant; males are buff-spotted with an orange-red facial skin patch.",
+    "geography": "Southeastern China",
+    "rarity": "Rare"
+  },
+  {
+    "bird_name": "Cactus Wren",
+    "species_name": "Campylorhynchus brunneicapillus",
+    "average_weight_species": "33g - 47g",
+    "description": "The largest North American wren, heavily spotted with a bold white eyebrow stripe.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "California Condor",
+    "species_name": "Gymnogyps californianus",
+    "average_weight_species": "8kg - 10kg",
+    "description": "One of the world's rarest birds; a massive scavenger with a bald head and a huge wingspan.",
+    "geography": "Southwestern US and Baja California",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "California Gull",
+    "species_name": "Larus californicus",
+    "average_weight_species": "600g - 1kg",
+    "description": "A medium-sized gull with a yellow bill featuring both black and red spots.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "California Quail",
+    "species_name": "Callipepla californica",
+    "average_weight_species": "150g - 190g",
+    "description": "A plump ground bird easily identified by its forward-drooping head plume or 'topknot'.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Campo Flicker",
+    "species_name": "Colaptes campestris",
+    "average_weight_species": "145g - 190g",
+    "description": "A large, terrestrial woodpecker with a bright yellow neck and face.",
+    "geography": "South America (East/South)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Canary (Atlantic)",
+    "species_name": "Serinus canaria",
+    "average_weight_species": "15g - 20g",
+    "description": "Small passerine with greenish-yellow plumage in the wild; ancestor of the domestic canary.",
+    "geography": "Macaronesia (Canary Islands, Azores)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Canvasback",
+    "species_name": "Aythya valisineria",
+    "average_weight_species": "850g - 1.3kg",
+    "description": "A large diving duck with a distinctive sloping profile and a reddish-brown head in males.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cape Glossy Starling",
+    "species_name": "Lamprotornis nitens",
+    "average_weight_species": "75g - 100g",
+    "description": "A stocky starling with brilliant, iridescent blue-green plumage and yellow eyes.",
+    "geography": "Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cape Longclaw",
+    "species_name": "Macronyx capensis",
+    "average_weight_species": "45g - 52g",
+    "description": "A grassland bird with a bright orange-red throat bordered by a black band.",
+    "geography": "Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cape May Warbler",
+    "species_name": "Setophaga tigrina",
+    "average_weight_species": "10g - 15g",
+    "description": "Small warbler; breeding males have a tiger-striped breast and chestnut cheek patches.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cape Rock Thrush",
+    "species_name": "Monticola rupestris",
+    "average_weight_species": "55g - 65g",
+    "description": "A large thrush; males have a blue head and neck with a rich orange breast and belly.",
+    "geography": "South Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Capped Heron",
+    "species_name": "Pilherodius pileatus",
+    "average_weight_species": "400g - 550g",
+    "description": "A striking white heron with a black crown and a bright blue face.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Capuchinbird",
+    "species_name": "Perissocephalus tricolor",
+    "average_weight_species": "320g - 400g",
+    "description": "A bizarre, thick-necked bird with a bald, blue-skinned head and a deep, low-frequency call.",
+    "geography": "Northeastern South America",
+    "rarity": "Uncommon"
+  },
+  {
+    "bird_name": "Carmine Bee-eater (Southern)",
+    "species_name": "Merops nubicoides",
+    "average_weight_species": "45g - 65g",
+    "description": "A stunning bird with bright carmine-red plumage and a turquoise crown.",
+    "geography": "Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Caspian Tern",
+    "species_name": "Hydroprogne caspia",
+    "average_weight_species": "530g - 780g",
+    "description": "The world's largest tern, featuring a heavy coral-red bill and a black cap.",
+    "geography": "Global coasts and large inland lakes",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cassowary (Southern)",
+    "species_name": "Casuarius casuarius",
+    "average_weight_species": "35kg - 60kg",
+    "description": "A massive, flightless bird with a distinctive bony casque on its head and bright blue neck skin.",
+    "geography": "Australia and New Guinea",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Cedar Waxwing",
+    "species_name": "Bombycilla cedrorum",
+    "average_weight_species": "30g - 35g",
+    "description": "A sleek, silky-feathered bird with a crest and red waxy tips on its wing feathers.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cerulean Warbler",
+    "species_name": "Setophaga cerulea",
+    "average_weight_species": "8g - 10g",
+    "description": "A small, sky-blue songbird that nests high in the forest canopy.",
+    "geography": "Eastern North America to South America",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Chara de Collar (Collared Jay)",
+    "species_name": "Cyanolyca armillata",
+    "average_weight_species": "100g - 140g",
+    "description": "A vibrant blue jay with a black mask and a distinct black band around the throat.",
+    "geography": "Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chattering Lory",
+    "species_name": "Lorius garrulus",
+    "average_weight_species": "180g - 230g",
+    "description": "A bright red parrot with green wings and a yellow patch on the back.",
+    "geography": "North Maluku, Indonesia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Chestnut-bellied Euphonia",
+    "species_name": "Euphonia pectoralis",
+    "average_weight_species": "14g - 17g",
+    "description": "A small finch-like bird; males are dark blue-black with a rich chestnut belly.",
+    "geography": "South America (Atlantic Forest)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chestnut-winged Cuckoo",
+    "species_name": "Clamator coromandus",
+    "average_weight_species": "65g - 85g",
+    "description": "A crested cuckoo with a black head, white collar, and bright chestnut wings.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chinese Bamboo Partridge",
+    "species_name": "Bambusicola thoracicus",
+    "average_weight_species": "200g - 350g",
+    "description": "A small, ground-dwelling bird with a grey breast and intricate brown mottling.",
+    "geography": "East Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chinese Pond Heron",
+    "species_name": "Ardeola bacchus",
+    "average_weight_species": "280g - 350g",
+    "description": "A small heron that transforms from drab brown to deep maroon and navy during breeding.",
+    "geography": "East and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chipping Sparrow",
+    "species_name": "Spizella passerina",
+    "average_weight_species": "11g - 16g",
+    "description": "A small sparrow with a bright rufous cap and a crisp white eyebrow stripe.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chucao Tapaculo",
+    "species_name": "Scelorchilus rubecula",
+    "average_weight_species": "40g - 50g",
+    "description": "A shy, forest-dwelling bird with a bright orange throat and a loud, echoing call.",
+    "geography": "Chile and Argentina",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Chukar Partridge",
+    "species_name": "Alectoris chukar",
+    "average_weight_species": "450g - 800g",
+    "description": "A ground bird with bold black-and-white stripes on its flanks and a red bill.",
+    "geography": "Eurasia; introduced to North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cinnamon Attila",
+    "species_name": "Attila cinnamomeus",
+    "average_weight_species": "40g - 50g",
+    "description": "A bright, uniform cinnamon-colored bird found in swampy forests and mangroves.",
+    "geography": "South America (Amazon/Orinoco basins)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cinnamon Flycatcher",
+    "species_name": "Pyrrhomyias cinnamomeus",
+    "average_weight_species": "10g - 14g",
+    "description": "A small, bushy-crested flycatcher with warm cinnamon-orange underparts.",
+    "geography": "Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cinnamon Teal",
+    "species_name": "Spatula cyanoptera",
+    "average_weight_species": "280g - 450g",
+    "description": "A small dabbling duck; males are a vibrant, solid cinnamon-red.",
+    "geography": "Western Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Clark's Grebe",
+    "species_name": "Aechmophorus clarkii",
+    "average_weight_species": "1.1kg - 1.8kg",
+    "description": "A large waterbird with a long neck and white plumage surrounding its eyes.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Clark's Nutcracker",
+    "species_name": "Nucifraga columbiana",
+    "average_weight_species": "100g - 160g",
+    "description": "A grey bird of high-altitude forests known for caching thousands of pine seeds.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cock-of-the-rock (Andean)",
+    "species_name": "Rupicola peruvianus",
+    "average_weight_species": "210g - 270g",
+    "description": "Famous for the male's brilliant scarlet-orange plumage and disc-shaped crest.",
+    "geography": "Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cockatoo (Sulphur-crested)",
+    "species_name": "Cacatua galerita",
+    "average_weight_species": "750g - 950g",
+    "description": "A large white parrot with a bold, yellow forward-curving crest.",
+    "geography": "Australia and New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Collared Aracari",
+    "species_name": "Pteroglossus torquatus",
+    "average_weight_species": "180g - 250g",
+    "description": "A small toucan with a saw-toothed bill and a yellow breast marked by a black spot.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Collared Crescentchest",
+    "species_name": "Melanopareia torquata",
+    "average_weight_species": "16g - 20g",
+    "description": "A small, ground-dwelling bird with a striking black crescent across its breast.",
+    "geography": "South America (Cerrado region)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common Firecrest",
+    "species_name": "Regulus ignicapilla",
+    "average_weight_species": "5g - 7g",
+    "description": "One of Europe's smallest birds, featuring a bright orange crown and a bold white eye stripe.",
+    "geography": "Europe and North Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common Grackle",
+    "species_name": "Quiscalus quiscula",
+    "average_weight_species": "75g - 140g",
+    "description": "A large blackbird with iridescent purple or blue-green heads and golden eyes.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common House Martin",
+    "species_name": "Delichon urbicum",
+    "average_weight_species": "16g - 22g",
+    "description": "A small migratory bird with blue-black upperparts and a distinctive white rump.",
+    "geography": "Eurasia and Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common Iora",
+    "species_name": "Aegithina tiphia",
+    "average_weight_species": "12g - 17g",
+    "description": "A small, bright yellow and olive songbird found in gardens and light forests.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common Loon",
+    "species_name": "Gavia immer",
+    "average_weight_species": "3kg - 5kg",
+    "description": "A powerful waterbird with a black-and-white checkered back and a haunting, iconic call.",
+    "geography": "North America and Eurasia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common Poorwill",
+    "species_name": "Phalaenoptilus nuttallii",
+    "average_weight_species": "45g - 58g",
+    "description": "A nocturnal bird with cryptic plumage; the only bird known to enter a true state of hibernation.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Common Starling",
+    "species_name": "Sturnus vulgaris",
+    "average_weight_species": "60g - 95g",
+    "description": "A highly adaptable bird with iridescent plumage that appears speckled in winter.",
+    "geography": "Global (Native to Eurasia)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Coppersmith Barbet",
+    "species_name": "Psilopogon haemacephalus",
+    "average_weight_species": "30g - 45g",
+    "description": "A small, colorful barbet with a repetitive metallic call resembling a hammer hitting copper.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Coppery-tailed Coucal",
+    "species_name": "Centropus cupreicaudus",
+    "average_weight_species": "250g - 350g",
+    "description": "A large, clumsy-looking cuckoo with deep coppery-brown tail feathers and a heavy bill.",
+    "geography": "Southern Africa wetlands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crab-plover",
+    "species_name": "Dromas ardeola",
+    "average_weight_species": "230g - 330g",
+    "description": "A unique, long-legged white and black shorebird that specializes in eating crabs.",
+    "geography": "Indian Ocean coasts",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crane Hawk",
+    "species_name": "Geranospiza caerulescens",
+    "average_weight_species": "400g - 550g",
+    "description": "A slate-gray hawk with long, double-jointed legs used to reach into tree hollows for prey.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cream-colored Woodpecker",
+    "species_name": "Celeus flavus",
+    "average_weight_species": "95g - 130g",
+    "description": "A stunning woodpecker with almost entirely pale-yellow or cream plumage and a brown tail.",
+    "geography": "South America (Amazon Basin)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Auklet",
+    "species_name": "Aethia cristatella",
+    "average_weight_species": "250g - 280g",
+    "description": "A social seabird with a distinctive forward-flopping crest and a citrus-like scent.",
+    "geography": "Bering Sea and North Pacific",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Caracara",
+    "species_name": "Caracara plancus",
+    "average_weight_species": "1kg - 1.5kg",
+    "description": "A bold, long-legged falcon that often behaves like a vulture, scavenging along roadsides.",
+    "geography": "Southern US to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Coua",
+    "species_name": "Coua cristata",
+    "average_weight_species": "140g - 170g",
+    "description": "A forest-dwelling bird with a prominent crest and blue bare skin around the eye.",
+    "geography": "Madagascar",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Fireback",
+    "species_name": "Lophura ignita",
+    "average_weight_species": "1.5kg - 2.5kg",
+    "description": "A large, dark forest pheasant with a short crest and a vibrant orange-red patch on the lower back.",
+    "geography": "Southeast Asia (Sumatra, Borneo)",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Crested Kingfisher",
+    "species_name": "Megaceryle lugubris",
+    "average_weight_species": "250g - 380g",
+    "description": "A very large, shaggy-crested kingfisher with black-and-white finely barred plumage.",
+    "geography": "Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Nuthatch",
+    "species_name": "Sitta tipped",
+    "average_weight_species": "40g - 50g",
+    "description": "A large, rare nuthatch with blue-grey plumage and a distinctive black-and-white crest.",
+    "geography": "Himalayas to Southeast Asia",
+    "rarity": "Rare"
+  },
+  {
+    "bird_name": "Crested Oropendola",
+    "species_name": "Psarocolius decumanus",
+    "average_weight_species": "150g - 500g",
+    "description": "A large, dark bird known for its long, hanging woven nests and bright yellow outer tail feathers.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Serpent Eagle",
+    "species_name": "Spilornis cheela",
+    "average_weight_species": "500g - 1.1kg",
+    "description": "A stocky raptor with a broad crest, known for feeding primarily on snakes and lizards.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Shriketit",
+    "species_name": "Falcunculus frontatus",
+    "average_weight_species": "25g - 35g",
+    "description": "A striking bird with a parrot-like bill used to strip bark, and a bold black-and-white head.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crested Wood Partridge",
+    "species_name": "Rollulus roulroul",
+    "average_weight_species": "120g - 190g",
+    "description": "A small, round forest partridge; males have a spectacular tall maroon crest.",
+    "geography": "Southeast Asia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Crimson Chat",
+    "species_name": "Epthianura tricolor",
+    "average_weight_species": "10g - 13g",
+    "description": "A small, nomadic bird of arid regions; males have a bright crimson crown and breast.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crimson Sunbird",
+    "species_name": "Aethopyga siparaja",
+    "average_weight_species": "5g - 8g",
+    "description": "A tiny, nectar-feeding bird; males are brilliant crimson with a yellow rump.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Crow (American)",
+    "species_name": "Corvus brachyrhynchos",
+    "average_weight_species": "300g - 600g",
+    "description": "A highly intelligent, all-black bird known for its social complexity and problem-solving.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cuban Tody",
+    "species_name": "Todus multicolor",
+    "average_weight_species": "5g - 7g",
+    "description": "A tiny, jewel-like bird with bright green upperparts, a pink throat, and a blue ear patch.",
+    "geography": "Cuba",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Cuban Trogon",
+    "species_name": "Priotelus temnurus",
+    "average_weight_species": "70g - 90g",
+    "description": "The national bird of Cuba, featuring the colors of the flag and a uniquely shaped tail.",
+    "geography": "Cuba",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Curl-crested Aracari",
+    "species_name": "Pteroglossus beauharnaisii",
+    "average_weight_species": "280g - 350g",
+    "description": "A toucan with unique, shiny black feathers on its head that resemble curled ribbons.",
+    "geography": "South America (Amazon Basin)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "D'Arnaud's Barbet",
+    "species_name": "Trachyphonus darnaudii",
+    "average_weight_species": "25g - 35g",
+    "description": "A ground-dwelling barbet with yellow and black speckling, known for its synchronized duets.",
+    "geography": "East Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Dalmatian Pelican",
+    "species_name": "Pelecanus crispus",
+    "average_weight_species": "10kg - 13kg",
+    "description": "The largest of the pelicans, with silvery-white plumage and curly nape feathers.",
+    "geography": "Eurasia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Darjeeling Woodpecker",
+    "species_name": "Dendrocopos darjellensis",
+    "average_weight_species": "60g - 85g",
+    "description": "A medium-sized woodpecker with a black back, white wing patches, and a yellow-washed neck.",
+    "geography": "Himalayas to Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Dark-eyed Junco",
+    "species_name": "Junco hyemalis",
+    "average_weight_species": "18g - 30g",
+    "description": "A common 'snowbird' with a pink bill and white outer tail feathers flashed during flight.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Daurian Redstart",
+    "species_name": "Phoenicurus auroreus",
+    "average_weight_species": "11g - 20g",
+    "description": "A small songbird; males have a silvery crown, black face, and a bright orange belly and tail.",
+    "geography": "East Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Demoiselle Crane",
+    "species_name": "Grus virgo",
+    "average_weight_species": "2kg - 3kg",
+    "description": "The smallest crane species, known for its elegant white ear tufts and long black neck feathers.",
+    "geography": "Central Eurasia to Africa/India",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Double-barred Finch",
+    "species_name": "Taeniopygia bichenovii",
+    "average_weight_species": "7g - 11g",
+    "description": "Also called the Owl Finch due to its white face ringed by two distinct black bands.",
+    "geography": "Northern and Eastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Double-crested Cormorant",
+    "species_name": "Nannopterum auritum",
+    "average_weight_species": "1.2kg - 2.5kg",
+    "description": "A large waterbird often seen standing on rocks with wings spread to dry.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Double-eyed Fig Parrot",
+    "species_name": "Cyclopsitta diophthalma",
+    "average_weight_species": "25g - 40g",
+    "description": "A tiny, short-tailed green parrot with vibrant facial markings that resemble 'extra' eyes.",
+    "geography": "New Guinea and Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Downy Woodpecker",
+    "species_name": "Dryobates pubescens",
+    "average_weight_species": "21g - 28g",
+    "description": "The smallest woodpecker in North America, virtually identical in pattern to the Hairy Woodpecker.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Dunlin",
+    "species_name": "Calidris alpina",
+    "average_weight_species": "40g - 85g",
+    "description": "A familiar shorebird with a slightly drooping bill and a black belly patch in breeding plumage.",
+    "geography": "Holarctic (Global North)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Dusky Lory",
+    "species_name": "Pseudeos fuscata",
+    "average_weight_species": "140g - 190g",
+    "description": "A social parrot with dark brown plumage highlighted by bright orange or yellow bands.",
+    "geography": "New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Dusky Robin",
+    "species_name": "Melanodryas vittata",
+    "average_weight_species": "25g - 30g",
+    "description": "A plain, brown-grey bird of the Australian robin family, found primarily in forests.",
+    "geography": "Tasmania, Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eared Pitta",
+    "species_name": "Hydrornis phayrei",
+    "average_weight_species": "90g - 120g",
+    "description": "A ground-dwelling bird with long, pointed feathers on the side of the head like 'ears'.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Bluebird",
+    "species_name": "Sialia sialis",
+    "average_weight_species": "27g - 34g",
+    "description": "A small thrush; males are vivid blue with a warm reddish-brown breast.",
+    "geography": "Eastern North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Bluebonnet",
+    "species_name": "Northiella haematogaster",
+    "average_weight_species": "70g - 100g",
+    "description": "A slender parrot with a blue face and a mix of olive, yellow, and red on the body.",
+    "geography": "Interior Southeast Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Golden Weaver",
+    "species_name": "Ploceus subaureus",
+    "average_weight_species": "25g - 35g",
+    "description": "A bright yellow songbird known for weaving complex, round nests from grass.",
+    "geography": "Eastern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Meadowlark",
+    "species_name": "Sturnella magna",
+    "average_weight_species": "90g - 150g",
+    "description": "A grassland bird with a bright yellow breast and a distinct black 'V' on its chest.",
+    "geography": "Eastern North America to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Rosella",
+    "species_name": "Platycercus eximius",
+    "average_weight_species": "90g - 120g",
+    "description": "A colorful parrot with a red head, white cheeks, and yellow-green scaled back plumage.",
+    "geography": "Southeastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Towhee",
+    "species_name": "Pipilo erythrophthalmus",
+    "average_weight_species": "32g - 52g",
+    "description": "A large sparrow; males are black above with rufous sides and white underparts.",
+    "geography": "Eastern North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Whip-poor-will",
+    "species_name": "Antrostomus vociferus",
+    "average_weight_species": "45g - 55g",
+    "description": "A nocturnal bird more often heard than seen, named after its rhythmic, whistled call.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eastern Yellow Robin",
+    "species_name": "Eopsaltria australis",
+    "average_weight_species": "15g - 25g",
+    "description": "A friendly forest bird with grey upperparts and a bright yellow breast.",
+    "geography": "Eastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ecuadorian Hillstar",
+    "species_name": "Oreotrochilus chimborazo",
+    "average_weight_species": "8g",
+    "description": "A high-altitude hummingbird; males have a violet head and a white breast.",
+    "geography": "High Andes (Ecuador/Colombia)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Egyptian Goose",
+    "species_name": "Alopochen aegyptiaca",
+    "average_weight_species": "1.5kg - 2.3kg",
+    "description": "A large, tan bird with dark eye patches, native to Africa but widely introduced elsewhere.",
+    "geography": "Africa and Europe",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Elegant Trogon",
+    "species_name": "Trogon elegans",
+    "average_weight_species": "65g - 80g",
+    "description": "A stunning forest bird with a metallic green back, red belly, and a barred tail.",
+    "geography": "Southwestern US to Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Elliot's Pheasant",
+    "species_name": "Syrmaticus ellioti",
+    "average_weight_species": "1kg - 1.3kg",
+    "description": "A shy, long-tailed pheasant with white wing bars and chestnut plumage.",
+    "geography": "Southeastern China",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Emerald Tanager",
+    "species_name": "Tangara florida",
+    "average_weight_species": "18g - 22g",
+    "description": "A brilliantly green songbird with small black spots and a yellowish crown.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Emperor Penguin",
+    "species_name": "Aptenodytes forsteri",
+    "average_weight_species": "22kg - 45kg",
+    "description": "The tallest and heaviest of all penguin species, specialized for extreme cold.",
+    "geography": "Antarctica",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Emu",
+    "species_name": "Dromaius novaehollandiae",
+    "average_weight_species": "30kg - 55kg",
+    "description": "The second-largest living bird by height; flightless with long legs and shaggy feathers.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Enggano Myna",
+    "species_name": "Gracula enganensis",
+    "average_weight_species": "180g - 250g",
+    "description": "A large, black hill-myna relative with yellow wattles on the head.",
+    "geography": "Enggano Island, Indonesia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Eurasian Bullfinch",
+    "species_name": "Pyrrhula pyrrhula",
+    "average_weight_species": "21g - 38g",
+    "description": "A bulky finch; males have a bright rose-red breast and a black cap.",
+    "geography": "Europe and Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eurasian Golden Oriole",
+    "species_name": "Oriolus oriolus",
+    "average_weight_species": "65g - 80g",
+    "description": "A striking bird; males are bright yellow with black wings and a red bill.",
+    "geography": "Europe, Asia, and Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Eurasian Magpie",
+    "species_name": "Pica pica",
+    "average_weight_species": "200g - 250g",
+    "description": "A highly intelligent corvid with black-and-white plumage and a long, iridescent green-blue tail.",
+    "geography": "Europe and Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "European Goldfinch",
+    "species_name": "Carduelis carduelis",
+    "average_weight_species": "14g - 19g",
+    "description": "A small, colorful finch with a bright red face, white cheeks, and a bold yellow wing stripe.",
+    "geography": "Europe, North Africa, and Western Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "European Turtle Dove",
+    "species_name": "Streptopelia turtur",
+    "average_weight_species": "100g - 170g",
+    "description": "A slender dove with a distinctive black-and-white patch on the side of its neck and rufous-toned wings.",
+    "geography": "Europe and North Africa to Central Asia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Evening Grosbeak",
+    "species_name": "Hesperiphona vespertina",
+    "average_weight_species": "53g - 72g",
+    "description": "A bulky finch with a massive bill; males have a bright yellow body and a dark head with a yellow brow.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Fairy Bluebird (Asian)",
+    "species_name": "Irena puella",
+    "average_weight_species": "50g - 75g",
+    "description": "A striking forest bird; males have brilliant turquoise-blue upperparts and jet-black underparts.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Fairy Penguin (Little Blue)",
+    "species_name": "Eudyptula minor",
+    "average_weight_species": "1kg - 1.2kg",
+    "description": "The smallest species of penguin, featuring slate-blue feathers and a white underside.",
+    "geography": "Australia and New Zealand",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Fairy Tern",
+    "species_name": "Sternula nereis",
+    "average_weight_species": "60g - 70g",
+    "description": "A small, pale tern with a yellow bill and a black crown that does not reach the bill.",
+    "geography": "Australia and New Zealand",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Fan-tailed Widowbird",
+    "species_name": "Euplectes axillaris",
+    "average_weight_species": "25g - 35g",
+    "description": "A marsh-dwelling bird; breeding males are black with red and orange shoulder patches.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Fasciated Wren",
+    "species_name": "Campylorhynchus fasciatus",
+    "average_weight_species": "20g - 28g",
+    "description": "A large, social wren with heavy black-and-white barring across the entire body.",
+    "geography": "Ecuador and Peru",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Fiery Minivet",
+    "species_name": "Pericrocotus igneus",
+    "average_weight_species": "14g - 16g",
+    "description": "A small, active forest bird; males are glossy black with vibrant orange-red underparts and wing patches.",
+    "geography": "Southeast Asia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Fiordland Penguin",
+    "species_name": "Eudyptes pachyrhynchus",
+    "average_weight_species": "2.5kg - 4kg",
+    "description": "A crested penguin with a thick yellow stripe over the eye and distinctive white cheek stripes.",
+    "geography": "New Zealand",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Fire-tailed Myzornis",
+    "species_name": "Myzornis pyrrhoura",
+    "average_weight_species": "11g - 13g",
+    "description": "A unique, bright green songbird with a black mask and a vibrant red-and-yellow tail.",
+    "geography": "Himalayas to Myanmar",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Flame Bowerbird",
+    "species_name": "Sericulus ardens",
+    "average_weight_species": "120g - 145g",
+    "description": "One of the most colorful bowerbirds; males have brilliant red and orange-yellow plumage.",
+    "geography": "New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Flame Tanager",
+    "species_name": "Piranga bidentata",
+    "average_weight_species": "32g - 38g",
+    "description": "A medium-sized songbird; males are bright orange-red with dark streaks on the back and white wing bars.",
+    "geography": "Mexico to Panama",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Forest Wagtail",
+    "species_name": "Dendronanthus indicus",
+    "average_weight_species": "14g - 17g",
+    "description": "A slender bird with a unique habit of wagging its tail sideways rather than up and down.",
+    "geography": "East Asia to Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Frigatebird (Great)",
+    "species_name": "Fregata minor",
+    "average_weight_species": "1kg - 1.6kg",
+    "description": "A large seabird with a deeply forked tail; males possess a giant, inflatable red throat pouch.",
+    "geography": "Tropical oceans worldwide",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Frillback Pigeon",
+    "species_name": "Columba livia domestica",
+    "average_weight_species": "300g - 450g",
+    "description": "A breed of domestic pigeon known for the unique 'frills' or curls on its wing shield feathers.",
+    "geography": "Global (Domestic)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gambel's Quail",
+    "species_name": "Callipepla gambelii",
+    "average_weight_species": "160g - 180g",
+    "description": "A desert-dwelling quail with a prominent black topknot and a buffy-white belly with a black patch.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gang-gang Cockatoo",
+    "species_name": "Callocephalon fimbriatum",
+    "average_weight_species": "240g - 330g",
+    "description": "A grey cockatoo; males are distinguished by their wispy, bright red crests.",
+    "geography": "Southeastern Australia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Gila Woodpecker",
+    "species_name": "Melanerpes uropygialis",
+    "average_weight_species": "65g - 75g",
+    "description": "A desert woodpecker that often nests in Saguaro cacti; has a zebra-striped back.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gilded Flicker",
+    "species_name": "Colaptes chrysoides",
+    "average_weight_species": "110g - 130g",
+    "description": "A large woodpecker of the desert, similar to the Northern Flicker but with yellow under-wings.",
+    "geography": "Southwestern US and Baja California",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Glossy Ibis",
+    "species_name": "Plegadis falcinellus",
+    "average_weight_species": "500g - 700g",
+    "description": "A dark, slender ibis with metallic bronze-green and purple iridescent plumage.",
+    "geography": "Worldwide (warm regions)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Go-away-bird (Grey)",
+    "species_name": "Corythaixoides concolor",
+    "average_weight_species": "200g - 300g",
+    "description": "A plain grey bird with a tall crest, named after its loud, alarm-like 'kway' call.",
+    "geography": "Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Golden-winged Warbler",
+    "species_name": "Vermivora chrysoptera",
+    "average_weight_species": "8g - 10g",
+    "description": "A small warbler with a yellow crown and wing patches, and a black throat and eye mask.",
+    "geography": "Eastern North America to South America",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Golden Bowerbird",
+    "species_name": "Amblyornis newtoniana",
+    "average_weight_species": "70g - 90g",
+    "description": "The smallest bowerbird; males are bright golden-yellow and build massive stick structures.",
+    "geography": "Northeastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Golden-cheeked Warbler",
+    "species_name": "Setophaga chrysoparia",
+    "average_weight_species": "9g - 11g",
+    "description": "A rare warbler with bright yellow cheeks and a black throat and back.",
+    "geography": "Breeds in Texas; winters in Central America",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Golden Chlorophonia",
+    "species_name": "Chlorophonia cyanea",
+    "average_weight_species": "12g - 15g",
+    "description": "A tiny, vibrant bird with bright green upperparts and a brilliant yellow belly.",
+    "geography": "South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Golden Eagle",
+    "species_name": "Aquila chrysaetos",
+    "average_weight_species": "3kg - 6.5kg",
+    "description": "One of the most powerful birds of prey, featuring dark brown plumage with golden feathers on the nape.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Golden Parakeet",
+    "species_name": "Guaruba guarouba",
+    "average_weight_species": "250g",
+    "description": "A stunning, almost entirely golden-yellow parrot with green flight feathers.",
+    "geography": "Amazon Basin, Brazil",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Golden Pheasant",
+    "species_name": "Chrysolophus pictus",
+    "average_weight_species": "550g - 700g",
+    "description": "An incredibly colorful gamebird; males have a golden crest and a bright red body.",
+    "geography": "Western China; introduced elsewhere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Golden Pipit",
+    "species_name": "Tmetothylacus tenellus",
+    "average_weight_species": "18g - 22g",
+    "description": "A slender grassland bird; males are distinctive for their bright yellow underparts and wings.",
+    "geography": "East Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gouldian Finch",
+    "species_name": "Chloebia gouldiae",
+    "average_weight_species": "12g - 15g",
+    "description": "An incredibly colorful finch with a purple breast, yellow belly, and green back.",
+    "geography": "Northern Australia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Grandala",
+    "species_name": "Grandala coelicolor",
+    "average_weight_species": "40g - 52g",
+    "description": "A high-altitude bird; males are a stunning, uniform deep silk-blue with black wings.",
+    "geography": "Himalayas to Central China",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gray Catbird",
+    "species_name": "Dumetella carolinensis",
+    "average_weight_species": "35g - 40g",
+    "description": "A slate-grey songbird with a black cap and cinnamon undertail, known for its cat-like mewing call.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gray Kingbird",
+    "species_name": "Tyrannus dominicensis",
+    "average_weight_species": "40g - 50g",
+    "description": "A large, pale grey flycatcher with a heavy bill and a notched tail.",
+    "geography": "Caribbean, Florida, and Northern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gray Partridge",
+    "species_name": "Perdix perdix",
+    "average_weight_species": "380g - 450g",
+    "description": "A rotound ground bird with a distinctive orange face and a dark horseshoe mark on the belly.",
+    "geography": "Eurasia; introduced to North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Great Argus",
+    "species_name": "Argusianus argus",
+    "average_weight_species": "1.5kg - 2.7kg",
+    "description": "A massive pheasant known for the male's enormous wings covered in intricate 'eye' spots.",
+    "geography": "Southeast Asia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Great Gray Owl",
+    "species_name": "Strix nebulosa",
+    "average_weight_species": "700g - 1.4kg",
+    "description": "One of the world's largest owls by length, featuring a massive facial disk and yellow eyes.",
+    "geography": "Northern Hemisphere (Boreal forests)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Great Jacamar",
+    "species_name": "Jacamerops aureus",
+    "average_weight_species": "65g - 75g",
+    "description": "A large, iridescent green forest bird with a long, straight bill and a golden-bronze belly.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Great Kiskadee",
+    "species_name": "Pitangus sulphuratus",
+    "average_weight_species": "55g - 70g",
+    "description": "A bold, noisy flycatcher with a black-and-white striped head and a bright yellow belly.",
+    "geography": "Texas to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Great Potoo",
+    "species_name": "Nyctibius grandis",
+    "average_weight_species": "500g - 650g",
+    "description": "A nocturnal master of camouflage that mimics a broken tree branch during the day.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Great Tinamou",
+    "species_name": "Tinamus major",
+    "average_weight_species": "1kg - 1.2kg",
+    "description": "A shy, ground-dwelling bird known for its haunting, fluting whistles in the rainforest.",
+    "geography": "Central and South America",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Great Xenops",
+    "species_name": "Megaxenops parnaguae",
+    "average_weight_species": "25g - 30g",
+    "description": "A large, bright rufous furnariid with a distinctive upturned bill.",
+    "geography": "Northeastern Brazil (Caatinga)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Greater Pewee",
+    "species_name": "Contopus pertinax",
+    "average_weight_species": "25g - 30g",
+    "description": "A drab grey flycatcher of pine-oak woods, recognized by its tufted head and 'ho-say, re-ah' song.",
+    "geography": "Southwestern US to Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Greater Prairie-chicken",
+    "species_name": "Tympanuchus cupido",
+    "average_weight_species": "700g - 1kg",
+    "description": "Famous for the male's booming courtship display involving orange neck sacs and tufted feathers.",
+    "geography": "Central North America",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Greater Sage-grouse",
+    "species_name": "Centrocercus urophasianus",
+    "average_weight_species": "1.5kg - 3kg",
+    "description": "The largest grouse in North America, known for elaborate lekking displays in sagebrush habitats.",
+    "geography": "Western North America",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Green Broadbill",
+    "species_name": "Calyptomena viridis",
+    "average_weight_species": "100g - 115g",
+    "description": "A small, plump bird with brilliant emerald-green plumage that provides perfect camouflage.",
+    "geography": "Southeast Asia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Green Jay",
+    "species_name": "Cyanocorax yncas",
+    "average_weight_species": "65g - 110g",
+    "description": "A stunning jay with a green body, blue-and-black head, and yellow outer tail feathers.",
+    "geography": "Texas to Honduras; Andes of South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Green Magpie (Common)",
+    "species_name": "Cissa chinensis",
+    "average_weight_species": "120g - 135g",
+    "description": "A striking corvid with vivid green plumage, a black eye mask, and red wings and bill.",
+    "geography": "Himalayas to Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Green-winged Dove",
+    "species_name": "Chalcophaps indica",
+    "average_weight_species": "110g - 160g",
+    "description": "A ground-dwelling dove with brilliant metallic emerald-green wings and a vinous-pink body.",
+    "geography": "South and Southeast Asia to Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Grey Cuckooshrike",
+    "species_name": "Coracina caeruleogrisea",
+    "average_weight_species": "115g - 160g",
+    "description": "A large, grey arboreal bird with a heavy bill, often found in the canopy of rainforests.",
+    "geography": "New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Grey-headed Chachalaca",
+    "species_name": "Ortalis cinereiceps",
+    "average_weight_species": "450g - 600g",
+    "description": "A social, noisy forest bird with a grey head and olive-brown plumage.",
+    "geography": "Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Grey-headed Fish Eagle",
+    "species_name": "Haliaeetus ichthyaetus",
+    "average_weight_species": "1.6kg - 2.7kg",
+    "description": "A large raptor with a grey head and white tail base, specialized for catching fish.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Grey Plover (Black-bellied)",
+    "species_name": "Pluvialis squatarola",
+    "average_weight_species": "170g - 320g",
+    "description": "A chunky shorebird with a black belly in summer and silver-grey plumage in winter.",
+    "geography": "Global (Breeds in Arctic)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Groove-billed Ani",
+    "species_name": "Crotophaga sulcirostris",
+    "average_weight_species": "70g - 80g",
+    "description": "A social, all-black cuckoo with a distinctive large bill featuring horizontal grooves.",
+    "geography": "Texas to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Guinea Turaco",
+    "species_name": "Tauraco persa",
+    "average_weight_species": "220g - 350g",
+    "description": "A green bird with a tall crest and brilliant red flight feathers visible only in flight.",
+    "geography": "West and Central Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Guineafowl (Helmeted)",
+    "species_name": "Numida meleagris",
+    "average_weight_species": "1.1kg - 1.6kg",
+    "description": "A large, speckled grey bird with a bare blue head and a bony 'helmet' or casque.",
+    "geography": "Africa; widely introduced elsewhere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Gurney's Pitta",
+    "species_name": "Hydrornis gurneyi",
+    "average_weight_species": "85g - 110g",
+    "description": "An extremely rare ground bird; males have a blue crown and black-and-yellow barred underparts.",
+    "geography": "Thailand and Myanmar",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Gyrfalcon",
+    "species_name": "Falco rusticolus",
+    "average_weight_species": "800g - 2.1kg",
+    "description": "The largest falcon in the world, specialized for life in the high Arctic tundra.",
+    "geography": "Holarctic (Arctic regions)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Hamerkop",
+    "species_name": "Scopus umbretta",
+    "average_weight_species": "410g - 500g",
+    "description": "A brown wading bird with a head shape resembling a hammer; builds enormous stick nests.",
+    "geography": "Africa, Madagascar, and Arabia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Harlequin Duck",
+    "species_name": "Histrionicus histrionicus",
+    "average_weight_species": "500g - 700g",
+    "description": "A small sea duck; males have complex blue, white, and chestnut patterns.",
+    "geography": "Northern North America and Eurasia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Harlequin Quail",
+    "species_name": "Cyrtonyx montezumae",
+    "average_weight_species": "150g - 200g",
+    "description": "Also known as Montezuma Quail; features an incredible black-and-white 'clown' face.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Harpy Eagle",
+    "species_name": "Harpia harpyja",
+    "average_weight_species": "4kg - 9kg",
+    "description": "One of the world's most powerful eagles, with massive talons for hunting monkeys and sloths.",
+    "geography": "Central and South America",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Hawaiian Goose (Nene)",
+    "species_name": "Branta sandvicensis",
+    "average_weight_species": "1.5kg - 2.5kg",
+    "description": "The world's rarest goose; has evolved to live on lava flows with reduced foot webbing.",
+    "geography": "Hawaii",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Hawfinch",
+    "species_name": "Coccothraustes coccothraustes",
+    "average_weight_species": "50g - 65g",
+    "description": "A massive-billed finch capable of cracking open cherry stones and olive pits.",
+    "geography": "Europe and Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Helmet Vanga",
+    "species_name": "Euryceros prevostii",
+    "average_weight_species": "85g - 100g",
+    "description": "A striking bird with a massive, arched bright blue bill and rufous-and-black plumage.",
+    "geography": "Madagascar",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Hepatic Tanager",
+    "species_name": "Piranga flava",
+    "average_weight_species": "30g - 40g",
+    "description": "Named for the male's 'liver-red' plumage; similar to the Summer Tanager but with a darker bill.",
+    "geography": "Southwestern US to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Himalayan Bluetail",
+    "species_name": "Tarsiger rufilatus",
+    "average_weight_species": "12g - 16g",
+    "description": "A small songbird; males have a bright blue back, orange flanks, and a white throat.",
+    "geography": "Himalayas to Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Himalayan Monal",
+    "species_name": "Lophophorus impejanus",
+    "average_weight_species": "1.8kg - 2.4kg",
+    "description": "A stunning pheasant with iridescent rainbow plumage and a spoon-shaped crest.",
+    "geography": "Himalayas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Hoatzin",
+    "species_name": "Opisthocomus hoazin",
+    "average_weight_species": "700g - 900g",
+    "description": "A bizarre, primitive-looking bird known for its digestive system that ferments leaves.",
+    "geography": "Amazon and Orinoco Basins",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Hooded Merganser",
+    "species_name": "Lophodytes cucullatus",
+    "average_weight_species": "540g - 680g",
+    "description": "A small duck with a striking fan-like crest that can be expanded or collapsed.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Hoopoe (Eurasian)",
+    "species_name": "Upupa epops",
+    "average_weight_species": "45g - 85g",
+    "description": "Distinctive bird with a pinkish-brown body, black-and-white wings, and a tall, retractable crest.",
+    "geography": "Europe, Asia, and Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Horned Guan",
+    "species_name": "Oreophasis derbianus",
+    "average_weight_species": "1.2kg - 2.5kg",
+    "description": "A large, turkey-like bird with a unique red horn of bare skin on its head.",
+    "geography": "Mexico and Guatemala highlands",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Horned Lark",
+    "species_name": "Eremophila alpestris",
+    "average_weight_species": "28g - 48g",
+    "description": "A ground-dwelling lark with tiny black feather 'horns' and a yellow-and-black face.",
+    "geography": "North America, Eurasia, and North Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Horned Sungem",
+    "species_name": "Heliactin bilophus",
+    "average_weight_species": "1.8g - 2.5g",
+    "description": "A hummingbird with two iridescent 'horns' and a long, pointed tail.",
+    "geography": "South America (Cerrado region)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "House Finch",
+    "species_name": "Haemorhous mexicanus",
+    "average_weight_species": "16g - 27g",
+    "description": "A small social finch; males have a bright red face and breast.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "House Sparrow",
+    "species_name": "Passer domesticus",
+    "average_weight_species": "24g - 39g",
+    "description": "A ubiquitous, chunky sparrow with a grey crown and black bib in males.",
+    "geography": "Global (Native to Eurasia)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Hyacinth Macaw",
+    "species_name": "Anodorhynchus hyacinthinus",
+    "average_weight_species": "1.2kg - 1.7kg",
+    "description": "The largest flying parrot, featuring deep cobalt plumage and yellow eye rings.",
+    "geography": "Central South America",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Iberian Magpie",
+    "species_name": "Cyanopica cooki",
+    "average_weight_species": "65g - 80g",
+    "description": "A graceful crow relative with azure-blue wings and a black cap.",
+    "geography": "Iberian Peninsula",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ibisbill",
+    "species_name": "Ibidorhyncha struthersii",
+    "average_weight_species": "270g - 320g",
+    "description": "A unique wader with a long, downward-curved red bill specialized for shingle riverbeds.",
+    "geography": "High-altitude Central Asia",
+    "rarity": "Uncommon"
+  },
+  {
+    "bird_name": "Imperial Shag",
+    "species_name": "Leucocarbo atriceps",
+    "average_weight_species": "1.8kg - 3.5kg",
+    "description": "A black-and-white cormorant with a blue eye ring and a yellow nasal knob.",
+    "geography": "Southern South America and Antarctica",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Inca Tern",
+    "species_name": "Larosterna inca",
+    "average_weight_species": "180g - 210g",
+    "description": "A dark grey seabird famous for its long, white 'mustache' feathers.",
+    "geography": "Coasts of Peru and Chile",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Indian Bustard (Great)",
+    "species_name": "Ardeotis nigriceps",
+    "average_weight_species": "8kg - 15kg",
+    "description": "A massive, ground-dwelling bird and one of the heaviest flying birds.",
+    "geography": "India and Pakistan",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Indian Pitta",
+    "species_name": "Pitta brachyura",
+    "average_weight_species": "45g - 65g",
+    "description": "A colorful ground bird with nine distinct colors, often heard but rarely seen.",
+    "geography": "Indian Subcontinent",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Indian Roller",
+    "species_name": "Coracias benghalensis",
+    "average_weight_species": "80g - 100g",
+    "description": "Famous for its aerial acrobatics and brilliant blue wing feathers shown in flight.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Indian Vulture",
+    "species_name": "Gyps indicus",
+    "average_weight_species": "5.5kg - 6.5kg",
+    "description": "A large Old World scavenger that has suffered massive population declines.",
+    "geography": "India and Pakistan",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Indigo Bunting",
+    "species_name": "Passerina cyanea",
+    "average_weight_species": "12g - 18g",
+    "description": "Small songbird; breeding males are entirely vibrant cerulean blue.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Indigo Flycatcher",
+    "species_name": "Eumyias indigo",
+    "average_weight_species": "14g - 18g",
+    "description": "A small forest bird with uniform deep indigo-blue plumage.",
+    "geography": "Southeast Asia (Java, Sumatra, Borneo)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Inland Dotterel",
+    "species_name": "Peltohyas australis",
+    "average_weight_species": "80g - 100g",
+    "description": "A desert shorebird with a buff-colored body and a distinct black 'Y' on its chest.",
+    "geography": "Arid Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ivory-billed Aracari",
+    "species_name": "Pteroglossus azara",
+    "average_weight_species": "120g - 160g",
+    "description": "A small toucan with a pale bill and a single red band across its yellow belly.",
+    "geography": "Amazon Basin",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ivory Gull",
+    "species_name": "Pagophila eburnea",
+    "average_weight_species": "450g - 680g",
+    "description": "A rare, pure white gull that lives in the high Arctic year-round.",
+    "geography": "Arctic Ocean",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "I'iwi",
+    "species_name": "Drepanis coccinea",
+    "average_weight_species": "16g - 20g",
+    "description": "A bright scarlet Hawaiian honeycreeper with a long, curved salmon-colored bill.",
+    "geography": "Hawaii",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Jabiru",
+    "species_name": "Jabiru mycteria",
+    "average_weight_species": "5kg - 9kg",
+    "description": "The tallest flying bird in South and Central America, featuring a black neck and red pouch.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Jack Snipe",
+    "species_name": "Lymnocryptes minimus",
+    "average_weight_species": "35g - 75g",
+    "description": "A small, secretive wader known for its characteristic 'bouncing' movement while feeding.",
+    "geography": "Eurasia and Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Jacobin Pigeon",
+    "species_name": "Columba livia domestica",
+    "average_weight_species": "350g - 500g",
+    "description": "A domestic pigeon breed known for its hood of feathers that encircles its head.",
+    "geography": "Global (Domestic)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Jandaya Parakeet",
+    "species_name": "Aratinga jandaya",
+    "average_weight_species": "120g - 140g",
+    "description": "A colorful parrot with an orange-red head and breast and green wings.",
+    "geography": "Northeastern Brazil",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Japanese Robin",
+    "species_name": "Larvivora akahige",
+    "average_weight_species": "14g - 20g",
+    "description": "A small songbird with a bright rufous face and throat and a grey belly.",
+    "geography": "East Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Java Sparrow",
+    "species_name": "Padda oryzivora",
+    "average_weight_species": "22g - 28g",
+    "description": "A large finch with a grey body, black-and-white head, and a heavy pink bill.",
+    "geography": "Java and Bali; introduced elsewhere",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Jocotoco Antpitta",
+    "species_name": "Grallaria ridgelyi",
+    "average_weight_species": "150g - 200g",
+    "description": "A large, long-legged ground bird with a white cheek patch; discovered only in 1997.",
+    "geography": "Ecuador and Peru",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Kagu",
+    "species_name": "Rhynochetos jubatus",
+    "average_weight_species": "700g - 1.1kg",
+    "description": "A flightless, ghost-grey bird with a long crest and bright orange legs.",
+    "geography": "New Caledonia",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Kakapo",
+    "species_name": "Strigops habroptila",
+    "average_weight_species": "1.5kg - 4kg",
+    "description": "A heavy, flightless, nocturnal parrot known for its sweet scent and lekking behavior.",
+    "geography": "New Zealand islands",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Killdeer",
+    "species_name": "Charadrius vociferus",
+    "average_weight_species": "75g - 120g",
+    "description": "A noisy plover with two black breast bands; famous for its 'broken-wing' distraction display.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "King Eider",
+    "species_name": "Somateria spectabilis",
+    "average_weight_species": "1.2kg - 2.1kg",
+    "description": "A large sea duck; males have a spectacular orange-and-blue plate on their forehead.",
+    "geography": "Arctic regions",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "King Vulture",
+    "species_name": "Sarcoramphus papa",
+    "average_weight_species": "3kg - 4.5kg",
+    "description": "A large vulture with white plumage and a wildly colorful, fleshy head and neck.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Kiwi (North Island Brown)",
+    "species_name": "Apteryx mantelli",
+    "average_weight_species": "2kg - 3.5kg",
+    "description": "A flightless bird with hair-like feathers and nostrils at the very tip of its long bill.",
+    "geography": "New Zealand",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Knob-billed Duck",
+    "species_name": "Sarkidiornis melanotos",
+    "average_weight_species": "1.2kg - 2.6kg",
+    "description": "A large duck; males feature a large, fleshy black 'knob' on their bill.",
+    "geography": "Africa, South Asia, and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Kookaburra (Laughing)",
+    "species_name": "Dacelo novaeguineae",
+    "average_weight_species": "300g - 450g",
+    "description": "The world's largest kingfisher, famous for its loud, human-like 'laugh' call.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Lark Bunting",
+    "species_name": "Calamospiza melanocorys",
+    "average_weight_species": "35g - 45g",
+    "description": "A large sparrow; breeding males are jet black with striking white wing patches.",
+    "geography": "North American prairies",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Laughing Gull",
+    "species_name": "Leucophaeus atricilla",
+    "average_weight_species": "250g - 370g",
+    "description": "A medium-sized gull with a black hood and a call that sounds like high-pitched laughter.",
+    "geography": "Coasts of the Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Lazuli Bunting",
+    "species_name": "Passerina amoena",
+    "average_weight_species": "13g - 18g",
+    "description": "Small songbird; males have an iridescent blue head, orange breast, and white belly.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Lesser Adjutant",
+    "species_name": "Leptoptilos javanicus",
+    "average_weight_species": "4kg - 6kg",
+    "description": "A large stork with a bare neck and head, and a large, heavy bill.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Lilac-breasted Roller",
+    "species_name": "Coracias caudatus",
+    "average_weight_species": "90g - 110g",
+    "description": "A stunningly colorful bird with a lilac breast, turquoise belly, and fork-tailed streamers.",
+    "geography": "Southern and Eastern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Limpkin",
+    "species_name": "Aramus guarauna",
+    "average_weight_species": "900g - 1.3kg",
+    "description": "A long-legged wetland bird specialized in hunting apple snails.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Little Auk (Dovekie)",
+    "species_name": "Alle alle",
+    "average_weight_species": "130g - 180g",
+    "description": "A tiny, plump black-and-white seabird of the high Arctic.",
+    "geography": "North Atlantic and Arctic Ocean",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Loggerhead Shrike",
+    "species_name": "Lanius ludovicianus",
+    "average_weight_species": "45g - 50g",
+    "description": "A predatory songbird that impales its prey on thorns or barbed wire.",
+    "geography": "North America",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Long-eared Owl",
+    "species_name": "Asio otus",
+    "average_weight_species": "220g - 430g",
+    "description": "A slender owl with very long, vertical ear tufts and orange facial disks.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Looney Birds (Loons/Divers)",
+    "species_name": "Gaviidae",
+    "average_weight_species": "1kg - 6.5kg",
+    "description": "Family of expert diving waterbirds with spear-shaped bills and haunting calls.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Lucifer Hummingbird",
+    "species_name": "Calothorax lucifer",
+    "average_weight_species": "3g - 4g",
+    "description": "A hummingbird with a long, curved bill and a brilliant purple iridescent throat in males.",
+    "geography": "Mexico and Southwestern US",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Magpie Goose",
+    "species_name": "Anseranas semipalmata",
+    "average_weight_species": "2kg - 2.8kg",
+    "description": "A unique waterbird with black and white plumage and only partially webbed feet.",
+    "geography": "Australia and Southern New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Malabar Hornbill (Pied)",
+    "species_name": "Anthracoceros coronatus",
+    "average_weight_species": "1kg",
+    "description": "A large hornbill with a massive yellow bill and a large black-and-white casque.",
+    "geography": "India and Sri Lanka",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Malachite Kingfisher",
+    "species_name": "Corythornis cristatus",
+    "average_weight_species": "15g - 19g",
+    "description": "A tiny, brilliant blue and orange kingfisher with a metallic green crest.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Malagasy White-eye",
+    "species_name": "Zosterops maderaspatanus",
+    "average_weight_species": "9g - 12g",
+    "description": "Small yellowish-green songbird with a distinctive white ring around the eye.",
+    "geography": "Madagascar and Comoros",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Maleo",
+    "species_name": "Macrocephalon maleo",
+    "average_weight_species": "1.4kg - 1.7kg",
+    "description": "A ground-dwelling bird that lays eggs in solar-heated volcanic sand for incubation.",
+    "geography": "Sulawesi, Indonesia",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Mallard Duck",
+    "species_name": "Anas platyrhynchos",
+    "average_weight_species": "700g - 1.6kg",
+    "description": "A medium-sized dabbling duck; males have a characteristic iridescent green head.",
+    "geography": "Global (Northern Hemisphere native)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Mandarin Duck",
+    "species_name": "Aix galericulata",
+    "average_weight_species": "450g - 700g",
+    "description": "Highly ornate perching duck; males feature orange 'sails' and complex colorful plumage.",
+    "geography": "East Asia; introduced to Europe",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Mangrove Cuckoo",
+    "species_name": "Coccyzus minor",
+    "average_weight_species": "65g - 75g",
+    "description": "A shy, slender cuckoo with a black mask and buff-colored underparts.",
+    "geography": "Florida, Caribbean, and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Marabou Stork",
+    "species_name": "Leptoptilos crumenifer",
+    "average_weight_species": "4.5kg - 8kg",
+    "description": "A massive stork with a bare neck, a long pink gular sac, and scavenger habits.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Masked Bobwhite",
+    "species_name": "Colinus virginianus ridgwayi",
+    "average_weight_species": "150g - 180g",
+    "description": "A subspecies of Northern Bobwhite; males have a striking black face and throat.",
+    "geography": "Arizona (USA) and Sonora (Mexico)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Masked Booby",
+    "species_name": "Sula dactylatra",
+    "average_weight_species": "1.2kg - 2.2kg",
+    "description": "A large white seabird with a distinctive black mask and yellow bill.",
+    "geography": "Tropical oceans worldwide",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Masked Lapwing",
+    "species_name": "Vanellus miles",
+    "average_weight_species": "230g - 400g",
+    "description": "Large shorebird with yellow facial wattles and a loud, piercing call.",
+    "geography": "Australia, New Zealand, and New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "McKay's Bunting",
+    "species_name": "Plectrophenax hyperboreus",
+    "average_weight_species": "35g - 45g",
+    "description": "A very white bunting that breeds only on two small islands in the Bering Sea.",
+    "geography": "Alaska islands (USA)",
+    "rarity": "Rare"
+  },
+  {
+    "bird_name": "Merlin",
+    "species_name": "Falco columbarius",
+    "average_weight_species": "140g - 230g",
+    "description": "A small, powerful falcon known for hunting small birds in rapid, level flight.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Mikado Pheasant",
+    "species_name": "Syrmaticus mikado",
+    "average_weight_species": "800g - 1.3kg",
+    "description": "A dark, elegant pheasant; males are blue-black with white wing bars and long tails.",
+    "geography": "High mountains of Taiwan",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Military Macaw",
+    "species_name": "Ara militaris",
+    "average_weight_species": "700g - 1.1kg",
+    "description": "A large green parrot with a red forehead and blue flight feathers.",
+    "geography": "Mexico and South America",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Mourning Dove",
+    "species_name": "Zenaida macroura",
+    "average_weight_species": "110g - 170g",
+    "description": "A graceful dove known for its mournful 'coo' and whistling wing beat.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Myna (Common)",
+    "species_name": "Acridotheres tristis",
+    "average_weight_species": "110g - 140g",
+    "description": "An adaptable, vocal bird with brown plumage and yellow skin around the eyes.",
+    "geography": "Asia; widely introduced globally",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Nicobar Pigeon",
+    "species_name": "Caloenas nicobarica",
+    "average_weight_species": "500g - 600g",
+    "description": "A large pigeon with iridescent green-copper hackles and a white tail.",
+    "geography": "Small islands of Southeast Asia",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Noisy Friarbird",
+    "species_name": "Philemon corniculatus",
+    "average_weight_species": "100g - 130g",
+    "description": "A honeyeater with a bare black head and a distinct 'knob' on its bill.",
+    "geography": "Eastern Australia and New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Beardless-Tyrannulet",
+    "species_name": "Camptostoma imberbe",
+    "average_weight_species": "7g - 9g",
+    "description": "A tiny, inconspicuous flycatcher with a small, bushy crest.",
+    "geography": "Texas to Costa Rica",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Cardinal",
+    "species_name": "Cardinalis cardinalis",
+    "average_weight_species": "42g - 48g",
+    "description": "Iconic songbird; males are bright red with a black face and prominent crest.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Flicker",
+    "species_name": "Colaptes auratus",
+    "average_weight_species": "110g - 160g",
+    "description": "A large, brownish woodpecker with a black bib and spotted underparts.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Fulmar",
+    "species_name": "Fulmarus glacialis",
+    "average_weight_species": "450g - 1kg",
+    "description": "A thick-necked seabird with a tubular nose, resembling a gull in flight.",
+    "geography": "North Atlantic and North Pacific",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Gannet",
+    "species_name": "Morus bassanus",
+    "average_weight_species": "2.5kg - 3.5kg",
+    "description": "A large white seabird with black wing tips and a yellowish head; a spectacular diver.",
+    "geography": "North Atlantic Ocean",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Goshawk",
+    "species_name": "Accipiter gentilis",
+    "average_weight_species": "630g - 1.4kg",
+    "description": "A large, powerful hawk with a white eyebrow and finely barred grey underparts.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Jacana",
+    "species_name": "Jacana spinosa",
+    "average_weight_species": "90g - 150g",
+    "description": "A wading bird with very long toes for walking on floating vegetation.",
+    "geography": "Mexico and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Mockingbird",
+    "species_name": "Mimus polyglottos",
+    "average_weight_species": "45g - 55g",
+    "description": "Highly intelligent songbird capable of mimicking hundreds of other bird songs.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Parula",
+    "species_name": "Setophaga americana",
+    "average_weight_species": "8g - 10g",
+    "description": "Small warbler with a blue-grey back, yellow throat, and white eye crescents.",
+    "geography": "Eastern North America to Caribbean",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Red Bishop",
+    "species_name": "Euplectes franciscanus",
+    "average_weight_species": "12g - 20g",
+    "description": "A small weaver bird; breeding males are brilliant orange-red with a black face.",
+    "geography": "Africa (introduced to USA)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Northern Shoveler",
+    "species_name": "Spatula clypeata",
+    "average_weight_species": "400g - 800g",
+    "description": "Dabbling duck with a very large, shovel-shaped bill used for filtering food.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ocellated Turkey",
+    "species_name": "Meleagris ocellata",
+    "average_weight_species": "3kg - 5kg",
+    "description": "Striking turkey with iridescent feathers and eye-like spots on the tail.",
+    "geography": "Yucatan Peninsula, Mexico",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Oilbird",
+    "species_name": "Steatornis caripensis",
+    "average_weight_species": "350g - 480g",
+    "description": "Unique nocturnal, fruit-eating bird that uses echolocation in caves.",
+    "geography": "Northern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Okinawa Rail",
+    "species_name": "Hypotaenidia okinawae",
+    "average_weight_species": "400g - 450g",
+    "description": "A flightless rail with a red bill and legs and black-and-white barred underparts.",
+    "geography": "Okinawa Island, Japan",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Orange-breasted Trogon",
+    "species_name": "Harpactes oreskios",
+    "average_weight_species": "50g - 60g",
+    "description": "Beautiful forest bird with a yellow-orange breast and olive-green head.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Orange-breasted Bunting",
+    "species_name": "Passerina leclancherii",
+    "average_weight_species": "11g - 14g",
+    "description": "A stunningly multicolored songbird with a blue-green crown, turquoise back, and bright orange-yellow underparts.",
+    "geography": "Pacific slope of Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Oriental Bay Owl",
+    "species_name": "Phodilus badius",
+    "average_weight_species": "220g - 310g",
+    "description": "A nocturnal bird with a distinct heart-shaped face and 'ears' that are actually extensions of the facial disk.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ornate Hawk-eagle",
+    "species_name": "Spizaetus ornatus",
+    "average_weight_species": "1kg - 1.6kg",
+    "description": "A medium-to-large raptor with a prominent black crest and bold chestnut-and-black barring on its body.",
+    "geography": "Central and South America",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Osprey",
+    "species_name": "Pandion haliaetus",
+    "average_weight_species": "1.4kg - 2.1kg",
+    "description": "A large, fish-eating raptor with white underparts and a distinctive dark eye stripe.",
+    "geography": "Global (except Antarctica)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ostrich (Common)",
+    "species_name": "Struthio camelus",
+    "average_weight_species": "90kg - 130kg",
+    "description": "The largest and heaviest living bird; flightless, with long legs capable of running at high speeds.",
+    "geography": "Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ovenbird",
+    "species_name": "Seiurus aurocapilla",
+    "average_weight_species": "18g - 26g",
+    "description": "A large, ground-walking warbler with an orange crown and a song that sounds like 'teacher, teacher, teacher!'",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Oystercatcher (Eurasian)",
+    "species_name": "Haematopus ostralegus",
+    "average_weight_species": "450g - 750g",
+    "description": "A noisy wading bird with black-and-white plumage and a long, stout orange-red bill.",
+    "geography": "Europe, Asia, and Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Painted Bunting",
+    "species_name": "Passerina ciris",
+    "average_weight_species": "13g - 19g",
+    "description": "Often called the most beautiful bird in North America; males have blue heads, green backs, and red bellies.",
+    "geography": "Southern US to Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Palila",
+    "species_name": "Loxioides bailleui",
+    "average_weight_species": "35g - 40g",
+    "description": "A finch-billed Hawaiian honeycreeper with a yellow head and breast, specialized to eat mamane seeds.",
+    "geography": "Hawaii (Mauna Kea)",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Palm-nut Vulture",
+    "species_name": "Gypohierax angolensis",
+    "average_weight_species": "1.3kg - 1.7kg",
+    "description": "A small vulture that is unusual for its heavy reliance on the fruit of oil palms rather than carrion.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Paradise Tanager",
+    "species_name": "Tangara chilensis",
+    "average_weight_species": "18g - 22g",
+    "description": "A multicolored songbird with a bright green face, sky-blue belly, and a red or yellow rump.",
+    "geography": "Amazon Basin",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Parakeet Auklet",
+    "species_name": "Aethia psittacula",
+    "average_weight_species": "240g - 330g",
+    "description": "A small seabird with a white plume behind the eye and a unique, circular orange bill.",
+    "geography": "North Pacific and Bering Sea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Parus major (Great Tit)",
+    "species_name": "Parus major",
+    "average_weight_species": "14g - 22g",
+    "description": "A familiar songbird with a glossy black head, white cheeks, and a yellow breast with a black 'necktie'.",
+    "geography": "Europe, Asia, and North Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Patagonian Sierra-finch",
+    "species_name": "Phrygilus patagonicus",
+    "average_weight_species": "20g - 26g",
+    "description": "A small finch with a dark grey head, orange-brown back, and yellow-green underparts.",
+    "geography": "Southern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Peacock (Indian Peafowl)",
+    "species_name": "Pavo cristatus",
+    "average_weight_species": "4kg - 6kg",
+    "description": "Famous for the male's massive, iridescent tail fan decorated with colorful eye-spots.",
+    "geography": "South Asia; introduced worldwide",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Peregrine Falcon",
+    "species_name": "Falco peregrinus",
+    "average_weight_species": "600g - 1.3kg",
+    "description": "The fastest animal on earth, capable of reaching over 320 km/h during its hunting stoop.",
+    "geography": "Global",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Phainopepla",
+    "species_name": "Phainopepla nitens",
+    "average_weight_species": "20g - 28g",
+    "description": "A silky-flycatcher with a tall crest and red eyes; males are glossy black with white wing patches.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Philippine Eagle",
+    "species_name": "Pithecophaga jefferyi",
+    "average_weight_species": "4kg - 8kg",
+    "description": "One of the world's largest and most powerful eagles, featuring a shaggy crest and a massive bill.",
+    "geography": "Philippines",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Pink Robin",
+    "species_name": "Petroica rodinogaster",
+    "average_weight_species": "9g - 11g",
+    "description": "A small, round bird; males are dark grey with a brilliant deep pink breast.",
+    "geography": "Southeastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Plush-crested Jay",
+    "species_name": "Cyanocorax chrysops",
+    "average_weight_species": "120g - 170g",
+    "description": "A social jay with a velvet-like black crest, yellow eyes, and blue-and-white tail tips.",
+    "geography": "Central South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Pomarine Jaeger",
+    "species_name": "Stercorarius pomarinus",
+    "average_weight_species": "550g - 900g",
+    "description": "A predatory seabird known for stealing food from other birds; has distinctive twisted tail streamers.",
+    "geography": "Global oceans; breeds in Arctic",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Puffin (Atlantic)",
+    "species_name": "Fratercula arctica",
+    "average_weight_species": "380g - 500g",
+    "description": "A small seabird with a colorful, triangular bill and a face that looks somewhat like a clown's.",
+    "geography": "North Atlantic Ocean",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Puna Teal",
+    "species_name": "Spatula puna",
+    "average_weight_species": "400g - 500g",
+    "description": "A high-altitude duck with a black cap, blue bill, and finely barred flanks.",
+    "geography": "Andes (South America)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Purple Finch",
+    "species_name": "Haemorhous purpureus",
+    "average_weight_species": "22g - 32g",
+    "description": "A small finch; males are described as looking like they were dipped in raspberry juice.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Purple Gallinule (American)",
+    "species_name": "Porphyrio martinica",
+    "average_weight_species": "200g - 300g",
+    "description": "A colorful wetland bird with purple-blue plumage, green wings, and long yellow legs.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Purple Martin",
+    "species_name": "Progne subis",
+    "average_weight_species": "45g - 60g",
+    "description": "The largest North American swallow; males are entirely dark iridescent purple-black.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Purple Swamphen",
+    "species_name": "Porphyrio porphyrio",
+    "average_weight_species": "500g - 1kg",
+    "description": "A large, bulky rail with deep blue-purple plumage and a massive red bill and frontal shield.",
+    "geography": "Europe, Africa, and Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Pygmy Kingfisher (African)",
+    "species_name": "Ispidina picta",
+    "average_weight_species": "11g - 14g",
+    "description": "A tiny, woodland kingfisher with bright blue upperparts and an orange-rufous underside.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Pyrrhuloxia",
+    "species_name": "Cardinalis sinuatus",
+    "average_weight_species": "35g - 45g",
+    "description": "A desert relative of the Northern Cardinal, with grey plumage and a curved, parrot-like yellow bill.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Quetzal (Resplendent)",
+    "species_name": "Pharomachrus mocinno",
+    "average_weight_species": "180g - 210g",
+    "description": "A sacred bird of the Maya; males have vibrant green plumage and extremely long tail streamers.",
+    "geography": "Central America (Cloud forests)",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Rainbow Lorikeet",
+    "species_name": "Trichoglossus moluccanus",
+    "average_weight_species": "100g - 150g",
+    "description": "A brightly colored parrot with a blue head, orange breast, and green wings.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Razorbill",
+    "species_name": "Alca torda",
+    "average_weight_species": "600g - 800g",
+    "description": "A colonial seabird with a thick, blunt black bill marked by a vertical white line.",
+    "geography": "North Atlantic Ocean",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Red-bearded Bee-eater",
+    "species_name": "Nyctyornis amictus",
+    "average_weight_species": "70g - 90g",
+    "description": "A large bee-eater with green plumage and long, hanging red throat feathers.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-bellied Pitta",
+    "species_name": "Erythropitta erythrogaster",
+    "average_weight_species": "60g - 90g",
+    "description": "A colorful ground bird with a brown head, blue breast band, and a bright red belly.",
+    "geography": "Southeast Asia and Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-billed Tropicbird",
+    "species_name": "Phaethon aethereus",
+    "average_weight_species": "600g - 800g",
+    "description": "A graceful white seabird with black barring on the back and very long central tail feathers.",
+    "geography": "Tropical Atlantic, Pacific, and Indian Oceans",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-browed Finch",
+    "species_name": "Neochmia temporalis",
+    "average_weight_species": "10g - 12g",
+    "description": "A small weaver finch with a grey body, olive wings, and a bright red brow and rump.",
+    "geography": "Eastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red Crossbill",
+    "species_name": "Loxia curvirostra",
+    "average_weight_species": "35g - 50g",
+    "description": "A finch with a unique crossed bill specialized for extracting seeds from conifer cones.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-faced Cormorant",
+    "species_name": "Urile urile",
+    "average_weight_species": "1.5kg - 2.2kg",
+    "description": "A dark seabird with a vibrant red face and a blue-based bill during the breeding season.",
+    "geography": "North Pacific and Bering Sea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-faced Warbler",
+    "species_name": "Cardellina rubrifrons",
+    "average_weight_species": "9g - 11g",
+    "description": "A small warbler with a bright red face and throat contrasting with a grey and white body.",
+    "geography": "Southwestern US to Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red Fody",
+    "species_name": "Foudia madagascariensis",
+    "average_weight_species": "14g - 19g",
+    "description": "A small weaver bird; males are brilliant scarlet-red with black patches around the eyes.",
+    "geography": "Madagascar; introduced to other islands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-headed Duck",
+    "species_name": "Aythya americana",
+    "average_weight_species": "1kg - 1.2kg",
+    "description": "A medium-sized diving duck; males have a bright cinnamon-red head and a grey body.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-headed Woodpecker",
+    "species_name": "Melanerpes erythrocephalus",
+    "average_weight_species": "56g - 90g",
+    "description": "A striking woodpecker with a fully red head, neck, and throat, contrasting with a black-and-white body.",
+    "geography": "Central and Eastern North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red Knot",
+    "species_name": "Calidris canutus",
+    "average_weight_species": "100g - 200g",
+    "description": "A large, chunky sandpiper with a brick-red breast in breeding plumage; known for long-distance migrations.",
+    "geography": "Global (Breeds in Arctic)",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Red-legged Honeycreeper",
+    "species_name": "Cyanerpes cyaneus",
+    "average_weight_species": "10g - 14g",
+    "description": "A small songbird; males are violet-blue with a turquoise crown and bright red legs.",
+    "geography": "Mexico to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-naped Trogon",
+    "species_name": "Harpactes kasumba",
+    "average_weight_species": "85g - 110g",
+    "description": "A forest bird with a black head, a red band on the nape, and a brilliant red breast.",
+    "geography": "Southeast Asia (Malay Peninsula, Sumatra, Borneo)",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Red-shouldered Hawk",
+    "species_name": "Buteo lineatus",
+    "average_weight_species": "450g - 700g",
+    "description": "A medium-sized hawk with a brownish-red chest and distinctive rufous 'shoulders'.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-tailed Hawk",
+    "species_name": "Buteo jamaicensis",
+    "average_weight_species": "700g - 1.5kg",
+    "description": "One of the most common hawks in North America, named for its iconic cinnamon-red tail.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-tailed Thrush",
+    "species_name": "Turdus naumanni",
+    "average_weight_species": "60g - 80g",
+    "description": "A medium-sized thrush with reddish-orange patches on the wings, flanks, and tail.",
+    "geography": "East Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-winged Blackbird",
+    "species_name": "Agelaius phoeniceus",
+    "average_weight_species": "32g - 77g",
+    "description": "A familiar marsh bird; males are black with bright red and yellow shoulder patches.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Red-whiskered Bulbul",
+    "species_name": "Pycnonotus jocosus",
+    "average_weight_species": "25g - 35g",
+    "description": "A songbird with a tall black crest and a small red patch (whiskers) behind the eyes.",
+    "geography": "South Asia; introduced to USA and Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Regent Bowerbird",
+    "species_name": "Sericulus chrysocephalus",
+    "average_weight_species": "75g - 110g",
+    "description": "Males are a spectacular gold and black; they build bowers to attract mates.",
+    "geography": "Eastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ring-necked Pheasant",
+    "species_name": "Phasianus colchicus",
+    "average_weight_species": "1kg - 1.5kg",
+    "description": "A large gamebird; males have a green head, red face, and a white neck ring.",
+    "geography": "Asia; widely introduced globally",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Roadrunner (Greater)",
+    "species_name": "Geococcyx californianus",
+    "average_weight_species": "220g - 450g",
+    "description": "A fast-running, ground-dwelling cuckoo known for its long tail and shaggy crest.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rock Dove (Pigeon)",
+    "species_name": "Columba livia",
+    "average_weight_species": "240g - 380g",
+    "description": "The common city pigeon, often grey with iridescent neck feathers.",
+    "geography": "Global",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rose-breasted Cockatoo (Galah)",
+    "species_name": "Eolophus roseicapilla",
+    "average_weight_species": "270g - 350g",
+    "description": "A popular parrot with a grey back and a soft pink face and breast.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rose-breasted Grosbeak",
+    "species_name": "Pheucticus ludovicianus",
+    "average_weight_species": "35g - 50g",
+    "description": "A stocky songbird; males are black and white with a bright rose-red patch on the breast.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Roseate Spoonbill",
+    "species_name": "Platalea ajaja",
+    "average_weight_species": "1.2kg - 1.8kg",
+    "description": "A large wading bird with bright pink plumage and a distinctive spoon-shaped bill.",
+    "geography": "The Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rosy-faced Lovebird",
+    "species_name": "Agapornis roseicollis",
+    "average_weight_species": "45g - 60g",
+    "description": "A small green parrot with a peach-to-rose colored face and throat.",
+    "geography": "Southwestern Africa; feral in Arizona",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rough-legged Buzzard",
+    "species_name": "Buteo lagopus",
+    "average_weight_species": "700g - 1.3kg",
+    "description": "A large hawk with feathers extending down to its toes; breeds in the Arctic.",
+    "geography": "Northern Hemisphere",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Royal Flycatcher (Amazonian)",
+    "species_name": "Onychorhynchus coronatus",
+    "average_weight_species": "15g - 20g",
+    "description": "Known for its spectacular, fan-shaped crest that is usually held flat.",
+    "geography": "South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ruby-crowned Kinglet",
+    "species_name": "Corthylio calendula",
+    "average_weight_species": "5g - 8g",
+    "description": "A tiny, active songbird; males have a hidden red crown patch shown when excited.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ruby-throated Hummingbird",
+    "species_name": "Archilochus colubris",
+    "average_weight_species": "2g - 6g",
+    "description": "The only hummingbird that breeds in the Eastern US; males have a glittering red throat.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ruddy Shelduck",
+    "species_name": "Tadorna ferruginea",
+    "average_weight_species": "1kg - 1.6kg",
+    "description": "A large orange-brown duck with a pale head and black tail.",
+    "geography": "Eurasia and North Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Ruddy Kingfisher",
+    "species_name": "Halcyon coromanda",
+    "average_weight_species": "65g - 90g",
+    "description": "A medium-sized kingfisher with overall cinnamon-red to violet-red plumage.",
+    "geography": "East and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rufous Kingfisher",
+    "species_name": "Ceyx erithaca",
+    "average_weight_species": "14g - 20g",
+    "description": "A tiny, jewel-like kingfisher with bright rufous, violet, and yellow plumage.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rufous Treepie",
+    "species_name": "Dendrocitta vagabunda",
+    "average_weight_species": "110g - 130g",
+    "description": "A long-tailed, cinnamon-colored bird of the crow family with a grey head.",
+    "geography": "Indian Subcontinent and SE Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Rufous Motmot",
+    "species_name": "Baryphthengus martii",
+    "average_weight_species": "140g - 195g",
+    "description": "A large motmot with a rufous head and chest, and a long tail with racket-like tips.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Sumatran Thrush",
+    "species_name": "Cochoa beccarii",
+    "average_weight_species": "100g - 120g",
+    "description": "A rare, forest-dwelling bird with deep blue and black plumage.",
+    "geography": "Sumatra, Indonesia",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Sand Martin (Bank Swallow)",
+    "species_name": "Riparia riparia",
+    "average_weight_species": "11g - 16g",
+    "description": "A small swallow that nests in burrows along riverbanks.",
+    "geography": "Global",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Sandhill Crane",
+    "species_name": "Antigone canadensis",
+    "average_weight_species": "3kg - 5kg",
+    "description": "A large, grey crane with a red forehead and a loud, bugling call.",
+    "geography": "North America and Siberia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Satyr Tragopan",
+    "species_name": "Tragopan satyra",
+    "average_weight_species": "1.2kg - 2.1kg",
+    "description": "A forest pheasant; males are bright crimson-red with white spots and blue facial skin.",
+    "geography": "Himalayas",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Say's Phoebe",
+    "species_name": "Sayornis saya",
+    "average_weight_species": "19g - 23g",
+    "description": "A flycatcher with a greyish-brown back and a pale cinnamon-orange belly.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Scarlet-crowned Fruit Dove",
+    "species_name": "Ptilinopus regina",
+    "average_weight_species": "85g - 110g",
+    "description": "A colorful dove with a pink/red crown, yellow belly, and green wings.",
+    "geography": "Australia and Indonesia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Scarlet-faced Liocichla",
+    "species_name": "Liocichla ripponi",
+    "average_weight_species": "45g - 55g",
+    "description": "A social songbird with olive plumage and bright red patches on the face and wings.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Scarlet Ibis",
+    "species_name": "Eudocimus ruber",
+    "average_weight_species": "700g - 900g",
+    "description": "A brilliant, entirely scarlet-red wading bird with a long, thin curved bill.",
+    "geography": "Northern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Scarlet Macaw",
+    "species_name": "Ara macao",
+    "average_weight_species": "1kg",
+    "description": "A large, iconic parrot with bright red, yellow, and blue plumage.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Scarlet Tanager",
+    "species_name": "Piranga olivacea",
+    "average_weight_species": "23g - 38g",
+    "description": "A stunning songbird; breeding males are brilliant red with jet-black wings and tails.",
+    "geography": "Eastern North America to South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Shoebill",
+    "species_name": "Balaeniceps rex",
+    "average_weight_species": "4kg - 7kg",
+    "description": "A prehistoric-looking wading bird with a massive, clog-shaped bill and grey plumage.",
+    "geography": "East-Central Africa swamps",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Short-billed Dowitcher",
+    "species_name": "Limnodromus griseus",
+    "average_weight_species": "90g - 120g",
+    "description": "A medium-sized shorebird with a long, straight bill used for 'sewing machine' style probing.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Smith's Longspur",
+    "species_name": "Calcarius pictus",
+    "average_weight_species": "22g - 30g",
+    "description": "A ground-dwelling songbird; males in breeding plumage have a rich buff-colored belly and a black-and-white face.",
+    "geography": "Arctic North America to Central USA",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Snow Goose",
+    "species_name": "Anser caerulescens",
+    "average_weight_species": "2kg - 3.2kg",
+    "description": "A white goose with black wing tips, known for forming massive, noisy migratory flocks.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Snow Partridge",
+    "species_name": "Lerwa lerwa",
+    "average_weight_species": "450g - 700g",
+    "description": "A high-altitude gamebird with finely barred black-and-white plumage and red legs.",
+    "geography": "Himalayas and Tibetan Plateau",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Snowy Egret",
+    "species_name": "Egretta thula",
+    "average_weight_species": "370g",
+    "description": "A small, graceful white heron with a black bill, black legs, and bright yellow feet.",
+    "geography": "The Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Snowy Owl",
+    "species_name": "Bubo scandiacus",
+    "average_weight_species": "1.6kg - 3kg",
+    "description": "A large, white owl of the Arctic, famously nomadic and active during the day.",
+    "geography": "Arctic regions worldwide",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Snowy Plover",
+    "species_name": "Charadrius nivosus",
+    "average_weight_species": "34g - 48g",
+    "description": "A small, pale shorebird that nests on sandy beaches and salt flats.",
+    "geography": "Americas",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Snowy Sheathbill",
+    "species_name": "Chionis albus",
+    "average_weight_species": "450g - 780g",
+    "description": "A plump, pure white bird with a scaly face, the only Antarctic bird without webbed feet.",
+    "geography": "Antarctica and Southern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Sora",
+    "species_name": "Porzana carolina",
+    "average_weight_species": "50g - 110g",
+    "description": "A small, secretive marsh bird with a short yellow bill and a black face mask.",
+    "geography": "North and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Spangled Cotinga",
+    "species_name": "Cotinga cayana",
+    "average_weight_species": "60g - 75g",
+    "description": "Males are a breathtaking turquoise-blue with a large, deep purple throat patch.",
+    "geography": "Amazon Basin",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Splendid Fairywren",
+    "species_name": "Malurus splendens",
+    "average_weight_species": "8g - 11g",
+    "description": "A tiny bird where breeding males are almost entirely brilliant cobalt blue.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Spoon-billed Sandpiper",
+    "species_name": "Calidris pygmaea",
+    "average_weight_species": "30g - 40g",
+    "description": "A tiny shorebird with a unique, highly specialized spatulate or spoon-shaped bill tip.",
+    "geography": "East Asia and Southeast Asia",
+    "rarity": "Critically Endangered"
+  },
+  {
+    "bird_name": "Spotted Catbird",
+    "species_name": "Ailuroedus maculosus",
+    "average_weight_species": "140g - 200g",
+    "description": "A green, stocky bird with white spotting and a call that sounds like a crying cat.",
+    "geography": "Northeastern Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Spotted Whistling-duck",
+    "species_name": "Dendrocygna guttata",
+    "average_weight_species": "600g - 900g",
+    "description": "A brown duck with prominent white spots on its flanks and a grey face.",
+    "geography": "Indonesia, Philippines, New Guinea",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Squacco Heron",
+    "species_name": "Ardeola ralloides",
+    "average_weight_species": "250g - 350g",
+    "description": "A small heron that looks buff-brown while perched but reveals brilliant white wings in flight.",
+    "geography": "Europe, Africa, and Middle East",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Sri Lanka Blue Magpie",
+    "species_name": "Urocissa ornata",
+    "average_weight_species": "180g - 210g",
+    "description": "A stunning corvid with bright blue plumage, a chestnut head, and red bill and legs.",
+    "geography": "Sri Lanka",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Steamer Duck (Fuegian)",
+    "species_name": "Tachyeres ptereneres",
+    "average_weight_species": "3.5kg - 6kg",
+    "description": "A massive, flightless duck known for 'steaming' across water using its wings like paddles.",
+    "geography": "Southern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Stork-billed Kingfisher",
+    "species_name": "Pelargopsis capensis",
+    "average_weight_species": "180g - 250g",
+    "description": "A very large kingfisher with a massive red bill and a brownish head.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Striated Caracara",
+    "species_name": "Phalcoboenus australis",
+    "average_weight_species": "1.2kg",
+    "description": "A curious and bold bird of prey, almost entirely dark with fine streaks on the neck.",
+    "geography": "Falkland Islands and Cape Horn",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Striped Owl",
+    "species_name": "Pseudoscops clamator",
+    "average_weight_species": "350g - 550g",
+    "description": "A medium-sized owl with very long ear tufts and prominent dark vertical striping on the breast.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Striated Manakin",
+    "species_name": "Machaeropterus regulus",
+    "average_weight_species": "9g - 11g",
+    "description": "A small forest bird; males have a bright red crown and white-streaked underparts.",
+    "geography": "South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Striped Swallow",
+    "species_name": "Cecropis abyssinica",
+    "average_weight_species": "15g - 20g",
+    "description": "A swallow with a rufous crown and heavily dark-streaked white underparts.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Sunbittern",
+    "species_name": "Eurypyga helias",
+    "average_weight_species": "180g - 220g",
+    "description": "A slender bird with a hidden wing pattern that resembles large, glowing eyes when spread.",
+    "geography": "Central and South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Superb Starling",
+    "species_name": "Lamprotornis superbus",
+    "average_weight_species": "60g - 85g",
+    "description": "A common, bold starling with iridescent blue-green upperparts and a bright orange belly.",
+    "geography": "East Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Surf Scoter",
+    "species_name": "Melanitta perspicillata",
+    "average_weight_species": "900g - 1.1kg",
+    "description": "A sea duck; males are entirely black with white patches on the head and a large, colorful bill.",
+    "geography": "North America coasts",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Swinhoe's Pheasant",
+    "species_name": "Lophura swinhoii",
+    "average_weight_species": "1kg - 1.2kg",
+    "description": "A forest pheasant; males have deep blue plumage, a white crest, and a white central tail.",
+    "geography": "Taiwan",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Tailorbird (Common)",
+    "species_name": "Orthotomus sutorius",
+    "average_weight_species": "6g - 10g",
+    "description": "Small, active songbird famous for 'sewing' leaves together to create a cradle for its nest.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Taiwan Magpie",
+    "species_name": "Urocissa caerulea",
+    "average_weight_species": "250g - 310g",
+    "description": "A long-tailed, sapphire-blue corvid with a black head, red bill, and white tail tips.",
+    "geography": "Taiwan",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Takahe",
+    "species_name": "Porphyrio hochstetteri",
+    "average_weight_species": "2.3kg - 3.8kg",
+    "description": "A large, flightless, prehistoric-looking rail with deep blue-green plumage and a massive red bill.",
+    "geography": "New Zealand (South Island)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Tasmanian Hen (Native)",
+    "species_name": "Tribonyx mortierii",
+    "average_weight_species": "1.1kg - 1.3kg",
+    "description": "A flightless, olive-brown rail with a heavy yellow bill and red eyes.",
+    "geography": "Tasmania, Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Tawny Frogmouth",
+    "species_name": "Podargus strigoides",
+    "average_weight_species": "230g - 500g",
+    "description": "Often mistaken for an owl, this nocturnal bird has cryptic, bark-like plumage used for camouflage.",
+    "geography": "Australia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Teal Duck (Common Teal)",
+    "species_name": "Anas crecca",
+    "average_weight_species": "250g - 400g",
+    "description": "Small dabbling duck; males have a chestnut head with a broad green eye patch.",
+    "geography": "Eurasia; North America (as Green-winged Teal)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Titmouse (Tufted)",
+    "species_name": "Baeolophus bicolor",
+    "average_weight_species": "18g - 26g",
+    "description": "A small, grey-backed songbird with a pointed crest and large, dark eyes.",
+    "geography": "Eastern North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Toucan (Toco)",
+    "species_name": "Ramphastos toco",
+    "average_weight_species": "500g - 850g",
+    "description": "The largest toucan, featuring a massive orange-yellow bill with a black spot at the tip.",
+    "geography": "South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Townsend's Warbler",
+    "species_name": "Setophaga townsendi",
+    "average_weight_species": "7g - 11g",
+    "description": "A small warbler with a yellow face and breast, and a distinctive black cheek patch.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Tree Swallow",
+    "species_name": "Tachycineta bicolor",
+    "average_weight_species": "16g - 25g",
+    "description": "A sleek swallow with iridescent blue-green upperparts and clean white underparts.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Tricolored Blackbird",
+    "species_name": "Agelaius tricolor",
+    "average_weight_species": "45g - 65g",
+    "description": "Highly social blackbird; males have red shoulder patches with a distinct white border.",
+    "geography": "California and Pacific Coast",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Tropical Kingbird",
+    "species_name": "Tyrannus melancholicus",
+    "average_weight_species": "32g - 43g",
+    "description": "A large, aggressive flycatcher with a grey head, yellow belly, and a notched tail.",
+    "geography": "The Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Trumpeter Swan",
+    "species_name": "Cygnus buccinator",
+    "average_weight_species": "7kg - 13kg",
+    "description": "The largest waterfowl in North America, with pure white plumage and a heavy black bill.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Turkey Vulture",
+    "species_name": "Cathartes aura",
+    "average_weight_species": "800g - 2kg",
+    "description": "A large scavenger with a bald red head and a keen sense of smell for locating carrion.",
+    "geography": "The Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Turquoise Motmot",
+    "species_name": "Eumomota superciliosa",
+    "average_weight_species": "60g - 70g",
+    "description": "Features a turquoise brow and a long tail with bare-shafted, racket-like tips.",
+    "geography": "Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Umbrellabird (Long-wattled)",
+    "species_name": "Cephalopterus penduliger",
+    "average_weight_species": "320g - 570g",
+    "description": "Large black bird with a massive crest and a long, feather-covered wattle hanging from the neck.",
+    "geography": "Colombia and Ecuador",
+    "rarity": "Vulnerable"
+  },
+  {
+    "bird_name": "Varied Thrush",
+    "species_name": "Ixoreus naevius",
+    "average_weight_species": "65g - 100g",
+    "description": "A shy forest thrush with an orange breast, black breast band, and orange wing bars.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Veery",
+    "species_name": "Catharus fuscescens",
+    "average_weight_species": "28g - 54g",
+    "description": "A cinnamon-brown thrush known for its ethereal, downward-spiraling flute-like song.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Venezuelan Troupial",
+    "species_name": "Icterus icterus",
+    "average_weight_species": "60g - 80g",
+    "description": "The national bird of Venezuela; a large, bright orange and black oriole with blue eye skin.",
+    "geography": "Northern South America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Verdin",
+    "species_name": "Auriparus flaviceps",
+    "average_weight_species": "6g - 8g",
+    "description": "A tiny desert bird with a grey body, yellow head, and a small rufous shoulder patch.",
+    "geography": "Southwestern US and Mexico",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Vermilion Flycatcher",
+    "species_name": "Pyrocephalus obscurus",
+    "average_weight_species": "11g - 14g",
+    "description": "A small flycatcher; males are unmistakable with brilliant scarlet-red plumage and a dark mask.",
+    "geography": "Americas",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Victoria Crowned-pigeon",
+    "species_name": "Goura victoria",
+    "average_weight_species": "2kg - 3.5kg",
+    "description": "The largest pigeon in the world, featuring blue plumage and a massive, lacy crest with white tips.",
+    "geography": "New Guinea",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Violet-backed Starling",
+    "species_name": "Cinnyricinclus leucogaster",
+    "average_weight_species": "35g - 50g",
+    "description": "A small starling; males are a stunning iridescent amethyst-violet with a white belly.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Violet Cuckoo",
+    "species_name": "Chrysococcyx xanthorhynchus",
+    "average_weight_species": "18g - 25g",
+    "description": "Small cuckoo; males have brilliant violet-purple upperparts and a white-and-violet barred belly.",
+    "geography": "Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Violet-green Swallow",
+    "species_name": "Tachycineta thalassina",
+    "average_weight_species": "12g - 16g",
+    "description": "Small swallow with iridescent green upperparts, a purple rump, and white patches on the face.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Violet Turaco",
+    "species_name": "Musophaga violacea",
+    "average_weight_species": "250g - 360g",
+    "description": "A large, glossy violet bird with a crimson crown and a yellow frontal shield on the bill.",
+    "geography": "West Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Visayan Hornbill",
+    "species_name": "Penelopides panini",
+    "average_weight_species": "400g - 500g",
+    "description": "A small forest hornbill with a yellowish-white head and a red-toned bill.",
+    "geography": "Visayan Islands, Philippines",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Vulturine Guineafowl",
+    "species_name": "Acryllium vulturinum",
+    "average_weight_species": "1.1kg - 1.6kg",
+    "description": "Striking bird with a bald head, long blue neck feathers, and cobalt-blue breast plumage.",
+    "geography": "East Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Wallcreeper",
+    "species_name": "Tichodroma muraria",
+    "average_weight_species": "16g - 20g",
+    "description": "A butterfly-like bird of high mountains with grey plumage and brilliant crimson wing patches.",
+    "geography": "Eurasia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Wattled Curassow",
+    "species_name": "Crax globulosa",
+    "average_weight_species": "2.2kg - 2.5kg",
+    "description": "A large, black forest bird with a curly crest and conspicuous red ornamental wattles at the base of the bill.",
+    "geography": "Amazon Basin (South America)",
+    "rarity": "Endangered"
+  },
+  {
+    "bird_name": "Wattled Lapwing (African)",
+    "species_name": "Vanellus senegallus",
+    "average_weight_species": "160g - 260g",
+    "description": "A large brown plover with long yellow legs and prominent yellow-and-red facial wattles.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Whimbrel",
+    "species_name": "Numenius phaeopus",
+    "average_weight_species": "300g - 500g",
+    "description": "A large, migratory curlew with a long, down-curved bill and a distinctive striped crown.",
+    "geography": "Global (Breeds in Arctic/Subarctic)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-breasted Waterhen",
+    "species_name": "Amaurornis phoenicurus",
+    "average_weight_species": "200g - 350g",
+    "description": "A bold rail with a clean white face and breast contrasting with dark grey upperparts.",
+    "geography": "South and Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-browed Crake",
+    "species_name": "Poliolimnas cinereus",
+    "average_weight_species": "40g - 65g",
+    "description": "A small wetland bird with a grey head, light brown body, and bold white stripes above and below the eye.",
+    "geography": "Southeast Asia, Australia, and Pacific Islands",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-cheeked Turaco",
+    "species_name": "Tauraco leucotis",
+    "average_weight_species": "200g - 315g",
+    "description": "A vibrant green bird with a tall crest and a large white patch in front of and below the eye.",
+    "geography": "East Africa (Ethiopia, Eritrea, Sudan)",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-crested Hornbill",
+    "species_name": "Horizocerus albocristatus",
+    "average_weight_species": "280g - 320g",
+    "description": "A forest hornbill with a massive, shaggy white crest and a very long, white-tipped tail.",
+    "geography": "Central and West Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-eared Hummingbird",
+    "species_name": "Basilinna leucotis",
+    "average_weight_species": "3g - 4g",
+    "description": "A small hummingbird with a bright red bill and a broad, glittering white stripe behind the eye.",
+    "geography": "Southwestern US to Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-necked Raven",
+    "species_name": "Corvus albicollis",
+    "average_weight_species": "800g - 1.1kg",
+    "description": "A large corvid with a massive black bill and a distinctive white patch on the back of the neck.",
+    "geography": "Eastern and Southern Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-tailed Tropicbird",
+    "species_name": "Phaethon lepturus",
+    "average_weight_species": "220g - 410g",
+    "description": "The smallest tropicbird, featuring white plumage with black wing bands and long tail streamers.",
+    "geography": "Tropical Atlantic, Pacific, and Indian Oceans",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "White-throated Bee-eater",
+    "species_name": "Merops albicollis",
+    "average_weight_species": "20g - 30g",
+    "description": "A slender bird with a black crown and eye mask, white throat, and long central tail streamers.",
+    "geography": "Africa and Southern Arabia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Wild Turkey",
+    "species_name": "Meleagris gallopavo",
+    "average_weight_species": "2.5kg - 11kg",
+    "description": "A large, heavy-bodied ground bird with a fan-shaped tail and bare skin on the head.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Willow Ptarmigan",
+    "species_name": "Lagopus lagopus",
+    "average_weight_species": "450g - 800g",
+    "description": "A tundra grouse that changes from brown in summer to pure white in winter.",
+    "geography": "Arctic and Subarctic regions",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Wilson's Bird-of-paradise",
+    "species_name": "Cicinnurus respublica",
+    "average_weight_species": "50g - 65g",
+    "description": "A small bird featuring a unique bare blue crown with a black cross pattern and lyre-shaped tail feathers.",
+    "geography": "Waigeo and Batanta Islands (Indonesia)",
+    "rarity": "Near Threatened"
+  },
+  {
+    "bird_name": "Wood Duck",
+    "species_name": "Aix sponsa",
+    "average_weight_species": "450g - 850g",
+    "description": "A colorful perching duck; males have a unique 'slicked-back' crest and intricate facial patterns.",
+    "geography": "North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Wood Thrush",
+    "species_name": "Hylocichla mustelina",
+    "average_weight_species": "40g - 50g",
+    "description": "A cinnamon-brown forest bird with bold black spots on a white breast; known for its flute-like song.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Woodland Kingfisher",
+    "species_name": "Halcyon senegalensis",
+    "average_weight_species": "45g - 65g",
+    "description": "A medium-sized, bright blue kingfisher with a black-and-red bill and a loud, piercing trill.",
+    "geography": "Sub-Saharan Africa",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Wrentit",
+    "species_name": "Chamaea fasciata",
+    "average_weight_species": "11g - 17g",
+    "description": "A small, secretive, drab brown bird with a long tail and a distinctive 'bouncing ball' song.",
+    "geography": "Pacific Coast of North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Yellow-bellied Flowerpecker",
+    "species_name": "Dicaeum melanoxanthum",
+    "average_weight_species": "8g - 11g",
+    "description": "A tiny bird with dark slate-grey upperparts and a bright yellow belly and breast.",
+    "geography": "Himalayas to Southeast Asia",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Yellow-breasted Chat",
+    "species_name": "Icteria virens",
+    "average_weight_species": "22g - 30g",
+    "description": "A large, vocal songbird with a bright yellow breast, olive back, and white 'spectacles'.",
+    "geography": "North and Central America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Yellow Cacique",
+    "species_name": "Cassiculus melanicterus",
+    "average_weight_species": "70g - 100g",
+    "description": "A black bird with a prominent yellow rump, yellow wing patches, and a long crest.",
+    "geography": "Western Mexico and Guatemala",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Yellow-headed Blackbird",
+    "species_name": "Xanthocephalus xanthocephalus",
+    "average_weight_species": "50g - 100g",
+    "description": "A striking marsh bird; males have a jet-black body and a brilliant golden-yellow head and chest.",
+    "geography": "Western North America",
+    "rarity": "Common"
+  },
+  {
+    "bird_name": "Zebra Dove",
+    "species_name": "Geopelia striata",
+    "average_weight_species": "50g - 65g",
+    "description": "A small, slender dove with fine black-and-white barring and a blue eye ring.",
+    "geography": "Southeast Asia; introduced to Hawaii",
+    "rarity": "Common"
+  }
+]
